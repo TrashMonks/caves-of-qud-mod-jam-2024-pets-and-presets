@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects>
+  <object Name="FSS_pet_jam Hampster" Inherits="BaseHumanoid">
+    <!-- Parts -->
+    <part Name="Render" DisplayName="{{dreamsmoke|Hampesper}}" Tile="hampesper/hampesper.png" ColorString="&amp;B" DetailColor="O" />
+    <part Name="Body" Anatomy="FSS_pet_jam Hampster Anatomy" />
+    <part Name="Description" Short="Small, intelligent eyes peer out at the world through a bubble of carbide-glass." />
+    <part Name="Pettable" />
+    <part Name="ConversationScript" ConversationID="FSS_pet_jam Hampster" />
+
+    <!-- Stats -->
+    <stat Name="Hitpoints" Value="50" />
+    <stat Name="Level" Value="3" />
+    <stat Name="AV" Value="0" />
+    <stat Name="Strength" sValue="1" />
+    <stat Name="Toughness" sValue="10" />
+    <stat Name="Willpower" sValue="18" />
+    <stat Name="Agility" sValue="16" />
+    <stat Name="Intelligence" sValue="14" />
+    <stat Name="Ego" sValue="18" />
+
+    <!-- Mutations -->
+    <mutation Name="SensePsychic" />
+    <mutation Name="SunderMind" />
+    <!-- <mutation Name="Telepathy" /> -->
+
+    <!-- Skills -->
+    <skill Name="Acrobatics_Dodge" />
+    <skill Name="Acrobatics_Tumble" />
+    <skill Name="Discipline_Lionheart" />
+    <skill Name="Tactics_Juke" />
+
+    <!-- Inventory -->
+    <inventoryobject Blueprint="FSS_pet_jam Hampster Ball" />
+
+    <!-- Tags -->
+    <property Name="Role" Value="Artillery" />
+    <property Name="Story" Value="FSS_pet_jam Ball Story" />
+    <tag Name="Pet" />
+    <tag Name="PetResponse" Value="rolls around excitedly, stares at you unnervingly, squeaks adorably, does a flip in its ball" />
+    <tag Name="StartingPet" />
+    <tag Name="NoXP" />
+    <tag Name="Gender" Value="female" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+    <xtagGrammar Proper="true" />
+  </object>
+
+  <object Name="FSS_pet_jam Hampster Ball" Inherits="Armor">
+    <part Name="ModSturdy" />
+    <part Name="NoDamage" />
+    <part Name="Render" DisplayName="Hampster Ball" RenderString="*" Tile="hampsterball/hampsterballcentred.png" TileColor="&amp;B" DetailColor="B" />  <!-- needs sprite and colour! -->
+    <part Name="Description" Short="A small, clear sphere of carbide-blue glass" />
+    <part Name="Armor" AV="5" DV="5" WornOn="Body" /> <!-- numbers might need adjusting -->
+    <part Name="Physics" Category="Natural Armor" IsReal="false" Weight="0" />
+    <part Name="MoveCostMultiplier" Amount="-25" />
+    <part Name="NaturalEquipment" />
+    <removepart Name="TinkerItem" />
+    <intproperty Name="Natural" Value="1" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+    <tag Name="NaturalGear" />
+    <tag Name="NoDefaultBehavior" />
+    <tag Name="NoSparkingQuest" />
+    <tag Name="ShowAsPhysicalFeature" />
+  </object>
+
+</objects>

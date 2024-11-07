@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<embarkmodules>
+  <module Class="XRL.CharacterBuilds.Qud.QudPregenModule">
+    <pregens>
+      
+      <pregen Name="Monster Catcher" Genotype="True Kin" Tile="monstercatcher/monstercatcher.png" Foreground="y" Detail="r" Background="k">
+        <code>H4sIAAAAAAAACs1UXWvbMBR9L/Q/CLNHx8TZGNkgD543xtYWsiZ0g9EH2b7YYrJk9LFhiv/7ruy2thxY1sFKDMbWPffj3KMr3Z2fERKUtIafoDSTInhLglW0jFbLdRS/CcIezyzjxcQhRoflPVbLwnLQaP7u1oTcDZ9HaN824IK+XV9GaUUVzQ2ody6jjr7Ywr0fQUiDbld9QEgSraHOeLtIdxjQhORmqL0ZmYUktdxYBRsB1ijKQ7K1GWf5BbR7+QPERljOB449mYIaijQe2aHphXkqtfeY5IDeWARzPvi7tHtlgVww4TkcyPiAdcNPF/6zjDubnaiKHrPjIt67u6SpFNry51IwMUaxzBrQJyjinNxxHbeSCaO3VuUV1VD4NZ3ORoEoTYXAMvSQpGScmRaBtQ/spS0rAdod+Nc+9EkY4JyVIHLXyspHvzLOG/kLFEKvfOhDKdEYx6Oxm3ZBm10DwqDL4uXaB66hpkwwUc46CDLsN2nQ6kf8x9FJ2wyUAMPyU5ydA3bHh4c7+Rbx1KSBQ26wg8l1PzzeXKHnWM8R2yKnTGJXV1bnllOFB1xJa5iAIJxHStvvdTwHbqhitIeCRNXBFO3Gxe1zbXclpYadoQq7KC9lTp0up7jzfyD6FzfxLM4V+yybhj7tRnaf2/Oz7jc91MGYbwgAAA==</code>
+        <description>
+&amp;c&#249;&amp;y Surround yourself with friends and become the very best
+&amp;c&#249;&amp;y Starts with a strong throwing arm
+&amp;c&#249;&amp;y {{W|Challenging}} starting build without included pet
+&amp;c&#249;&amp;y Additional preset by {{zetachrome|Flower}} and {{zetachrome|Spiral Static}}
+        </description>
+      </pregen>
+    </pregens>
+  </module>
+
+</embarkmodules>

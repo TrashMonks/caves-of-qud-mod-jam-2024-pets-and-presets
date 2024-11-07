@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<bodies>
+  <bodyparttypevariants>
+    <bodyparttypevariant VariantOf="Body" Type="Tiny Hampster" ChimeraWeight="0" />
+    <bodyparttypevariant VariantOf="Missile Weapon" Type="Telekinetic Grip" ChimeraWeight="0" RequiresType="" />
+  </bodyparttypevariants>
+
+  <anatomies>
+    <anatomy Name="FSS_pet_jam Hampster Anatomy" BodyType="Tiny Hampster" BodyMobility="2">
+      <part Type="Telekinetic Grip" />
+      <part Type="Floating Nearby" />
+      <part Type="Floating Nearby" />
+    </anatomy>
+  </anatomies>
+</bodies>
