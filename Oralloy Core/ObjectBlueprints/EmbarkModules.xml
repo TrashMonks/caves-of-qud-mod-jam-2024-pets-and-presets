@@ -1,0 +1,16 @@
+<embarkmodules>
+    <module Class="XRL.CharacterBuilds.Qud.QudPregenModule">
+        <pregens>
+            <pregen Name="Oralloy Core" Genotype="Mutated Human" Tile="Monosophy_OralloyCore/OralloyCore.png" Foreground="y" Detail="c" Background="k">
+				<code>H4sIAAAAAAAACs1WW2vbMBR+L/Q/CLNHNySlG2GQh8Qbu7Uja7JuMPog22e2mCwZ6WgjDfnvO3LSxHbapQ3tSCDYOt+5fD43ND8+YizIeAG/wVihVfCaBaedbue02+/0+kFY4bETMq0p9Eihu8IKnToJlsQ//Jmx+fKxhqazErzR98vzTpRzwxMEM/IebeeLS/3/HSiNpHZRGYRsaC0UsZydRBMyKEN2tYw92DALWeQkOgMDBQ4NlyEbu1iK5BPMpvoXqIFyUi45VmRSjpxorNmR6AU+ltobcrJFbxOEfN7qe7cXDjlCyt67gquG1lYub7HF8mUR7p3LiYsPNJUNZrszuVL3Tj/rgqf/K4FV1ci3PcAUtrjtTmJRksduXWJBQlL52Izs8jevH9iqfVdJjnJRgOF135XOFTeCKyQV/4FtNNKuwnp1+SJ8aNCvyiKPJTA/VAXsGfzlfsFHRiBS7JFWtN2e4rs3h+t7W7n3pK08RDQidgiH2MttcrubeayFQjt2Jsm5hbQZ028MNKAyzAnoN0oSDDMhBc4IeNUEptplORXYD0Ov28Q+KAQpRQYqgW3Lb0LKUv8Bsw29zbQXbmT1rgt4OSmhao+Ts7MmcAkFF0qorD20MX3v0I9y0+IZt2DkLOpC3MAaP8AWuo/k7lZSdOPxzsdgftI6ZJE2jf0SlHDHcAfUC2lV8TZQGq1o6Cd3Wj1nmXKtLUyQG6S2OddJtb8OsVT/IPqAu0DLzgf7qMuSP+5S4B/Xx0eLv0+pcDf2CgAA</code>
+				<description>
+					&amp;c&#249;&amp;y You spent years meditating upon salt and radio waves.
+					&amp;c&#249;&amp;y By divine providence, you happened upon a tin containing a high-grade metal pill.
+					&amp;c&#249;&amp;y Consuming it has brought your latent potential to the surface. Pilgrimage is necessary to realize it.
+					&amp;c&#249;&amp;y (Chimera with 5 unstable genomes and brittle bones.)
+					&amp;c&#249;&amp;y ({{W|Challenging}} starting build.) 
+				</description>
+			</pregen>
+        </pregens>
+    </module>
+</embarkmodules>
