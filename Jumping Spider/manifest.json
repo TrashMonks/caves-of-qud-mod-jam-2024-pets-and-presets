@@ -1,0 +1,9 @@
+{
+    "id": "Trashbug_JumpingSpiderPet",
+    "title": "(Giant) Adorable Jumping Spider Pet!",
+    "description": "Adds a new starting pet to Caves of Qud.",
+    "version": "1.0.0",
+    "author": "Bug",
+    "tags": "Creature",
+    "PreviewImage": "preview.png"
+}

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--Shout outs and a special thanks to the qud-buds discord thread! Live and drink, water-sibs -->
+<objects>
+	<object Name="Trashbug_JumpingSpiderMutant" Inherits="BaseSpider">
+		<part Name="Body" Anatomy="Spider" />
+		<part Name="Description" Short="A spider once small beyond notice stands towering over =pronouns.possessive= kin. The shimmer of =pronouns.possessive= cerulean bristles liken to a desert mirage, luring the unwary to their demise. A pair of tremendous stygian eyes observe their surroundings intently, waiting." />
+		<part Name="Render" DisplayName="Jumping Spider" />
+		<part Name="Brain" Hostile="false" Factions="Arachnids-100" />
+		<part Name="Corpse" CorpseChance="0" />
+		<part Name="AISelfPreservation" Threshold="35"/>
+		<removepart Name="AIKillStuckStuff" />
+		<tag Name="BaseObject" Value="*noinherit" />
+		
+		<stat Name="Hitpoints" Value="24" />
+		<stat Name="DV" Value="10" />
+		<stat Name="Strength" sValue="16" />
+		<stat Name="Agility" sValue="22" />
+		<stat Name="Wisdom" sValue="18" />
+		<stat Name="Toughness" sValue="20" />
+		<stat Name="Level" Value="1" />
+		<skill Name="ShortBlades" />
+		<skill Name="Tactics" />
+		<skill Name="Tactics_Charge" />
+		<skill Name="Tactics_Run" />
+		<mutation Name="MultipleLegs" Level="3" />
+		<mutation Name="HeightenedSpeed" Level="3" />
+		<mutation Name="AdrenalControl2" Level="3" />
+		<mutation Name="Chimera" />
+
+		<inventoryobject Blueprint="Trashbug_JumpingSpider_Bite" Number="1" />
+		
+		<tag Name="DeathSounds" Value="Sounds/Creatures/VO/sfx_creature_animal_spider_vo_die" />
+		<tag Name="TakeDamageSound" Value="Sounds/Creatures/VO/sfx_creature_animal_spider_vo_hurt"/>
+		<tag Name="AmbientIdleSound" Value="Sounds/Creatures/VO/sfx_creature_animal_spider_vo_idle"/>
+		<tag Name="PunchSound" Value="Sounds/Creatures/VO/sfx_creature_animal_spider_vo_attack"/> 
+	</object>
+	<object Name="Trashbug_JumpingSpider_Bite" Inherits="CaveSpider_Bite">
+		<part Name="MeleeWeapon" BaseDamage="2d2" Skill="ShortBlades" />
+		<part Name="StunOnHit" Chance="5" Duration="2d2" />
+		<part Name="ConfuseOnHit" Chance="5" Duration="2d3" />
+		<part Name="PoisonOnHit" Chance="35" Strength="15" DamageIncrement="2" Duration="2-3" />
+	</object>
+	<object Name="Trashbug_Spooder" Inherits="Trashbug_JumpingSpiderMutant">
+		<part Name="Render" DisplayName="{{B|Colossa}}" Tile="Creatures/bug_colossusjumpingspider3.png" ColorString="&amp;Y" DetailColor="B" />
+		<tag Name="Gender" Value="female" />
+		<tag Name="Pet"/>
+		<tag Name="StartingPet" />
+		<part Name="Pettable" />
+		<tag Name="PetResponse" Value="waves her palps in the air, headbutts your hand, grooms her chelicerae" />
+		<property Name="Story" Value="Spooder the Colossal Jumping Spider" />
+	</object>
+</objects>
