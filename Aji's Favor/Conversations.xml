@@ -1,0 +1,56 @@
+<conversations>
+  <conversation ID="Gearlink_AJISFAVOR_AjiPet">
+    <start>
+      <text>Live and drink =player.formalAddressTerm=.</text>
+      <text>Breathe deep =player.formalAddressTerm=.</text>
+      <text>Fuming God watch you =player.formalAddressTerm=.</text>
+      <text>Drink deep of the Fuming God's breath.</text>
+      <text>Drink deep of the Fuming God's breath =player.formalAddressTerm=. But not too deeply.</text>
+      <text>The shallow world is so strange...</text>
+      <text>The Aji will never believe these sights.</text>
+      <text>No other Aji has tread this path.</text>
+      <text>Maintaining this capsule leaves me hungry...</text>
+      <text>The weight of this world, light as pumice.</text>
+      <choice Target="Qud">Wise Aji, how are you finding Qud?</choice>
+      <choice Target="Wisdom">Wise Aji, pass on the Fuming God's insight.</choice>
+      <choice Target="End">Stay warm and pressurized friend.</choice>
+    </start>
+    <node ID="More">
+      <text>Breathe deep =player.formalAddressTerm=.</text>
+      <text>Fuming God watch you =player.formalAddressTerm=.</text>
+      <text>Is there more, =player.formalAddressTerm=.</text>
+      <text>What else is on your mind?</text>
+      <choice Target="Qud">Wise Aji, how are you finding Qud?</choice>
+      <choice Target="Wisdom">Wise Aji, pass on the Fuming God's insight.</choice>
+      <choice Target="End">Stay warm and pressurized friend.</choice>
+    </node>
+    <node ID="Qud">
+      <text>There are many unfamiliar liquids. They are cold and slippery.</text>
+      <text>Salt crystals are everywhere. Some things don’t change.</text>
+      <text>It is so bright, much of the time.</text>
+      <text>So many chrome-children. The Fuming God speaks obliquely of them.</text>
+      <text>I miss the rites with the God-Children. And the offerings.</text>
+      <text>There are so many children, stacked atop one another, biting, screaming.</text>
+      <text>It is grander and messier than the Dromads described.</text>
+      <text>It is strange, stranger than even the God-Children described.</text>
+      <text>The Spindle… it haunts my dreams.</text>
+      <text>The earth is as porous as home. But colder, and full of more dead things.</text>
+      <text>The taste of life, of death. It is everywhere. It is overwhelming.</text>
+      <choice Target="More">Take care =subject.formalAddressTerm=.</choice>
+    </node>
+    <node ID="Wisdom">
+      <text>Rock or water, there are waves. Let the waves carry you.</text>
+      <text>You will change. It will burn. You will endure.</text>
+      <text>There are such wonders on this wave. Care for it well.</text>
+      <text>In time, all will be ash. Live now.</text>
+      <text>First, you must breath.</text>
+      <text>When all else fails, breath.</text>
+      <text>As thanks, give care.</text>
+      <text>We are all children. Some are old children.</text>
+      <text>Respect the Aji.</text>
+      <text>Drink deep of the Fuming God's breath. Loosen the self, and see the waves.</text>
+      <text>Inhale volcanic gases responsibly.</text>
+      <choice Target="More">Breath deep, wise Aji.</choice>
+    </node>
+  </conversation>
+</conversations>

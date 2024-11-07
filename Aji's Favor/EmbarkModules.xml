@@ -1,0 +1,15 @@
+<embarkmodules>
+	<module Class="XRL.CharacterBuilds.Qud.QudPregenModule">
+        <pregens>
+						<pregen Name="Favored by the Aji" Genotype="True Kin" Tile="FavoredByTheAji.png" Foreground="r" Detail="K" Background="k">
+								<code>H4sIAAAAAAAACs1UUWvbMBB+L/Q/CLNHxyTdGGGQh9RbS9cOsiZ0g9EH2T5sMVky0mmbKfnvPdltbcewrIWVGIyt+767+/Tp0N3xEWNBzkv4BcYKrYIPLDiJptHJdB7N5kHY4IkTMusRZkSYPmClzpwES+Effs3YXft5gjZ1BT7p+/VVFBfc8BTBnPqKNvrqMv+eg9JItC9NQsiW1kKZyHoSrymhCtlN23vRKQtZ7CQ6AwsFDg2XIVu5RIr0EuqN/glqoZyUrcZGTMaRk4wndRR6g8+V9pGKjOR1TajmI9+X3RgH7FKoAWFk4yO2bX+24YttXLvkQF0cKNtv4gPdFz1zpVA5O9fZJC6o5Gt5uUQ0InEI9gDt3BW339GVFgrtypm04BayYU/vOBpQORYEvAsHyDIXUmA9Bjba5YUCa8fQhUKQUuSgUr+V+RD9JqSs9G8wBL0fQp9y7fldbNvfBK/WFSgkxuTtfAhcQ8mFokkhcNqHEtrusqLoMOM/Tk5cJ2AUoEgPcXRG6vbPjvT2TWb9kAUJKdIOevd++wzGiphdv+ZGhLRQWupcpFxeqAz+0BSEuynaNYc82wVuuBG8gYIzTpPVh7fd4va1DrrQ2sIauUEavCudcu/IIZ75X4T+w2W8k+ebfdZVxZ93FfvP7fHR9h4dabOXcggAAA==</code>
+								<description>
+									&amp;c&#249;&amp;y Good with people and tech.
+									&amp;c&#249;&amp;y Sees what artifacts merchants are selling.
+									&amp;c&#249;&amp;y Poor at direct combat.
+									&amp;c&#249;&amp;y {{W|Challenging}} starting build
+                </description>
+            </pregen>
+        </pregens>
+    </module>
+</embarkmodules>

@@ -1,0 +1,49 @@
+<objects>
+  <object Name="Gearlink_AJISFAVOR_AjiPet" Inherits="BaseSlug">
+    <part Name="Render" DisplayName="Avri" Tile="PetAji.png" ColorString="&amp;r" DetailColor="K" />
+    <part Name="Description" Short="=pronouns.Possessive= soot-caked shell spirals to a point and curves to embrace a plump mass of vitreous resin. Cracks and pops issue from =pronouns.objective= as =pronouns.subjective= =verb:flow:afterpronoun=. Whisps of vapor and heat mirage rise from the preasurized capsule which permits an Aji to venture from the Fuming God's domain." />
+    <part Name="ConversationScript" ConversationID="Gearlink_AJISFAVOR_AjiPet" />
+    <part Name="Pettable" />
+    <property Name="Story" Value="Gearlink_AJISFAVOR_AjiPetStory" />
+    <part Name="Corpse" CorpseChance="100" CorpseBlueprint="Billowing Conch of the Aji" />
+    <part Name="DropOnDamage" Blueprint="@Gearlink_AJISFAVOR_AjiGas" MinimumDamage="1" SpawnAsDropColor="false" PopulationRollsAreStatic="false" />
+    <stat Name="Hitpoints" Value="45" />
+    <stat Name="AV" Value="6" />
+    <stat Name="Intelligence" sValue="16" />
+    <stat Name="Willpower" sValue="16" />
+    <stat Name="Ego" sValue="16" />
+    <!-- Make it so Avri isn't hurt by high heat. but is vulnerable to cold -->
+    <part Name="Physics" FlameTemperature="99999999" VaporTemperature="99999999" />
+    <stat Name="HeatResistance" Value="100" />
+    <stat Name="ColdResistance" Value="-50" />
+    <!-- Avri should be immune to her own gases. Glitter dust doesn't harm anything
+    and not being a plant or fungus, Avri won't be harmed by defoliant or fungicide. -->
+    <!-- TODO: If GasImmunity is updated to allow multiple gases, replace all this with
+    that part. -->
+    <!-- Make Avri immune to acid gas -->
+    <stat Name="AcidResistance" Value="100" />
+    <!-- Make Avri immune to sleep, and stun gas -->
+    <part Name="EffectResistance" Values="Sleep,StunGasStun" />
+    <!-- Make Avri at least resistant to the poison gas. -->
+    <skill Name="Endurance_PoisonTolerance" />
+    <part Name="GasImmunity" GasType="MiasmaticAsh" />
+    <mutation Name="Telepathy" Level="1" />
+    <inventoryobject Blueprint="Gearlink_AJISFAVOR_AjiSlam" Number="1" />
+    <tag Name="PetResponse" Value="crackles,pops,shudders,quivers" />
+    <tag Name="StartingPet" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+    <tag Name="Gender" Value="female" />
+    <tag Name="PronounSet" Value="she/her" />
+    <xtagGrammar Proper="true" />
+  </object>
+
+  <object Name="Gearlink_AJISFAVOR_AjiSlam" Inherits="NaturalWeapon">
+    <part Name="Render" DisplayName="{{r|sublimating mantle}}" Tile="Creatures/natural-weapon-bands.bmp" ColorString="&amp;w"  />
+    <part Name="MeleeWeapon" BaseDamage="1d2" Skill="Cudgel" Stat="Strength" Slot="Body" />
+    <part Name="TemperatureOnHit" Amount="6d20" Max="false" OnWielderHit="false" />
+  </object>
+
+  <object Name="Gearlink_AJISFAVOR_AjiCorpse">
+    <part Name="ReplaceObject" Table="Gearlink_AJISFAVOR_AjiCorpseTable" />
+  </object>
+</objects>

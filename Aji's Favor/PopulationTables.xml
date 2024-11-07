@@ -1,0 +1,21 @@
+<populations>
+  <population Name="Gearlink_AJISFAVOR_AjiGas">
+    <group Name="Gases" Style="pickone">
+      <object Blueprint="AcidGas80" Number="1" />
+      <object Blueprint="DefoliantGas80" Number="1" />
+      <object Blueprint="FungicideGas80" Number="1" />
+      <object Blueprint="GlitterGas80" Number="1" />
+      <object Blueprint="MiasmaticAsh80" Number="1" />
+      <object Blueprint="PoisonGas80" Number="1" />
+      <object Blueprint="SleepGas80" Number="1" />
+      <object Blueprint="StunGas80" Number="1" />
+    </group>
+  </population>
+
+  <population Name="Gearlink_AJISFAVOR_AjiCorpseTable">
+    <group Name="Corpse" Style="pickeach">
+      <object Blueprint="Billowing Conch of the Aji" Number="1" />
+      <object Blueprint="Gearlink_AJISFAVOR_AjiGas" Number="3" />
+    </group>
+  </population>
+</populations>
