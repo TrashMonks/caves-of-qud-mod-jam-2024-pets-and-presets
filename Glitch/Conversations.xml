@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<conversations>
+  <conversation ID="GlitchMod_ErrorConversation">
+    <start ID="Welcome">
+      <text>&amp;w*errors loudly*&amp;y</text>
+      <text>&amp;w*soft glitching*&amp;y</text>
+    </start>
+    <choice Target="End">Glitch and blink.</choice>
+  </conversation>
+</conversations>

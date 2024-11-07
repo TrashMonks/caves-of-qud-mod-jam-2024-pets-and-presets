@@ -1,0 +1,15 @@
+<embarkmodules>
+    <module Class="XRL.CharacterBuilds.Qud.QudPregenModule">
+        <pregens>
+            <pregen Name="Glitch" Genotype="Mutated Human" Tile="GlitchedPresetSprite.png" Foreground="Y" Detail="k" Background="M">
+                    <code>H4sIAAAAAAAAA9VYS2/TQBC+8yssi0OR0ijpAwFSD2n6AlqUJlVBQhXa2EO86nrX7KPIDblwAokDSC1X1As3jty4cedH+JcwdtLguCKGlDghUhxnv9mZzzOzs7Pu3rAsu0N8OAGpqOD2PcteKlfKS5WV8uoduxTDbUOZm8KriFf6kC9cw0Dh6FP8a1nd5DoEDsIA4hlPmrvlukckcTTI9VidKu8bN/5uAxcaxfaSCSWrphT4bRYu1ls4IShZh33Da79Ylay6YdpIWONgtCSsZDVMm1HnIYQH4hj4GjeMJQQTLi7RBFlccsORm/pviW2gjivkhiZQ5aV4rHXPaKLBtXaMT3ha6IoTB1Av+e2VJvRhy7Tn0oUjvHI9OJCOdbYcTzAiC3BdEirUq+bOeRlmue7zA1RYSQ0oYOAkGobLs//ppu6tQbYOXNuIH5U61h7tSEI5ruzSqHBdGK5R8m7yyYCHRFKSwJUU0Cv9me11IMf/h7lqBjnpI4+wjCaaKUa/WEZL4xk1hdLS+AWTWh5PaksW76eV8ZQaUrSFcqiahNYWIz7lHatJwknTeDy7HcLdGTHLyfgt4sBsiOUk/haAnoiYBDid02Ben9q0onl9ZlMK546QvMit7Dr2coITqy7aBTlRqXHNsEkqmlXO9lIn6oWZKI8bntBChVx7oLEXah1TXmDubIRKg+NxSgo0WieS0xMhhSlymdRYm3JRoMGGCvFk4YOWE1f1Cay2NBZFkNZCQ1CF7TVWyEM8Lfq3ZsIBDxssPJ0tibrgz42aCYd9PGSxIpMclxYJ4h21QJMe9UEWWT82VQDyX9gb3h9N/+xf01rSttEwf4f/LLXc0z+WFq5Vw0jHIwrcEYsI1zqUUR1m21J7syPilmN5dWT0PtfAGO0Ad2Kii9XqSAeA61gC72gv263YB8J0PA5KZZsG+zGuukC8xCTBjXsIpNLLJkErgP4hbWVkuAk+oXHVzLzfaOOD1oKs/JRypW6UFj49hSE+dznzO4q5ucMHHVO3i8kjsOV5FZ1/js4/RecXP75GHz/cjt5dfP8SnX1biM5eR2/fRGfve720ggDisNnbmGKOh0afbUopZANHU0KYTW4S/vhZ05Ol4FgoWomODDatYHpCKGhpIuMNaVc4SR2bv4COoZn/NjUzLbb1QARBelfI8y9ej270fgL7vL5uIxgAAA==</code>
+                    <description>
+                    &amp;R ERROR! Several issues have been detected with this preset, including:
+                        &amp;r&#249;&amp;Y Selected mutations are incompatible with each other
+                        &amp;r&#249;&amp;Y Attribute point distribution is outside acceptable bounds
+                        &amp;r&#249;&amp;Y Player tile not found
+                    </description>
+            </pregen>
+        </pregens>
+    </module>
+</embarkmodules>
