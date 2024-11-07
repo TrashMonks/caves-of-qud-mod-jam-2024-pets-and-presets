@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<populations>
+
+    <population Name="BelongingArtifacts">
+        <table Name="Artifact 1C" Chance="25" />
+        <table Name="Artifact 1R" Chance="25" />
+        <table Name="Artifact 2C" Chance="15" />
+        <table Name="Artifact 2R" Chance="15" />
+        <table Name="Artifact 3C" Chance="5" />
+        <table Name="Artifact 3R" Chance="5" />
+        <table Name="Artifact 4C" Chance="2" />
+        <table Name="Artifact 4R" Chance="3" />
+        <table Name="Artifact 5C" Chance="3" />
+        <table Name="Artifact 5R" Chance="2" />
+    </population>
+
+    <population Name="BelongingsTrail">
+        <group Name="Items" Style="pickone">
+        <object Blueprint="Garbage" />
+        <group Name="BooksAndRandomBooks" Style="pickone">
+            <table Name="BooksAndRandomBooks" />
+        </group>
+        <group Name="Corpses" Style="pickone">
+            <table Weight="50" Name="DynamicObjectsTable:Corpses:Tier{zonetier}" />
+        </group>
+        <group Name="BelongingArtifacts" Style="pickone">
+            <table Name="BelongingArtifacts" />
+        </group>
+        <group Name="Rocks" Style="pickone">
+            <object Blueprint="SmallBoulder" />
+            <object Blueprint="SmallBoulder Grey" />
+        </group>
+        </group>
+    </population>
+</populations>

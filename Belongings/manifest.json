@@ -1,0 +1,9 @@
+{
+    "id": "Phils_Belongings",
+    "title": "The Belongings",
+    "description": "Adds the preset of a 'Wizard' as well as the Pet 'The Belongings', a sentient Chest, that follows it's owner everywhere it goes.",
+    "version": "0.1.0",
+    "author": "Philsen",
+    "tags": "Preset, Pets",
+    "PreviewImage": "belongings-preview.png"
+} 

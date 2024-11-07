@@ -1,0 +1,10 @@
+<conversations>
+    <conversation ID="BelongingsConvo">
+        <node ID="Start">
+            <text>
+                {{emote|*The Chest drops to the ground, tucking all its feet away, and opens its lid wide.*}}~
+                {{emote|*The Chest looks at you, panting like a little dog*}}~
+            </text>
+        </node>
+    </conversation>
+</conversations>

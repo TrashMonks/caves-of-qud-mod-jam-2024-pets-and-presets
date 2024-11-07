@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects>
+    <object Name="Phils_Belongings" Inherits="Creature">
+        <part Name="Render" DisplayName="Belongings" Tile="Phils_Belongings/belongings.png" TileColor="&amp;w" DetailColor="r" />
+        <part Name="Description" Short="A sentient Chest made out of intelligent Nachash Tree Wood. Hundreds of little legs bristle beneath the Chest. When it opens the lid, a long row of sharp teeth appear." />
+        <part Name="Pettable" />
+        <part Name="Fetches" SniffChance="5" SniffMessageChance="5" />
+        <part Name="LeavesTrail" TrailChance="1" TrailBlueprint="@BelongingsTrail" OnEnter="false" />
+        <part Name="ConversationScript" ConversationID="BelongingsConvo" />
+        <part Name="Brain" Hostile="False" Wanders="True" MaxWanderRadius="6" Passive="False" />
+        <part Name="Physics" Organic="false" Weight="350" />
+
+        <stat Name="Hitpoints" Value="250" />
+        <stat Name="Level" Value="3" />
+        <stat Name="AV" Value="5" />
+        <stat Name="Strength" sValue="22" />
+        <stat Name="Toughness" sValue="20" />
+        <stat Name="Willpower" sValue="17" />
+        <stat Name="Agility" sValue="18" />
+        <stat Name="Intelligence" sValue="15" />
+        <stat Name="Ego" sValue="13" />
+        
+        <mutation Name="MultipleLegs" Level="10" />
+        <mutation Name="Teleportation" Level="4" />
+
+        <property Name="Role" Value="Brute" />
+        <property Name="Story" Value="Phils_Belongings Story" />
+
+        <inventoryobject Blueprint="BelongingsBite"/>
+
+        <tag Name="Pet" />
+        <tag Name="PetResponse" Value="wags with their non-existent tail, pants with their open lid, are revealing a long row of teeth." />
+        <tag Name="StartingPet" />
+        <tag Name="Gender" Value="neuter" />
+        <tag Name="ExcludeFromDynamicEncounters" />
+        <tag Name="NamingTag" Value="The Belongings" />
+    </object>
+
+    <object Name="BelongingsBite" Inherits="BaseFangs">
+        <part Name="MeleeWeapon" MaxStrengthBonus="8000" BaseDamage="2d3" Skill="Axe" Stat="Strength" Attributes="Bite" />
+    </object>
+
+</objects>
