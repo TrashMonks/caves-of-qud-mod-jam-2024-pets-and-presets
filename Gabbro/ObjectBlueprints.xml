@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects>
+  <object Name="CalciumGuy_Gabbro" Inherits="BaseOoze">
+    <part Name="Description" Short="Here, a bowl of magma crawls tenaciously forward, smoke slipping from the seams of its ferrous-crystalline skin to dance thinly in the air before dispersing. Fire hotter than the solar surface is its breath and its heart; the rumbling sigh of its movement speaks of complacency disturbed and sought to be recovered. It is Gabbro, and it will roll on until it has sufficient reason to stop." />
+    <part Name="Render" DisplayName="Gabbro" Tile="CalciumGuy_Pets/Gabbro.png" ColorString="&amp;K" DetailColor="r" />
+    <part Name="Pettable" />
+    <tag Name="PetResponse" Value="grumbles, quakes" />
+    <tag Name="StartingPet" />
+
+    <part Name="Corpse" CorpseChance="0" />
+    <stat Name="Level" Value="1" />
+    <stat Name="AV" Value="5" />
+    <stat Name="Hitpoints" Value="25" />
+    <stat Name="HeatResistance" Value="200" />
+    <stat Name="ColdResistance" Value="-50" />
+
+    <part Name="LiquidBurst" EelChance="0" Liquid="LavaPuddle" />
+    <part Name="LightSource" Lit="true" Radius="3" />
+    <tag Name="BleedLiquid" Value="lava-500" />
+    <tag Name="BleedColor" Value="&amp;R" />
+    <tag Name="BleedPrefix" Value="{{R|magmatic}}" />
+
+    <inventoryobject Blueprint="CalciumGuy_MoltenMaul" Number="1" />
+    <skill Name="Cudgel" />
+    <skill Name="Cudgel_Bludgeon" />
+  </object>
+
+  <object Name="CalciumGuy_MoltenMaul" Inherits="Base Pseudopod">
+    <part Name="Render" DisplayName="{{R|Molten Maul}}" Tile="Creatures/natural-weapon-pseudopod.bmp" ColorString="&amp;R" />
+    <part Name="TemperatureOnHit" Amount="350-400" Max="false" OnWielderHit="true" />
+    <part Name="MeleeWeapon" HitBonus="6" MaxStrengthBonus="99" BaseDamage="4d4" Skill="Cudgel" Stat="Strength" />
+    <part Name="ElementalDamage" Damage="1d4" Attributes="Heat" />
+  </object>
+</objects>
