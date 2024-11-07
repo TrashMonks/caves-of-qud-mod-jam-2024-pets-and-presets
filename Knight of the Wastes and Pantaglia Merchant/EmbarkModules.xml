@@ -1,0 +1,12 @@
+<embarkmodules>
+    <module Class="XRL.CharacterBuilds.Qud.QudPregenModule">
+        <pregens>
+            <pregen Name="Knight of the Wastes" Genotype="Mutated Human" Tile="knightofwastes.png" Foreground="Y" Detail="m" Background="k">
+                <code>H4sIAAAAAAAACs1XbW/aMBD+Xqn/wYr2MSCoqmmtxAcGUzu1nVqC6KSpH0xyS7w6duSXVQzx33c2tCTQDjq1UZBQyD3nu8f3ZjM/PCAkSGkOv0FpJkVwSoKjdqd91PnU7p4EocenlvGkpNBFhc4Ky2ViOWgU/3DvhMyXjydoPCvALfo+umwPMqpobEB9dhZ1+8Ym7uvEBtWu/IKQ9LWGfMpnrUGESBGSydJ3b80sJAPLjVXQE2CNojwk13bKWXwBs7G8B9ETlvMlR08moYYijSd2KPpgXkttiEa26K2doM1Hk9cKUhAVaCuAj9hi+WMR/ncAz0DIhgawSm13AB/1ndkra6iBhJzbnNYWy2XmGhjJMrHdcVwVIJq8ECzNDJE/icmA3FJtsF1rCmZkpw2tywqz3eFcqTujt1Ql9bW27wG0rRsYww1uu6OYF2ixU5Zo4BB7G+sTZPmZl1/IahisgjyUuB1o5VbHHJKyC686oYpRYVDT7XMTHUjrsW5Zvgj39X0Orp1A4Fy6sSy+F6B1vQy++X6eMF9ytXqOOMuBnHEqkpr3PFaswIz/kkyYujM+fpCtDPAeULfjSMaMcj4jIyhsKpyft/C/frl7cYh133SI9Y1RbGrx4GngFNskt8fZ6qpQX1sVZ1RjUZxWsxhERoFITeYi36nkJOinjDMzQ+SkCoylTTM/S7agr1jynDM8zmO3l49V9JZxXsgHUNvQl1S6ebuWlUsvoEVUgC+P1vFxFRhBTplgIt0c11Pcb98N8eqKdzz/BlYbmbM/8IQ3sIReIrm7lAT+9dpu3qCAZ1o6wApIfJ631JUU2OrRs6veMzmZlBoig7MRi+VSxn50NTFB/yC6x+VvY52fzZSboRUwwfajKbzuOuged4cHi78QF5nlfw8AAA==</code>
+                <description>
+Says Yurl, Says Yurl, he's a churl, but you'll afford his service if you're flat broke and nobody can argue against that.
+                </description>
+            </pregen>
+        </pregens>
+    </module>
+</embarkmodules>

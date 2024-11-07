@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects>
+  <object Name="Pantaglia Pet" Inherits="Woodsprog">
+    <stat Name="Hitpoints" Value="15" />
+    <stat Name="AV" Value="2" />
+    <part Name="Description" Short="A merchant =pronouns.subjective= will be yet."/>
+    <mutation Name="Quills" Level="1" />
+    <part Name="Pettable" />
+    <tag Name="PetResponse" Value="blinks,trembles,pricks your thumb" />
+    <tag Name="StartingPet" />
+    <part Name="Render" DisplayName="Pantaglia" Tile="pantaglia.png" ColorString="&amp;g" DetailColor="W" />
+  </object>
+</objects>
