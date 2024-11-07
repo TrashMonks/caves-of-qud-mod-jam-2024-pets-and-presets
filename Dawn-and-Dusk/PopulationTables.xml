@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<populations>
+  <population Name="EquinoxInventory">
+    <group Style="pickeach">
+
+	  <table Name="Junk 1" Number="0-2" />	 
+	  
+	  <object Blueprint="Glowsphere" Number="1-3" />
+	  <object Blueprint="Bear Jerky" Number="0-2" />
+	  <object Blueprint="Beetle Jerky" Number="0-4" />
+	  <object Blueprint="Compacted Bone Meal" Number="0-2" />
+	  
+	</group>
+  </population>
+</populations>

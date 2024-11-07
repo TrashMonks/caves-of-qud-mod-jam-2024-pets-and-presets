@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<embarkmodules>
+  <module Class="XRL.CharacterBuilds.Qud.QudPregenModule">
+    <pregens>
+      <pregen Name="Cat Herder" Genotype="Mutated Human" Tile="thighs/catherder.png" Foreground="y" Detail="M" Background="k">
+        <code>H4sIAAAAAAAACs1VXWvbMBR9L/Q/CLNH1yQljFDIQ+at67Z2pElIB6MPsn2xRWXJ6KMjhPz3XclpYydsWUtnEgi27rkfR8dXV6vTE0KCnJbwCEozKYILEpxHvei8N4z6wyD0eGIZzxoOfXTobbBSZpaDRvNPtyZkVT+eofmyAhf0Y3odxQVVNDWgPriMOrq1mft/BiENut34gJCMtYYy4cuzeIYBVUgWde3RlllIYsuNVTASYI2iPCQTm3CWfoPlXD6AGAnLec3Rk8mooUjjmR2a3pmXUvuISfbobYtgzid/l/bGGmogI1e2pKLltaflE7auX9bhq7Wc2eRIpWwxO6zkxt0lvUMZ1SMTQC6pKkF1paX/gJhbH6GaO9wO61lWmLHXtGjgkPoc29Nb/1bNBdl08kbkK2B5YUC4xgaqmMibZbz7As1UGPR2e91FY2k91m/a1+Er6t9alj4I0LpbBt8dAbJgvu06rTyFHDeu6nWnlecFSk0ureq4LLZoRU2xfJOy28X9HydI/00nyNgYxRJr4BhHyC65wzNkIpkwemJVWlANWbumm9lGgchNgcD71icJxjnjzCwRGLaBubR54c/wBRm0oS/CAOcMWz6F/Yx3jPNK/sLbAD9zv419yqUL2NqaHRfQalaBb4+zwaANTKGkTLiZtjMrE9zv2E3QdsR/vHziQkoNM0OVQT7XMvWH4gjb6G9E/+Ga34lzxb7KqqIvu+Td4/70ZP0bQOKBu9EKAAA=</code>
+        <description>
+&amp;c&#249;&amp;y Untested in combat {{K|(beyond making kibble)}}
+&amp;c&#249;&amp;y Catlike reflexes, speed, and senses
+&amp;c&#249;&amp;y Resistant to the cold {{K|(both temperatures and disease)}}
+&amp;c&#249;&amp;y {{W|Survivable}} starting build {{K|(if you intend to herd cats)}}
+&amp;c&#249;&amp;y Additional preset by {{amorous|Thighs}}
+        </description>
+      </pregen>
+    </pregens>
+  </module>
+
+</embarkmodules>

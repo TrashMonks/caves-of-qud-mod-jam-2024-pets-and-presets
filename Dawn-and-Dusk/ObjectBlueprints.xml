@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objects>
+  <object Name="Dawn-and-Dusk" Inherits="Chitinous Puma">
+    <part Name="Render" DisplayName="{{c-C-c-C-y-y-y-y-y-m-M-m-M sequence|Dawn-and-Dusk}}" Tile="thighs/equinox.png" ColorString="&amp;m" TileColor="&amp;m" DetailColor="C" RenderString="c" />
+    <part Name="Description" Short="The paradigm for arranging felines has shifted. Why settle for merely one cat {{K|(in merely one location!)}} when multiple may occupy the same space?
+
+This very peculiar arrangement of pet hopes to answer those needs {{K|(or, at least, it can be used as reason to not continue to ask the question)}}.
+
+Above, the radiant glistening of {{c-C-c-C sequence|Dawn}} is pleasant, and ever-twinkling. The long-suffering {{m-M-m-M sequence|Dusk}}, below, seems quite peeved by the burden placed on its shoulders." />
+    
+	<!-- Please bear in mind, future me, that Dawn talks 'like a profoundly unsuccessful failed magician' and Dusk is mute, and very tired of them. We call that a 'style guide'. -->
+	<part Name="ConversationScript" ConversationID="EquinoxChatter" />
+    
+	<!-- Initialising like, stats or whatever. -->
+	<stat Name="Level" Value="1" />
+    <stat Name="Hitpoints" Value="35" />
+    
+	<!-- The typical pet(noun)-that-can-be-pet(verb) nonsense. Which came first, anyway? -->
+	<tag Name="PetResponse" Value="bat at your touch playfully,sniff at you with both their noses,awkwardly attempt to rub against you,show their claws gently,mew softly in unison" />
+    <part Name="Pettable" />
+    <tag Name="Pet"/>
+    <tag Name="StartingPet"/>
+    <xtagGrammar Proper="true" />
+    
+	<!-- Stats here. They probably work. :shrug: -->
+	<stat Name="AV" Value="6"/>
+    <stat Name="DV" Value="2"/>
+	
+	<!-- Not sure how Dawn or Dusk would identify and, honestly, there's no usecase where I need to figure this out; neuter/plural pronouns will work fine as they're a collective. -->
+	<tag Name="Gender" Value="nonspecific" />
+	<tag Name="Species" Value="cat"/>
+	
+	<!-- To prevent proliferation of fungal infections. Seems kind of horrifying to have two cats, quite happily already merged together, confront 'the colony' in this way. -->
+	<mutation Name="Regeneration" Level="1"/>
+
+	<!-- Gives the added benefit of giving the classic 'ray cat green' (available at your local dealership) to the otherwise forced-white tile. -->
+	<!-- <mutation Name="PhotosyntheticSkin"/> -->
+	<!-- Decided to remove this so I can try out other things instead. -->
+	
+	<!-- You'd sure hope so. -->
+	<mutation Name="TwoHeaded" />
+	
+	<!-- Radio silence otherwise. -->
+	<mutation Name="Telepathy"/>
+	
+	<!-- It's a ray cat. -->
+	<mutation Name="DarkVision" Level="6"/>
+
+	<!-- Added after discovering that it plays poorly with the accompanying preset because it keeps getting outpaced. -->
+	<mutation Name="HeightenedSpeed" Level="1"/>
+	
+	<!-- Hurry up Antleronio, the sale is almost over. (Which is to say, it's a cat faction member and this feels like a nod to that despite being functionally useless.) -->
+	<skill Name="Acrobatics"/>
+	
+	<!-- Nice try! That arrow went over our heads! -->
+	<skill Name="Acrobatics_SwiftReflexes"/>
+	
+	<!-- They're huddled for warmth. (I don't know.) -->
+    <stat Name="ColdResistance" Value="10"/>
+	
+	<!-- Custom inventory, of course. -->
+    <tag Name="InventoryPopulationTable" Value="EquinoxInventory" />
+	
+	<!-- And, you know, preparing for the sadness. -->
+	<part Name="Corpse" BodyDrop="false" InventoryDrop="true"/>
+    
+	<!-- Kind of grim/dark story (yet again, from me), might be due a rework? It's a bit saddening. -->
+	<property Name="Story" Value="Equinox_Story" />
+    
+	<tag Name="ExcludeFromDynamicEncounters" Value="true"/>
+  </object>
+</objects>
