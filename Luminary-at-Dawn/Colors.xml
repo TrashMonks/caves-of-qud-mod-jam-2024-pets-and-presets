@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<colors>
+  <shaders>
+    <shader Name="LuminaryName" Type="alternation" Colors="b-B-R-o-W-Y" ShowInPicker="false"/>
+    <shader Name="LuminaryMelee1" Type="alternation" Colors="o-W-Y-Y-Y-W-o" ShowInPicker="false"/>
+    <shader Name="LuminaryMelee2" Type="alternation" Colors="Y-W-o-o-o-W-Y" ShowInPicker="false"/>
+    <shader Name="LuminaryRanged1" Type="alternation" Colors="b-B-o-o" ShowInPicker="false"/>
+    <shader Name="LuminaryRanged2" Type="alternation" Colors="W-Y" ShowInPicker="false"/>
+  </shaders>
+</colors>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objects>
+
+
+	<!-- BASE OBJECTS -->
+	<object Name="clau_BaseLuminary" Inherits="Creature">
+		<part Name="Render" DisplayName="[BASE LUMINARY]" RenderString="m" ColorString="&amp;c"/>
+		<part Name="Body" Anatomy="clau_AnatomyLuminary"/>
+		<tag Name="PrimaryLimbType" Value="Body"/>
+		<part Name="Corpse" BurntCorpseChance="0"/>
+		<part Name="Physics" Weight="100"/>
+		<part Name="Metal"/>
+		
+		<intproperty Name="Bleeds" Value="1"/>
+    	<tag Name="BleedLiquid" Value="oil-1000"/>
+    	<tag Name="BleedColor" Value="&amp;K"/>
+    	<tag Name="BleedPrefix" Value="{{K|oily}}"/>
+		
+		<stag Name="HardMaterial" Value="casing"/>
+		<tag Name="LiveFungus"/>
+		<tag Name="Robot" Value="True"/>
+		<tag Name="Class" Value="fungus"/>
+		<tag Name="Culture" Value="Fungal"/>
+		
+		<tag Name="SeveredLimbBlueprint" Value="FungusLimb"/>
+	    <tag Name="SeveredHeadBlueprint" Value="FungusHead"/>
+	    <tag Name="SeveredFaceBlueprint" Value="RobotFace"/>
+	    <tag Name="SeveredArmBlueprint" Value="FungusLimb"/>
+	    <tag Name="SeveredHandBlueprint" Value="RobotHand"/>
+	    <tag Name="SeveredLegBlueprint" Value="RobotLeg"/>
+	    <tag Name="SeveredFootBlueprint" Value="RobotFoot"/>
+	    <tag Name="SeveredFeetBlueprint" Value="RobotFeet"/>
+	    <tag Name="SeveredTailBlueprint" Value="FungusLimb"/>
+	    <tag Name="SeveredRootsBlueprint" Value="FungusLimb"/>
+	    <tag Name="SeveredFinBlueprint" Value="RobotFin"/>
+		
+		<tag Name="AmbientIdleSound" Value="Sounds/Creatures/VO/sfx_robot_generic_vo_idle"/>
+    	<tag Name="PunchSound" Value="Sounds/Creatures/VO/sfx_robot_generic_vo_attack"/>
+    	<tag Name="DeathSounds" Value="Sounds/Creatures/VO/sfx_creature_animal_fungi_vo_die"/>
+    	<tag Name="TakeDamageSound" Value="Sounds/Creatures/VO/sfx_robot_generic_vo_hurt"/>
+    	<tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_robot_lesser"/>
+
+		<tag Name="BaseObject" Value="*noinherit"/>
+	</object>
+
+	<!-- ACTORSESES -->
+
+	<object Name="clau_JamDummy" Inherits="clau_BaseLuminary">
+		<part Name="Render" DisplayName="{{LuminaryName|Luminary-at-Dawn}}" Tile="creatures/monk-percussionist.png" ColorString="&amp;y" DetailColor="B"/>
+		<part Name="Brain" Hostile="False" Wanders="False" Factions="Joppa-100"/>
+		<inventoryobject Blueprint="clau_LuminaryCHASSIS" Number="1"/>
+		<inventoryobject Blueprint="clau_LuminaryHARDPOINT" Number="1"/>
+		<tag Name="ExcludeFromDynamicEncounters"/>
+	</object>
+
+
+	<!-- UNIQUE ACTORSESES -->
+
+	<object Name="clau_Luminary" Inherits="clau_BaseLuminary">
+		<part Name="Render" DisplayName="{{LuminaryName|Luminary-at-Dawn}}" Tile="Creatures/Luminary.png" RenderString="m" ColorString="&amp;Y" DetailColor="c"/>
+
+		<stat Name="Level" Value="1"/>
+		<stat Name="Strength" sValue="22"/>
+		<stat Name="Agility" sValue="18"/>
+		<stat Name="Toughness" sValue="18"/>
+		<stat Name="Intelligence" sValue="14"/>
+		<stat Name="Willpower" sValue="16"/>
+		<stat Name="Ego" sValue="10"/>
+		<stat Name="Hitpoints" sValue="60"/>
+		<stat Name="AV" Value="12"/>
+		<part Name="Brain" Hostile="false" Factions="Playerneutral-100" MaxKillRadius="8"/>
+		<part Name="AISelfPreservation" Threshold="35"/>
+		<part Name="Corpse" CorpseChance="100" CorpseBlueprint="clau_LuminaryWEAPON"/>
+		<part Name="Description" Short="Fungus and chrome form a glorious alliance in- and outside the boundaries of the tripedal amalgam. A star-beacon is at the center of this union, casting morning light upon the world around it."/>
+		<part Name="ConversationScript" ConversationID="clau_LuminaryConvo"/>
+
+		<mutation Name="ElectricalGeneration" Level="1"/>
+		<mutation Name="Telepathy"/>
+
+		<skill Name="Cudgel"/>
+		<skill Name="Cudgel_Expertise"/>
+		<skill Name="Cudgel_Bludgeon"/>
+		<skill Name="Cudgel_ChargingStrike"/>
+		<skill Name="Cudgel_Slam"/>
+		<skill Name="Rifles"/>
+		<skill Name="Rifle_SteadyHands"/>
+		<skill Name="Rifle_DrawABead"/>
+		<skill Name="Tactics"/>
+		<skill Name="Tactics_Hurdle"/>
+		<skill Name="Tactics_Charge"/>
+
+		<inventoryobject Blueprint="clau_LuminaryCHASSIS" Number="1"/>
+		<inventoryobject Blueprint="clau_LuminaryHARDPOINT" Number="1"/>
+
+		<tag Name="Gender" Value="neuter"/>
+		<tag Name="Pet"/>
+		<tag Name="StartingPet"/>
+		<part Name="Pettable"/>
+		<tag Name="PetResponse" Value="glows proudly,glows ponsively,pokes you in the side with its manipulator"/>
+		<xtagGrammar Proper="true"/>
+		<tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+	</object>
+
+	<!-- ITEMS -->
+
+	<object Name="clau_LuminaryCHASSIS" Inherits="NaturalWeapon">
+		<part Name="Render" DisplayName="{{LuminaryMelee1|Svetilo}}" Tile="Items/Svetilo.png" RenderString="P" ColorString="&amp;C" DetailColor="W"/>
+		<part Name="Description" Short="A miniature morrow sun sits atop a fungus-chrome rod, its light — a symbol of the unbreakable union."/>
+		<part Name="Physics" Organic="false"/>
+		<part Name="MeleeWeapon" PenBonus="1" BaseDamage="3d4" Skill="Cudgel" Stat="Strength" Slot="Body"/>
+		<part Name="ElementalDamage" Damage="2d4" Attributes="Light"/>
+		<part Name="ModGigantic"/>
+		<part Name="StunOnHit" Chance="5" Duration="1"/>
+		<tag Name="SwingSound" Value="Sounds/Melee/cudgels/sfx_melee_cudgel_crysteel_swing"/>
+    	<tag Name="BlockedSound" Value="Sounds/Melee/multiUseBlock/sfx_melee_crysteel_blocked"/>
+		<tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_bludgeon_glass"/>
+		<tag Name="NoDefaultBehavior"/>
+    	<xtagGrammar Proper="true"/>
+    </object>
+    <object Name="clau_LuminaryWEAPON" Inherits="BaseCudgel">
+    	<part Name="Render" DisplayName="{{LuminaryMelee2|Svetilo}}" Tile="Items/Svetilo.png" RenderString="P" ColorString="&amp;C" DetailColor="W"/>
+		<part Name="Description" Short="A miniature twilight sun sits atop a chrome rod, its light — a symbol of the once-unbrekable union."/>
+		<part Name="Physics" Weight="30" UsesTwoSlots="true" FreezeTemperature="-99999" BrittleTemperature="-99999" FlameTemperature="99999" VaporTemperature="99999"/>
+		<part Name="MeleeWeapon" MaxStrengthBonus="1000" PenBonus="1" BaseDamage="3d4" Skill="Cudgel" Stat="Strength"/>
+		<part Name="ElementalDamage" Damage="2d4" Attributes="Light"/>
+		<part Name="AddMod" Mods="ModGigantic,ModMasterwork,ModSturdy"/>
+		<part Name="StunOnHit" Chance="5" Duration="1"/>
+		<tag Name="SwingSound" Value="Sounds/Melee/cudgels/sfx_melee_cudgel_crysteel_swing"/>
+    	<tag Name="BlockedSound" Value="Sounds/Melee/multiUseBlock/sfx_melee_crysteel_blocked"/>
+		<tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_bludgeon_glass"/>
+		<tag Name="Storied" Value="true"/>
+		<property Name="Story" Value="Svetilo"/>
+    	<xtagGrammar Proper="true"/>
+    	<tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+    </object>
+
+    <object Name="clau_LuminaryHARDPOINT" Inherits="NaturalMissileWeapon">
+    	<part Name="Render" DisplayName="{{LuminaryRanged1|Dawn}} {{LuminaryRanged2|Caster}}" Tile="Items/Dawn Caster.png" RenderString="]" ColorString="&amp;Y" DetailColor="W"/>
+    	<part Name="Description" Short=""/>
+		<part Name="Physics" Organic="false"/>
+    	<part Name="MissileWeapon" Skill="Rifles" AmmoChar="o" ShowShotsPerAction="false" NoWildfire="true" MaxRange="10" ShotsPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="0"/>
+		<part Name="EnergyAmmoLoader" ChargeUse="0" ProjectileObject="clau_LuminaryLIGHT"/>
+		<part Name="LightSource" Lit="true" Radius="6"/>
+		<tag Name="NoDefaultBehavior"/>
+		<tag Name="UsesSlots" Value="Missile Weapon"/>
+    	<tag Name="MissileFireSound" Value="Sounds/Missile/Fires/Rifles/sfx_missile_laserRifle_fire"/>
+    	<xtagGrammar Proper="true"/>
+    </object>
+    <object Name="clau_LuminaryLIGHT" Inherits="TemporaryProjectile">
+    	<part Name="Render" DisplayName="{{Y|blinding light}}" ColorString="&amp;Y"/>
+    	<part Name="Projectile" BasePenetration="5" BaseDamage="2d4" Attributes="Light" ColorString="&amp;Y" PassByVerb="streak"/>
+    	<part Name="TreatAsSolid" LightBased="true" Hits="false" RequiresPhaseMatch="false" Message="The darkness consumes =subject.t=!"/>
+	    <tag Name="Light"/>
+	    <tag Name="ProjectileVFX" Value="MissileWeaponsEffects/medium_laser"/>
+	    <tag Name="ProjectileVFXConfiguration" Value="duration::0.5;;beamColor0::#FFEE00;;beamColor1::#FFFFFF"/>
+	    <tag Name="ImpactSound" Value="Sounds/Missile/Hits/sfx_missile_directEnergy_hit"/>
+	</object>
+
+</objects>

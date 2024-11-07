@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bodies>
+	<anatomies>
+		<anatomy Name="clau_AnatomyLuminary" Category="Fungal">
+			<part Type="Cap">
+				<part Type="Sensor Array"/>
+				<part Type="Stalk">
+					<part Type="Manipulator"/>
+				</part>
+			</part>
+			<part Type="Chassis"/>
+			<part Type="Hardpoint" Laterality="Left"/>
+			<part Type="Foot" Laterality="Right" SupportsDependent="Feet"/>
+	    	<part Type="Support Hyphae" Laterality="Left" SupportsDependent="Feet"/>
+	    	<part Type="Support Hyphae" Laterality="Mid" SupportsDependent="Feet"/>      
+	    	<part Type="Feet"/>
+	    </anatomy>
+	</anatomies>
+</bodies>

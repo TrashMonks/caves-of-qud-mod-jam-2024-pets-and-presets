@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<conversations>
+
+	<!-- Tambourine Gal -->
+	<conversation ID="clau_LuminaryConvo">
+		<start ID="Greet">
+			<text>
+				{{w|*Luminary-at-Dawn is gloriously silent.*}}~
+				{{w|*The fungus-chrome union waves =pronouns.possessive= manipulator at you. Or does =pronouns.subjective=?*}}~
+				{{w|*You feel the cold touch of the union's telepathic connection.*}}~
+				{{w|*You feel Luminary-at-Dawn focusing on your mind.*}}
+			</text>
+			<choice ID="Trade" Ordinal="990">
+				<text>*Tell =pronouns.objective= you want to go over your belongings.*</text>
+				<part Name="Trade"/>
+			</choice>
+			<choice Target="End">*Wish Luminary-at-Dawn to live and drink.*</choice>
+		</start>
+	</conversation>
+</conversations>
