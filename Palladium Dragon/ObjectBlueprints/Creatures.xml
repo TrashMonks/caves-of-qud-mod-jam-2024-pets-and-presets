@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects>
+	<object Name="Snapjaw Scavenger Pet" Inherits="BaseHumanoid">
+		<tag Name="StartingPet" />
+		<part Name="Body" Anatomy="Snake" />
+		<part Name="Description" Short="Glauert, seeker of the Palladium Dragon and student of Natural History. Their many fins undulate like ribbons as they move from position to position, seeking vantage points from which to observe the natural lives of all Qud's varied creatures." />
+		<part Name="Render" DisplayName="Glauert" Tile="Monosophy_PalladiumDragon/PalladiumDragon.png" ColorString="&amp;W" DetailColor="w" />
+		<part Name="Pettable" />
+		<tag Name="PetResponse" Value="makes a show of protest but appreciates the attention,appraises you curiously,rolls their eyes, harrumphs awkwardly in a doomed effort to restore decorum" />
+		<part Name="ConversationScript" ConversationID="Glauert" />
+		<!--property Name="Story" Value="My Snapjaw Scavenger Story" /-->
+		<part Name="Brain" Factions="Fish-100,Pariahs-100" />
+		<stat Name="Level" Value="5" />
+		<stat Name="Hitpoints" Value="40" />
+		<stat Name="AV" Value="0" />
+		<stat Name="DV" Value="8" />
+		<stat Name="MoveSpeed" sValue="100" />
+		<skill Name="Tactics" />
+		<skill Name="Tactics_Hurdle" />
+		<skill Name="Tactics_Juke" />
+		<skill Name="Endurance_Calloused" />
+		<mutation Name="Burgeoning" Level="3"/>
+		<mutation Name="Wings" Level="5"/>
+		<builder Name="Tier2HumanoidEquipment" />
+		<inventoryobject Blueprint="Plastifer Jerkin" Number="1" />
+		<xtagGrammar Proper="true" />
+	</object>
+</objects>

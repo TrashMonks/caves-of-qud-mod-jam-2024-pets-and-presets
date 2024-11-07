@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<conversations>
+  <conversation ID="Glauert">
+    <start ID="Welcome">
+      <text>Shh, I think we're about to see something incredible!</text>
+	  <text>I wonder what jungles the Slumberling stalks while dreaming...</text>
+	  <text>What lies beyond the oasis of Qud?</text>
+	  <text>Have you heard news of the Dragon of the Reef?</text>
+	  <text>The Reef is such a beautiful place. We should spend more time there.</text>
+	  <text>The natural wealth of this land is incredible, but the salt wears on me sometimes.</text>
+      <choice Target="DragonIntro">Tell me about the Palladium Dragon.</choice>
+    </start>
+    <node ID="DragonIntro">
+      <text>It's a new development, from what I've heard around the Freehold. Something massive. Something truly worthy of the name Dragon, like the world has not seen since antiquity. Nothing could excite a Naturalist more.</text>
+      <choice Target="DragonElaboration">Intriguing. A new development, you say?</choice>
+	  <choice Target="End">I do not have time for this now. Live and drink.</choice>
+    </node>
+	<node ID="DragonElaboration">
+      <text>Yes. They're just rumors, but the hermits of the reef have reported seeing massive staring eyes from the woods, correlated with periods of inexplicable plant activity. Even when the creature is plainly observed, it blends so well with its environment as to make the observer think it is one with its backdrop. It is something so perfectly adapted to its environment that the Reef itself has become an extension of its body.</text>
+	  <choice Target="DragonBelieve">Incredible. Has anyone found any physical traces of this creature?</choice>
+    </node>
+	<node ID="DragonBelieve">
+      <text>Not yet, but I hope that with another expedition to the Reef we can change that. Since it seems to primarily spy on isolated hermits living in nature, I had been observing them myself in order to potentially catch the beast in the act. No luck, though...</text>
+      <choice Target="DragonDoubt">Incredible. Live and drink.</choice>
+    </node>
+  </conversation>
+</conversations>

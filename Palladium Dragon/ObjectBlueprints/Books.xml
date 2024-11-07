@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<books>
+  <book ID="My Snapjaw Scavenger Story" Title="{{W|My Story Title}}">
+    <page>
+Write your story for your creature here!
+    </page>
+  </book>
+</books>
