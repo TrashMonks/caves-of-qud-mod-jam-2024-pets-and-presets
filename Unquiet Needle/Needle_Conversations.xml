@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<conversations>
+
+<conversation ID="UnquietNeedle"   >
+
+<node ID="Start" IfHaveQuest="Litany of an Unquiet Needle">
+
+{{emote|*The eerie crackling at the back of your mind coalesces into a voice, low and creaking, enunciating each syllable as though it wished to compensate for its own lack of a mouth.}}
+
+Yes, wielder mine?
+
+<choice GotoID="Slain" IfNotHaveFinishedQuest="Litany of an Unquiet Needle" IfHaveFinishedQuestStep="Litany of an Unquiet Needle~Needle1">I have slain one of the beings that hunt us. There was something in the air, right as it died. </choice>
+<choice GotoID="Hunt" IfHaveFinishedQuestStep="Litany of an Unquiet Needle~Needle1">So, what is it that drives these Seekers to hunt you? </choice>
+<choice GotoID="Taking1" IfHaveActiveQuest="Litany of an Unquiet Needle II">So, where was it that I was supposed to be taking you, again? </choice>
+<choice GotoID="Taking2" IfHaveActiveQuest="Litany of an Unquiet Needle" IfNotHaveFinishedQuestStep="Litany of an Unquiet Needle~Needle1">So, where was it that I was supposed to be taking you, again? </choice>
+<choice GotoID="Taking3" IfHaveActiveQuest="Litany of an Unquiet Needle III" IfHaveFinishedQuest="Litany of an Unquiet Needle II">So, where was it that I was supposed to be taking you, again? </choice>
+<choice GotoID="Scream" >Why is it that you yell so much, in combat? </choice>
+
+</node>
+
+<node ID="Taking1" >
+
+Into one of the floaty things that appear when a Seeker's mind is separated from its body.
+
+
+<choice GotoID="Start">Alright, then.</choice>
+
+
+</node>
+
+
+<node ID="Scream" >
+
+Ah, I get a little... overexcited.
+
+<choice GotoID="Start">Alright, then.</choice>
+
+
+</node>
+
+
+<node ID="Taking2" >
+
+To one of the beings that pursue us. Preferably to the head of one, pointy end first.
+
+<choice GotoID="Start">Alright, then.</choice>
+
+
+</node>
+
+
+<node ID="Taking3" >
+
+Out in a little village in the Jungle, a horn-crowned thing has managed to jam its mind into an access-point, so to speak, which I require for communication with my Eminence. We need to pry it loose.
+
+<choice GotoID="Start">Alright, then.</choice>
+
+
+</node>
+
+<node ID="Hunt" >
+
+Ah, it is an... administrative difference.
+
+You see, they claim that they are guided by His Eminence, and that their relentless hunting of all things endowed with psychal grace is an enactment of His will.
+
+A preposterous notion, is it not? For if His Eminence truly spoke to the beings of this world, would He not speak through me? It was He who sent me here, after all.
+
+
+<choice GotoID="Start">That does indeed make sense</choice>
+<choice GotoID="Eminence">Are you certain? Who is this eminence, really?</choice>
+
+
+</node>
+
+
+
+<node ID="Slain" >
+
+Excellent. Truly and most excellent.
+
+For your next assignment, I need you to shove me into there.
+
+<choice GotoID="Where">Into where?</choice>
+<choice GotoID="Why">Why?</choice>
+<choice GotoID="End"  CompleteQuestStep="Litany of an Unquiet Needle~Needle1" FinishQuest="Litany of an Unquiet Needle"  StartQuest="Litany of an Unquiet Needle II">Alright, then. </choice>
+
+
+</node>
+
+<node ID="Where" >
+
+Into the floaty thing. It won't take long.
+
+<choice GotoID="Why">Why?</choice>
+<choice GotoID="End" CompleteQuestStep="Litany of an Unquiet Needle~Needle1" FinishQuest="Litany of an Unquiet Needle" StartQuest="Litany of an Unquiet Needle II">Alright, then.</choice>
+
+</node>
+
+
+<node ID="Why" >
+
+I need to submit a report, you see. Of the various things I have pierced, of the treachery of the Seekers and the goings-on in this world beneath my rule. His Eminence will be pleased.
+
+<choice GotoID="End"  CompleteQuestStep="Litany of an Unquiet Needle~Needle1" FinishQuest="Litany of an Unquiet Needle"  StartQuest="Litany of an Unquiet Needle II">Alright, then.</choice>
+
+<choice GotoID="Eminence">Who is this eminence, really?</choice>
+
+
+</node>
+
+<node ID="Eminence" >
+
+Perhaps I will tell you at some point. Not now, though.
+<choice GotoID="End">Alright, then.</choice>
+
+
+
+</node>
+
+
+<node ID="Start">
+			<text>
+{{emote|A low, melodic buzzing creeps across the back of your skull, like a centipede-hand wrought from static. Something eyeless is watching you.}}
+
+			</text>
+      	<choice GotoID="First">*examine the glass-shard before you* </choice>
+		</node>
+
+		<node ID="First">
+			<text>
+{{emote|The buzzing, prickling sensation at the back of your mind coalesces into a voice, low and murmurous, enunciating each syllable as though it wished to compensate for its own lack of a mouth.}}
+
+Ah.
+
+Another hand, you mean?
+
+Another set of little flesh-wrapt metacarpals, curling round the haft?
+
+If thine desire is mine desire, then by all means. Wield me.
+
+Though be warned. Mine desire is one of ceaseless bloodshed, and the paths of all wielders before ye have ended in death.
+
+			</text>
+         	<choice GotoID="YouSpeak">You speak?</choice>
+        	<choice GotoID="WhoIsThis" >Who is this?</choice>
+		</node>
+
+    <node ID="YouSpeak">
+			<text>
+I do indeed. I stab things too.
+      </text>
+      	<choice GotoID="WhoIsThis">Who are you?</choice>
+			<choice GotoID="End">Alright, then. Live and... remain ever polished.</choice>
+		</node>
+
+     <node ID="WhoIsThis">
+			<text>
+I, wielder mine, am a needle. 
+
+My true name, I regret to inform you, would pop your skull like a musa fruit were I to speak it.
+
+Or, I assume it would pop like a musa fruit. I have never actually seen one. They pop like skulls, do they not?
+      </text>
+      	<choice GotoID="TheyDo">Yes! They pop quite sumptuously!</choice>
+			<choice GotoID="TheyDont">Actually no, it's more of a cracking sound.</choice>
+		</node>
+
+     <node ID="TheyDo">
+			<text>
+Ah. Once again I dazzle with botanical knowledge.
+
+But as I was saying, I am a needle,  a sharpened thing to pierce the brains of all that stand against me. In addition to this, I am the Sovereign of This World, appointed to my most exalted position by His Eminence himself!
+
+This is what has made me so wise in the ways of botany, alongside all other subjects.
+
+  </text>
+      	<choice GotoID="Doubt">You? A sovereign? But you are little more than a sharp-looking piece of glass!</choice>
+              	<choice GotoID="Submit" >Forgive my lack of tact, your Sovereignty. It is hard to know how to bow while holding the one to whom one is bowing.</choice>
+		</node>
+
+     <node ID="TheyDont">
+			<text>
+Well, then. Can you truly fault me, bereft as I am of eyes and ears?
+
+Though not bereft of majesty. For as I was saying, I am a needle, a sharpened thing to pierce the brains of all that stand against me. In addition to this, I am the Sovereign of This World, appointed to my most exalted position by His Eminence himself!
+      </text>
+              	<choice GotoID="Doubt">You? A sovereign? But you are little more than a sharp-looking piece of glass!</choice>
+              	<choice GotoID="Submit" >Forgive my lack of tact, your Sovereignty. It is hard to know how to bow while holding the one to whom one is bowing.</choice>
+		</node>
+
+         <node ID="Doubt">
+			<text>
+Ah, the flesh-things I lord over have a tendency to say things like that. 
+
+It is, in fact, quite possible to be both a glass-shard and a Sovereign. Quite regrettable, as well. Mostly is it quite regrettable due to my lack of… ambulation. Bereft of legs, I cannot scamper. 
+
+Despite your lack of respect for my lordship over this world, you do seem like someone in need of a stabbing-implement. I do love a good stab, you know. Would you mind lugging me around for a bit?
+
+ </text>
+ <choice GotoID="Insightful">Is there anywhere specific you need to be lugged?</choice>
+              	<choice GotoID="TossMeBack">Does not sound like something for me, I have to say.</choice>
+		</node>
+
+  <node ID="Submit">
+    	<text>
+Ah, finally someone who treats me with the respect I am owed. Most other flesh-things think little of my sovereignty.
+
+I have begun to suspect that this regrettable fact owes its existence to my unfortunate lack of… ambulation. Bereft of legs, I cannot scamper.
+
+Seeing as you have proven yourself a dutiful subject, I hope that it would not be too much of a question to ask you to be my ambulation. It would be a great service if you could lug me around, for a bit. You may stab things with me, too. In fact, you are encouraged to stab things.
+   </text>
+             <choice GotoID="Insightful">Is there anywhere specific you need to be lugged?</choice>
+              	<choice GotoID="TossMeBack">Does not sound like something for me, I have to say.</choice>
+		</node>
+
+ <node ID="TossMeBack">
+    	<text>
+Ah. Well, then. Toss me back into the ditch, if you please.
+
+Or don't.
+      </text>
+              	
+                	<choice GotoID="End">Alright, then. Live and... remain ever spotless.</choice>
+		</node>
+
+ <node ID="Insightful">
+    	<text>
+A most insightful question, wielder mine.
+
+Unfortunately, it is one that I cannot answer. You see, there are those amidst the fleshen sort who would seek to see my sovereignty over this world toppled, and my person used for purposes unknown. I dread that they scheme against me from the shadows, even as we speak.
+
+Just to make sure that you are not one of their lot, I would ask you to stab one one when they come for us. Preferably, but not necessarily, with me.
+      </text>
+                              	<choice GotoID="End" StartQuest="Litany of an Unquiet Needle">
+                                I tend to stab folks that come for me on principle, so sure. I'm in.
+                                </choice>
+                	<choice GotoID="Unsure">How will I know that I'm stabbing the right person?</choice>
+		</node>
+        
+     <node ID="Unsure">
+    	<text>
+A less insightful question, wielder mine. 
+
+You'll know them when you see them. They make a proper mess of the local noosphere. And of the local craniums. Not exactly the subtle sort.
+      </text>
+              	
+                	<choice GotoID="End" StartQuest="Litany of an Unquiet Needle">
+                    Oh, they sound like a fun sort. I'm looking forward to meeting one already.
+                    </choice>
+                    <choice GotoID="Cranium">Actually, I think I'd prefer to keep my cranium in one piece for the time being.</choice>
+		</node>
+
+       <node ID="Unsure">
+    	<text>
+I suppose it is only natural for your sort, to grow attached to the sturdy bits of your flesh. If you ever feel the desire to hunt the things that hunt you, I will be waiting.
+      </text>
+              	
+                	<choice GotoID="End">
+                    Live and... remain ever spotless.
+                    </choice>
+                   
+		</node>
+	</conversation>
+
+ <conversation ID="PsychalVortex">
+
+
+
+<node ID="Start" IfHaveItem="Unquiet Needle" IfHaveActiveQuest="Litany of an Unquiet Needle II">
+<text>
+{{emote|*A maelstrom of psychic energy swirls before you, pulsing softly as though waiting for you to act. At its center is a pinprick-sized hole to a fiercer place, but already the edges are beginning to fray.*}}
+
+{{emote|*As you gaze into the churning vortex of thought-stuff, you feel the now-familiar crackle of the Unquiet Needle slowly wriggle its way into your consciousness.*}}
+
+So, what are you waiting for?
+
+</text>
+<choice GotoID="Upgrade2">*insert the Needle into the psychal rupture.*</choice>
+
+<choice GotoID="End">...</choice>
+
+</node>
+
+<node ID="Start">
+<text>
+{{emote|*A maelstrom of psychic energy swirls before you, pulsing softly as though waiting for you to act. At its center is a pinprick-sized hole to a fiercer place, but already the edges are beginning to fray.*}}
+</text>
+<choice GotoID="End">...</choice>
+</node>
+
+<node ID="Upgrade2" >
+<text>
+{{emote|*The inside of the fissure is cold, its edges nipping at the skin of your wrist like songbirds at a rice-bag.*}}
+
+{{emote|*The Unquiet Needle squirms to life in your hand, spinning like a compass-pointer, twisting your arm in angles you do not think you could point to on this side of the hole. Just as soon as you've convinced yourself your arm will come loose, the motions stop.*}}
+
+{{emote|*You wait a moment, and then another moment, and then for what feels like an eternity before withdrawing your hand. As the haft of the Needle emerges from the rupture, your head fills with a triumphant fuzz.*}}
+
+</text>
+<choice GotoID="Upgrade3"   StartQuest="Litany of an Unquiet Needle III" CompleteQuestStep="Litany of an Unquiet Needle II~Needle3" FinishQuest="Litany of an Unquiet Needle II"> 
+<part Name="ReceiveItem" Blueprints="Unquiet Needle 2"  />
+				<part Name="TakeItem" Blueprints="Unquiet Needle" Amount="*" Destroy="true" />
+              <text>...</text>
+            </choice>
+</node>
+
+<node ID="Upgrade3" >
+<text>
+
+I made contact. Not with my Eminence, but with... Something. Someone. There is an access-point here in Qud, where I could submit my report and finally make contact with Him who once dreamt me into being. I would need you to clear the way, of course.
+</text>
+<choice GotoID="WhereIs">Where is this access-point?</choice>
+
+<choice GotoID="ClearTheWay">What do you mean, "clear the way"?</choice>
+
+</node>
+
+<node ID="WhereIs" >
+<text>
+In a village out in the Jungle. No, not the one you're thinking of, the other one. Though you might want to head to the one that you're thinking of first. They might be able to give directions.
+
+</text>
+<choice GotoID="End">Alright, then. To the jungle it is.</choice>
+
+</node>
+
+<node ID="ClearTheWay" >
+<text>
+That is where the problem lies, wielder mine. The point in space we seek is already occupied. Someone is hogging the podium, so to speak, and that someone has to be disposed of if I am to submit my report. I do not think my Eminence will mind.
+
+</text>
+<choice GotoID="WhereIs">Where is this "someone"?</choice>
+<choice GotoID="WhoIs">Who is this "someone"?</choice>
+</node>
+
+
+<node ID="ClearTheWay" >
+<text>
+A flesh-wrapped thing of the horn-crowned sort. Has taken to lording over its fellow horned-folk as of late, it seems. Drinks deep of the dreams of all that disobey, until naught but the vessel remains.
+
+I wonder how it would feel, to be driven in-between those horns.
+
+</text>
+<choice GotoID="WhereIs">Where is this "horn-crowned thing"?</choice>
+
+</node>
+
+
+
+</conversation>
+
+<conversation ID="AmaranthineVortex">
+
+
+<node ID="Start" IfHaveItem="Unquiet Needle 2" IfHaveActiveQuest="Litany of an Unquiet Needle III" >
+<text>
+{{emote|*A violent maelstrom of psychic energy swirls before you, thrumming with reddened energy as though daring you to act. At its center is a pinprick-sized hole to a fiercer place, but already the edges are beginning to fray.*}}
+
+{{emote|*As you gaze into the churning vortex of thought-stuff, you feel the now-familiar crackle of the Unquiet Needle slowly wriggle its way into your consciousness.*}}
+
+So, what are we waiting for?
+
+</text>
+<choice GotoID="Upgrade1">*insert the Needle into the psychal rupture, once again.*</choice>
+
+<choice GotoID="End">...</choice>
+
+</node>
+
+<node ID="Start">
+<text>
+{{emote|*A violent maelstrom of psychic energy swirls before you, thrumming with reddened energy as though daring you to act. At its center is a pinprick-sized hole to a fiercer place, but already the edges are beginning to fray.*}}
+</text>
+<choice GotoID="End">...</choice>
+</node>
+
+
+<node ID="Upgrade1" >
+<text>
+{{emote|*The inside of the fissure is cold, its edges rippling like flames around your wrist.*}}
+
+{{emote|*Inside, the Needle is still.*}}
+
+</text>
+<choice GotoID="Upgrade2">...</choice>
+
+</node>
+<node ID="Upgrade2" >
+<text>
+...
+
+</text>
+<choice GotoID="Upgrade3">...</choice>
+
+</node>
+
+<node ID="Upgrade3" >
+<text>
+...
+
+</text>
+<choice GotoID="Upgrade4">...</choice>
+
+</node>
+
+<node ID="Upgrade4" >
+<text>
+...
+
+</text>
+<choice GotoID="Upgrade5">...</choice>
+
+</node>
+<node ID="Upgrade5" >
+<text>
+{{emote|*You hear the faintest crackle of a voice, deep within the vortex.*}}
+
+Wielder?
+
+</text>
+<choice GotoID="Upgrade6">Yes?</choice>
+
+</node>
+
+<node ID="Upgrade6" >
+<text>
+
+I've been thinking. What if... what if Its Eminence does not answer?
+
+
+</text>
+<choice GotoID="Upgrade7">Why would he not answer?</choice>
+
+</node>
+
+<node ID="Upgrade7" >
+<text>
+
+I do not know.
+
+
+</text>
+<choice GotoID="Upgrade8">...</choice>
+
+</node>
+
+<node ID="Upgrade8" >
+<text>
+
+It is just... the village. The river. The bloodshed that we saw, the madness in that goatman's eyes. Why would Its Eminence desire it?
+
+
+
+</text>
+<choice GotoID="Upgrade9">Are you certain that this is the doing of your Eminence?</choice>
+
+</node>
+
+<node ID="Upgrade9" >
+<text>
+
+It... It must be, must it not? This is the access point. His Eminence provided this for Mamon and his congregation. But what would be His purpose in driving them all to such carnage.
+
+</text>
+<choice GotoID="Upgrade10">
+<part Name="ReceiveItem" Blueprints="Unquiet Needle 3 Intelligence"  />
+				<part Name="TakeItem" Blueprints="Unquiet Needle 2" Amount="*" Destroy="true" />
+              <text>
+              {{B|[Attune to Intelligence]}} It is nothing but the furor of a caged thing, rattling against its confines. Perhaps your Eminence is trapped, and empty, violent gestures like this are all that It is capable of. Ptoh does not answer you because It does not care.  
+              </text>
+</choice>
+<choice GotoID="Upgrade10">
+<part Name="ReceiveItem" Blueprints="Unquiet Needle 3 Willpower"  />
+				<part Name="TakeItem" Blueprints="Unquiet Needle 2" Amount="*" Destroy="true" />
+              <text>
+              {{g|[Attune to Willpower]}} It is the working of a predator, a thing that cultivates minds to devour them as Mamon cultivated his flock to feast upon it. Ptoh does not answer you because It is afraid.
+              </text>
+</choice>
+<choice GotoID="Upgrade10">
+<part Name="ReceiveItem" Blueprints="Unquiet Needle 3 Ego"  />
+				<part Name="TakeItem" Blueprints="Unquiet Needle 2" Amount="*" Destroy="true" />
+              <text>
+              {{m|[Attune to Ego]}} I find it all strangely beautiful. Perhaps the violence we have borne witness to is in itself the message your Eminence wishes to give you. Ptoh does not answer you because you already know what It desires.
+              </text>
+</choice>
+
+</node>
+
+<node ID="Upgrade10" >
+<text>
+
+{{emote|The Needle is silent as you pull it out of the rift. You get the distinct sensation that it is thinking things over.*}}
+
+
+</text>
+<choice GotoID="End" CompleteQuestStep="Litany of an Unquiet Needle III~Needle4" FinishQuest="Litany of an Unquiet Needle III">
+I do believe we are done here.
+</choice>
+
+</node>
+
+</conversation>
+
+
+</conversations>

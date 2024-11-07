@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<quests>
+  
+  <quest Name="Litany of an Unquiet Needle" Level="1" 
+         Accomplishment="You slew one of the beings that pursue the Unquiet Needle" 
+         Hagiograph="N/A"
+         HagiographCategory="FindsObject">
+
+    <step ID="Needle1" Name="Slay one of the beings that hunt you" XP="250">
+      <text>Preferrably, but not necessarily, with the Unquiet Needle in hand.</text>
+    </step>
+
+    <step ID="Needle2" Name="Speak to the Unquiet Needle" XP="100">
+      <text>No matter how much it may pain you.</text>
+    </step>
+
+      </quest>
+
+      <quest Name="Litany of an Unquiet Needle II" Level="1" 
+         Accomplishment="You aided the Unquiet Needle in establishing a connection to another place." 
+         Hagiograph="N/A"
+         HagiographCategory="FindsObject">
+
+ <step ID="Needle3" Name="Insert the Needle into a psychal rupture"  XP="500">
+      <text>It will be quick. Do not let go.</text>
+    </step>
+</quest>
+
+<quest Name="Litany of an Unquiet Needle III" Level="1" 
+         Accomplishment="For better or for worse, you helped the Unquiet Needle gain a better understanding of who it is that it serves." 
+         Hagiograph="N/A"
+         HagiographCategory="FindsObject">
+
+
+ <step ID="Needle4" Name="Establish a more direct connection"  XP="1000">
+      <text>In a village out in the jungle, someone is hogging the podium. You know what to do, by now.</text>
+    </step>
+
+  </quest>
+
+
+
+  </quests>

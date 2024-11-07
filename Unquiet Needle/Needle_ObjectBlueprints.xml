@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<objects>
+
+<object Name="Unquiet Needle" Inherits="BaseDagger">
+		<part Name="Render" DisplayName="{{M|Unquiet Needle}}" Tile="Feline/Needle.png" ColorString="&amp;M" DetailColor="K" />
+		<part Name="Description" Short="Black glass narrows to a wicked point. Reflections stir beneath its mirrored facets, sinking into the starless surface until only the outline remains." />
+		<part Name="Physics" Weight="1" />
+		<part Name="Commerce" Value="0" />
+		<part Name="RulesDescription" Text="Attacks MA instead of AV." />
+		<part Name="MeleeWeapon" Stat="Ego"  MaxStrengthBonus="7" BaseDamage="2d3-1d2" />
+		<tag Name="Mods" Value="None" />
+		<tag Name="ExcludeFromDynamicEncounters" />
+    <part Name="Unreplicable" />
+		<tag Name="EquipmentFrameColors" Value="kKmM" />
+    <tag Name="NoSparkingQuest" />
+    <xtagGrammar Proper="true" />
+    <part Name="NoDamage" />
+    <intproperty Name="TreatAsPsychic" Value="1" />   
+    <tag Name="QuestItem" /> 
+    <tag Name="IndefiniteArticle" Value="the" />
+    <tag Name="DefiniteArticle" Value="the" />
+    <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_armor_psychically_charged" />
+    <tag Name="BlockedSound" Value="Sounds/Melee/multiUseBlock/sfx_melee_crysteel_blocked" />	  
+    <tag Name="SwingSound" Value="Sounds/Melee/shortBlades/sfx_melee_dagger_crysteel_swing"/> 
+    <part Name="ConversationScript" ConversationID="UnquietNeedle" ClearLost="false" />
+    <part Name="TakenAccomplishment" Text="You clutched the black glass of the =this= in your hands." Hagiograph="Delight in the sublime violence of =name= the Unquiet, who lifted a vitreous thorn from the earth and taught it how to speak!" HagiographCategory="FindsObject" HagiographWeight="High" />
+  	<part Name="CreateObjectOnHit" Blueprint="NeedleSpeech" Charges="99999" Chance="7" />
+    <part Name="GlimmerAlteration" Amount="20" IsRealityDistortionBased="true" ChargeUse="0" IsEMPSensitive="false" IsPowerLoadSensitive="false" IsTechScannable="false" />
+	</object>
+
+<object Name="Unquiet Needle 2" Inherits="BaseDagger">
+		<part Name="Render" DisplayName="{{M|Unquiet Needle}}" Tile="Feline/Needle.png" ColorString="&amp;M" DetailColor="K" />
+		<part Name="Description" Short="Black glass narrows to a wicked point. Reflections stir beneath its mirrored facets, sinking into the starless surface until only the outline remains." />
+		<part Name="Physics" Weight="1" />
+		<part Name="Commerce" Value="0" />
+		<part Name="RulesDescription" Text="Attacks MA instead of AV." />
+		<part Name="MeleeWeapon" Stat="Ego" MaxStrengthBonus="9" BaseDamage="2d5-1d2" />
+		<tag Name="Mods" Value="None" />
+		<tag Name="ExcludeFromDynamicEncounters" />
+    <part Name="Unreplicable" />
+		<tag Name="EquipmentFrameColors" Value="kKmM" />
+    <tag Name="NoSparkingQuest" />
+    <xtagGrammar Proper="true" />
+    <part Name="NoDamage" />
+    <part Name="CleaveOnHit" CriticalOnly="true" Chance="100" />
+    <intproperty Name="TreatAsPsychic" Value="1" />   
+    <tag Name="QuestItem" /> 
+    <tag Name="IndefiniteArticle" Value="the" />
+    <tag Name="DefiniteArticle" Value="the" />
+    <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_armor_psychically_charged" />
+    <tag Name="BlockedSound" Value="Sounds/Melee/multiUseBlock/sfx_melee_crysteel_blocked" />	  
+    <tag Name="SwingSound" Value="Sounds/Melee/shortBlades/sfx_melee_dagger_crysteel_swing"/> 
+    <part Name="ConversationScript" ConversationID="UnquietNeedle" ClearLost="false" />
+  	<part Name="CreateObjectOnHit" Blueprint="NeedleSpeech" Charges="99999" Chance="7" />
+    <part Name="GlimmerAlteration" Amount="20" IsRealityDistortionBased="true" ChargeUse="0" IsEMPSensitive="false" IsPowerLoadSensitive="false" IsTechScannable="false" />
+	</object>
+
+  <object Name="Unquiet Needle 3 Ego" Inherits="BaseDagger">
+		<part Name="Render" DisplayName="{{M|Unquiet Needle}}" Tile="Feline/Needle.png" ColorString="&amp;M" DetailColor="K" />
+		<part Name="Description" Short="Black glass narrows to a wicked point. Reflections stir beneath its mirrored facets, sinking into the starless surface until only the outline remains." />
+		<part Name="Physics" Weight="1" />
+		<part Name="Commerce" Value="0" />
+		<part Name="RulesDescription" Text="Attacks MA instead of AV." />
+		<part Name="MeleeWeapon" Stat="Ego" MaxStrengthBonus="11" BaseDamage="2d8-1d2" />
+		<tag Name="Mods" Value="None" />
+		<tag Name="ExcludeFromDynamicEncounters" />
+    <part Name="Unreplicable" />
+		<tag Name="EquipmentFrameColors" Value="kKmM" />
+    <tag Name="NoSparkingQuest" />
+    <xtagGrammar Proper="true" />
+    <part Name="NoDamage" />
+        <part Name="SecondaryAttackChance" Chance="5" Final="false" />
+    <part Name="CleaveOnHit" CriticalOnly="true" Chance="100" />
+    <intproperty Name="TreatAsPsychic" Value="1" />   
+    <tag Name="QuestItem" /> 
+            <part Name="ReduceCooldowns" ChargeUse="0" UsesChargePerEffect="false" WorksOnEquipper="true" PercentageReduction="25" IncludeAbilities="Menacing Stare,Intimidate,Berate" />
+    <tag Name="IndefiniteArticle" Value="the" />
+    <tag Name="DefiniteArticle" Value="the" />
+    <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_armor_psychically_charged" />
+    <tag Name="BlockedSound" Value="Sounds/Melee/multiUseBlock/sfx_melee_crysteel_blocked" />	  
+    <tag Name="SwingSound" Value="Sounds/Melee/shortBlades/sfx_melee_dagger_crysteel_swing"/> 
+    <part Name="ConversationScript" ConversationID="UnquietNeedle" ClearLost="false" />
+  	<part Name="CreateObjectOnHit" Blueprint="NeedleSpeech" Charges="99999" Chance="7" />
+    <part Name="GlimmerAlteration" Amount="40" IsRealityDistortionBased="true" ChargeUse="0" IsEMPSensitive="false" IsPowerLoadSensitive="false" IsTechScannable="false" />
+	</object>
+
+    <object Name="Unquiet Needle 4 Ego" Inherits="BaseDagger">
+		<part Name="Render" DisplayName="{{M|Unquiet Needle}}" Tile="Feline/Needle.png" ColorString="&amp;M" DetailColor="K" />
+		<part Name="Description" Short="Black glass narrows to a wicked point. Reflections stir beneath its mirrored facets, sinking into the starless surface until only the outline remains." />
+		<part Name="Physics" Weight="1" />
+		<part Name="Commerce" Value="0" />
+		<part Name="RulesDescription" Text="Attacks MA instead of AV." />
+		<part Name="MeleeWeapon" Stat="Ego" MaxStrengthBonus="13" BaseDamage="4d5-1d2" />
+		<tag Name="Mods" Value="None" />
+		<tag Name="ExcludeFromDynamicEncounters" />
+    <part Name="Unreplicable" />
+		<tag Name="EquipmentFrameColors" Value="kKmM" />
+    <part Name="SecondaryAttackChance" Chance="10" Final="false" />
+    <tag Name="NoSparkingQuest" />
+    <xtagGrammar Proper="true" />
+        <part Name="ReduceCooldowns" ChargeUse="0" UsesChargePerEffect="false" WorksOnEquipper="true" PercentageReduction="50" IncludeAbilities="Menacing Stare,Intimidate,Berate" />
+    <part Name="NoDamage" />
+    <part Name="CleaveOnHit" CriticalOnly="true" Chance="100" />
+    <part Name="MutationOnEquip" IsRealityDistortionBased="true" ClassName="Fear Aura" DisplayName="Fear Aura"  />
+    <intproperty Name="TreatAsPsychic" Value="1" />   
+    <tag Name="QuestItem" /> 
+    <tag Name="IndefiniteArticle" Value="the" />
+    <tag Name="DefiniteArticle" Value="the" />
+    <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_armor_psychically_charged" />
+    <tag Name="BlockedSound" Value="Sounds/Melee/multiUseBlock/sfx_melee_crysteel_blocked" />	  
+    <tag Name="SwingSound" Value="Sounds/Melee/shortBlades/sfx_melee_dagger_crysteel_swing"/> 
+    <part Name="ConversationScript" ConversationID="UnquietNeedle" ClearLost="false" />
+  	<part Name="CreateObjectOnHit" Blueprint="NeedleSpeech" Charges="99999" Chance="7" />
+    <part Name="GlimmerAlteration" Amount="60" IsRealityDistortionBased="true" ChargeUse="0" IsEMPSensitive="false" IsPowerLoadSensitive="false" IsTechScannable="false" />
+	</object>
+
+  <object Name="Unquiet Needle 3 Intelligence" Inherits="BaseDagger">
+		<part Name="Render" DisplayName="{{M|Unquiet Needle}}" Tile="Feline/Needle.png" ColorString="&amp;M" DetailColor="K" />
+		<part Name="Description" Short="Black glass narrows to a wicked point. Reflections stir beneath its mirrored facets, sinking into the starless surface until only the outline remains." />
+		<part Name="Physics" Weight="1" />
+		<part Name="Commerce" Value="0" />
+		<part Name="RulesDescription" Text="Attacks MA instead of AV." />
+		<part Name="MeleeWeapon" Stat="Intelligence" HitBonus="2" MaxStrengthBonus="11" BaseDamage="2d7-1d2" />
+		<tag Name="Mods" Value="None" />
+		<tag Name="ExcludeFromDynamicEncounters" />
+    <part Name="Unreplicable" />
+		<tag Name="EquipmentFrameColors" Value="kKbB" />
+    <tag Name="NoSparkingQuest" />
+    <xtagGrammar Proper="true" />
+    <part Name="MutationOnEquip" IsRealityDistortionBased="true" ClassName="Waveform" DisplayName="Waveform" Level="6" />
+    <part Name="NoDamage" />
+    <part Name="CleaveOnHit" CriticalOnly="false" Chance="10" />
+    <intproperty Name="TreatAsPsychic" Value="1" />   
+    <tag Name="QuestItem" /> 
+    <tag Name="IndefiniteArticle" Value="the" />
+    <tag Name="DefiniteArticle" Value="the" />
+    <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_armor_psychically_charged" />
+    <tag Name="BlockedSound" Value="Sounds/Melee/multiUseBlock/sfx_melee_crysteel_blocked" />	  
+    <tag Name="SwingSound" Value="Sounds/Melee/shortBlades/sfx_melee_dagger_crysteel_swing"/> 
+    <part Name="ConversationScript" ConversationID="UnquietNeedle" ClearLost="false" />
+  	<part Name="CreateObjectOnHit" Blueprint="NeedleSpeech" Charges="99999" Chance="7" />
+	</object>
+
+    <object Name="Unquiet Needle 4 Intelligence" Inherits="BaseDagger">
+		<part Name="Render" DisplayName="{{M|Unquiet Needle}}" Tile="Feline/Needle.png" ColorString="&amp;M" DetailColor="K" />
+		<part Name="Description" Short="Black glass narrows to a wicked point. Reflections stir beneath its mirrored facets, sinking into the starless surface until only the outline remains." />
+		<part Name="Physics" Weight="1" />
+		<part Name="Commerce" Value="0" />
+		<part Name="RulesDescription" Text="Attacks MA instead of AV." />
+		<part Name="MeleeWeapon" Stat="Intelligence" HitBonus="4" MaxStrengthBonus="13" BaseDamage="4d4-1d2" />
+		<tag Name="Mods" Value="None" />
+		<tag Name="ExcludeFromDynamicEncounters" />
+    <part Name="Unreplicable" />
+		<tag Name="EquipmentFrameColors" Value="kKbB" />
+    <tag Name="NoSparkingQuest" />
+    <xtagGrammar Proper="true" />
+    <part Name="MutationOnEquip" IsRealityDistortionBased="true" ClassName="Waveform" DisplayName="Waveform" Level="12" />
+    <part Name="NoDamage" />
+    <part Name="CleaveOnHit" CriticalOnly="false" Chance="15" />
+    <intproperty Name="TreatAsPsychic" Value="1" />   
+    <tag Name="QuestItem" /> 
+    <tag Name="IndefiniteArticle" Value="the" />
+    <tag Name="DefiniteArticle" Value="the" />
+    <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_armor_psychically_charged" />
+    <tag Name="BlockedSound" Value="Sounds/Melee/multiUseBlock/sfx_melee_crysteel_blocked" />	  
+    <tag Name="SwingSound" Value="Sounds/Melee/shortBlades/sfx_melee_dagger_crysteel_swing"/> 
+    <part Name="ConversationScript" ConversationID="UnquietNeedle" ClearLost="false" />
+  	<part Name="CreateObjectOnHit" Blueprint="NeedleSpeech" Charges="99999" Chance="7" />
+	</object>
+
+ <object Name="Unquiet Needle 3 Willpower" Inherits="BaseDagger">
+		<part Name="Render" DisplayName="{{M|Unquiet Needle}}" Tile="Feline/Needle.png" ColorString="&amp;M" DetailColor="K" />
+		<part Name="Description" Short="Black glass narrows to a wicked point. Reflections stir beneath its mirrored facets, sinking into the starless surface until only the outline remains." />
+		<part Name="Physics" Weight="1" />
+		<part Name="Commerce" Value="0" />
+		<part Name="RulesDescription" Text="Attacks MA instead of AV." />
+		<part Name="MeleeWeapon" Stat="Willpower" MaxStrengthBonus="12" BaseDamage="2d7-1d2" />
+		<tag Name="Mods" Value="None" />
+		<tag Name="ExcludeFromDynamicEncounters" />
+    <part Name="Unreplicable" />
+    <part Name="CriticalThreshold" Value="2" />
+		<tag Name="EquipmentFrameColors" Value="kKWY" />
+    <tag Name="NoSparkingQuest" />
+    <xtagGrammar Proper="true" />
+    <part Name="MutationOnEquip" IsRealityDistortionBased="true" ClassName="Mental Mirror" DisplayName="Mental Mirror" Level="6" />
+    <part Name="NoDamage" />
+    <part Name="CleaveOnHit" CriticalOnly="true" Chance="100" />
+    <intproperty Name="TreatAsPsychic" Value="1" />   
+    <tag Name="QuestItem" /> 
+    <tag Name="IndefiniteArticle" Value="the" />
+    <tag Name="DefiniteArticle" Value="the" />
+    <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_armor_psychically_charged" />
+    <tag Name="BlockedSound" Value="Sounds/Melee/multiUseBlock/sfx_melee_crysteel_blocked" />	  
+    <tag Name="SwingSound" Value="Sounds/Melee/shortBlades/sfx_melee_dagger_crysteel_swing"/> 
+    <part Name="ConversationScript" ConversationID="UnquietNeedle" ClearLost="false" />
+  	<part Name="CreateObjectOnHit" Blueprint="NeedleSpeech" Charges="99999" Chance="7" />
+    <part Name="GlimmerAlteration" Amount="60" IsRealityDistortionBased="true" ChargeUse="0" IsEMPSensitive="false" IsPowerLoadSensitive="false" IsTechScannable="false" />
+	</object>
+
+ <object Name="Unquiet Needle 4 Willpower" Inherits="BaseDagger">
+		<part Name="Render" DisplayName="{{M|Unquiet Needle}}" Tile="Feline/Needle.png" ColorString="&amp;M" DetailColor="K" />
+		<part Name="Description" Short="Black glass narrows to a wicked point. Reflections stir beneath its mirrored facets, sinking into the starless surface until only the outline remains." />
+		<part Name="Physics" Weight="1" />
+		<part Name="Commerce" Value="0" />
+		<part Name="RulesDescription" Text="Attacks MA instead of AV.
+    Failed psychic attacks against you cause the attacker to hemorrhage." />
+		<part Name="MeleeWeapon" Stat="Willpower" MaxStrengthBonus="14" BaseDamage="4d4-1d2" />
+		<tag Name="Mods" Value="None" />
+		<tag Name="ExcludeFromDynamicEncounters" />
+    <part Name="Unreplicable" />
+    <part Name="CriticalThreshold" Value="3" />
+		<tag Name="EquipmentFrameColors" Value="kKWY" />
+    <part Name="PsychicMeridian" NosebleedDamage="1d6" NosebleedSave="30" Cooldown="0" TargetWearer="false" />
+    <tag Name="NoSparkingQuest" />
+    <xtagGrammar Proper="true" />
+    <part Name="MutationOnEquip" IsRealityDistortionBased="true" ClassName="Mental Mirror" DisplayName="Mental Mirror" Level="6" />
+    <part Name="NoDamage" />
+    <part Name="CleaveOnHit" CriticalOnly="false" Chance="5" />
+    <intproperty Name="TreatAsPsychic" Value="1" />   
+    <tag Name="QuestItem" /> 
+    <tag Name="IndefiniteArticle" Value="the" />
+    <tag Name="DefiniteArticle" Value="the" />
+    <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_armor_psychically_charged" />
+    <tag Name="BlockedSound" Value="Sounds/Melee/multiUseBlock/sfx_melee_crysteel_blocked" />	  
+    <tag Name="SwingSound" Value="Sounds/Melee/shortBlades/sfx_melee_dagger_crysteel_swing"/> 
+    <part Name="ConversationScript" ConversationID="UnquietNeedle" ClearLost="false" />
+  	<part Name="CreateObjectOnHit" Blueprint="NeedleSpeech" Charges="99999" Chance="7" />
+    <part Name="GlimmerAlteration" Amount="80" IsRealityDistortionBased="true" ChargeUse="0" IsEMPSensitive="false" IsPowerLoadSensitive="false" IsTechScannable="false" />
+	</object>
+
+
+  <object Name="NeedleSpeech" Inherits="Widget">
+        <part Name="Render" Visible="true" DisplayName="{{M|Unquiet Needle}}" RenderString=" " RenderLayer="0" />
+        <part Name="Physics" Weight="10000" Takeable="false" Solid="false" IsReal="false" />
+        <part Name="Preacher" Book="NeedleSpeech" Chance="100" SmartUse="false" Prefix="{{y|The}} {{M|Unquiet Needle}} {{y|says,}} " Frozen="You hear a quiet murmuring from within the ice." inOrder="false" ChatWait="200" />
+        <part Name="FallsApart" Duration="2" Message="" />
+      	<stat Name="Energy" ShortName="EN" Min="-100000" Max="100000" Value="0" />
+        <part Name="Brain" Factions="PlayerNeutral-100" /> 
+        <stat Name="Speed" ShortName="SP" Min="1" Max="10000" Value="100" />
+        <removetag Name="Non" />
+        <part Name="SoundOnCreate" Sounds="Sounds/Equip/sfx_equip_armor_psychically_charged" Volume="1"></part>
+  </object>
+
+    <object Name="NeedleCrater" Inherits="Furniture">
+    <part Name="Render" DisplayName="small crater" RenderString="233" RenderLayer="6" RenderIfDark="false" ColorString="&amp;w" DetailColor="M" Tile="Feline/Crater.png" />
+    <part Name="Physics" Weight="50" Takeable="false" Solid="false" />
+    <part Name="Description" Short="A length-shape has parted the earth here, and now roosts in the hollow it's left." />
+    <tag Name="NoSparkingQuest" />
+    <part Name="Container" Preposition="within" />
+    <part Name="Inventory" />
+    <tag Name="Immutable" />
+    <part Name="NoDamage" />
+    <tag Name="NoEffects" />
+    <part Name="Interesting" Radius="1" />
+    <intproperty Name="NavigationWeight" Value="10" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+    <inventoryobject Blueprint="Unquiet Needle" />
+    <removepart Name="Graffitied" />
+    <tag Name="EmptyTile" Value="Feline/Crater.png" />
+    <tag Name="FullTile" Value="Feline/FullCrater.png" />
+    <part Name="MessageWhenFirstSeen" Mode="Popup" Message="{{K|You cannot remember when it was that the dreams first began. Were you a hooded traveler of the windswept plain, taking dream-step after dream-stap towards something half-buried in the salt, transfixed by the glint in the distance? Were you a glowcrow soaring the dreaming sky, sweeping the world below with your gaze, landing time and time again near the crater? Or were you an ant that had strayed from the scent-path, losing yourself past the towers of scumgrass, finding yourself on the earth-lip and finding yourself in the presence of something much taller and blacker than all of the grass-blades you'd seen?}} 
+
+    {{K|It all bleeds together, these days. It bleeds and it pools in the crater before you, for the crater you dreamt of is here.}}" />
+  </object>
+
+ <object Name="NeedleSpawner" Inherits="Widget">
+        <part Name="Render" DisplayName="{{M|Unquiet Needle}}" Tile="Feline/Needle.png" ColorString="&amp;M" DetailColor="K"  Visible="false" RenderString=" " RenderLayer="0" />
+        <part Name="Physics" Weight="10000" Takeable="false" Solid="false" IsReal="false" />
+        <part Name="PopulationSpawner" Specification="NeedleCrater" Range="12" DestroyAfterSpawn="true" />
+        <tag Name="StartingPet" />
+  </object>
+
+<object Name="UpgradeStationSpawner" Inherits="Widget">
+        <part Name="PopulationSpawner" Specification="NeedleUpgradeStation" Range="2" DestroyAfterSpawn="true" />
+  </object>
+
+  <object Name="UpgradeStationSpawnerMamon" Inherits="Widget">
+        <part Name="PopulationSpawner" Specification="NeedleUpgradeStationMamon" Range="2" DestroyAfterSpawn="true" />
+  </object>
+
+  <object Name="NeedleUpgradeStation" Inherits="InertObject">
+    <part Name="Render" DisplayName="psychal rupture" Tile="Abilities/abil_wormhole.bmp" ColorString="&amp;m" DetailColor="K"  RenderLayer="50" RenderString="@" />
+    <stat Name="Hitpoints" Value="10000" />
+    <part Name="Description" Short="The ghost of a hiveminded thing, a pulled-away puppeteer's string, the shape left behind by a mind that is not as it was. Dance like Ptoh is watching." />
+    <stat Name="DV" Value="1000" />
+    <part Name="NoDamage" />
+    <part Name="Interesting" Radius="1" />
+    <part Name="AnimatedMaterialGeneric" AnimationLength="100" ColorStringAnimationFrames="0=&amp;m,50=&amp;K" TileColorAnimationFrames="0=&amp;m,50=&amp;K" DetailColorAnimationFrames="0=K,50=m" />   
+    <tag Name="IgnoresGravity" />
+    <tag Name="Flyover" />
+    <tag Name="NoSparkingQuest" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+    <intproperty Name="TreatAsPsychic" Value="1" />   
+    <part Name="LightSource" Lit="true" Radius="6" />
+    <part Name="SoundOnCreate" Sounds="Sounds/Abilities/sfx_ability_spacetimeVortex_head" Volume="1"></part>
+    <part Name="SoundOnDestroy" Sounds="Sounds/Abilities/sfx_ability_spacetimeVortex_tail" Volume="1"></part>
+    <part Name="SpawnBlocker" />
+    <part Name="ConversationScript" ConversationID="PsychalVortex" ClearLost="false" />
+    <part Name="FallsApart" Duration="6-12" Message="=subject.T= =verb:close= up and =verb:vanish=." />
+  </object>
+
+   <object Name="NeedleUpgradeStationMamon" Inherits="InertObject">
+    <part Name="Render" DisplayName="psychal rupture" Tile="Abilities/abil_wormhole.bmp" ColorString="&amp;r" DetailColor="K"  RenderLayer="50" RenderString="@" />
+    <stat Name="Hitpoints" Value="10000" />
+    <part Name="Description" Short="In a brighter age, perhaps, this would have been the gate through which Mamon would have led his Children into a ceaseless and deathless dream. Now Mamon is dead, and Amaranth remains nothing but an unfulfilled ache." />
+    <stat Name="DV" Value="1000" />
+    <part Name="NoDamage" />
+    <part Name="Interesting" Radius="1" />
+    <part Name="AnimatedMaterialGeneric" AnimationLength="200" ColorStringAnimationFrames="0=&amp;r,100=&amp;K" TileColorAnimationFrames="0=&amp;r,100=&amp;K" DetailColorAnimationFrames="0=K,100=r" />   
+    <tag Name="IgnoresGravity" />
+    <tag Name="Flyover" />
+    <tag Name="NoSparkingQuest" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+    <intproperty Name="TreatAsPsychic" Value="1" />   
+    <part Name="LightSource" Lit="true" Radius="8" />
+    <part Name="SoundOnCreate" Sounds="Sounds/Abilities/sfx_ability_spacetimeVortex_head" Volume="1"></part>
+    <part Name="SoundOnDestroy" Sounds="Sounds/Abilities/sfx_ability_spacetimeVortex_tail" Volume="1"></part>
+    <part Name="SpawnBlocker" />
+    <part Name="ConversationScript" ConversationID="AmaranthineVortex" ClearLost="false" />
+    <part Name="FallsApart" Duration="600-1200" Message="=subject.T= =verb:close= up and =verb:vanish=." />
+  </object>
+  
+
+
+  <object Name="BaseFactionHeroTemplate_Seekers" Load="Merge">
+		<part Name="DropOnDeath" Blueprints="UpgradeStationSpawner" />
+        <part Name="FinishQuestStepWhenSlain" Quest="Litany of an Unquiet Needle" Step="Needle1" GameState="SeekerSlain" RequireQuest="true" />
+  </object>
+
+  <object Name="SpecialFactionHeroTemplate_Seekers" Load="Merge">   
+		<part Name="DropOnDeath" Blueprints="UpgradeStationSpawner" />
+        <part Name="FinishQuestStepWhenSlain" Quest="Litany of an Unquiet Needle" Step="Needle1" GameState="SeekerSlain" RequireQuest="true" />
+  </object>
+
+<object Name="PsychicSeekerHunter" Load="Merge">
+   		<part Name="DropOnDeath" Blueprints="UpgradeStationSpawner" />
+      <part Name="RandomMutations" Mental="1d1" MentalLevel="1d4" Physical="0" PhysicalLevel="0" />
+    <part Name="FinishQuestStepWhenSlain" Quest="Litany of an Unquiet Needle" Step="Needle1" GameState="SeekerSlain" RequireQuest="true" />
+  </object>
+
+ <object Name="Mamon" Load="Merge">
+   <part Name="DropOnDeath" Blueprints="UpgradeStationSpawnerMamon" />
+  </object>
+
+<object Name="BaseTau" Load="Merge">
+		<removepart Name="DropOnDeath"  />
+    <removepart Name="RandomMutations" />
+	</object>
+
+
+</objects>
