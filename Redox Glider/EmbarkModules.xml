@@ -1,0 +1,15 @@
+<embarkmodules>
+    <module Class="XRL.CharacterBuilds.Qud.QudPregenModule">
+        <pregens>
+            <pregen Name="Scout" Genotype="Mutated Human" Tile="Meph_MJ2024_Salvadaddy_02.png" Foreground="y" Detail="w" Background="k">
+                <code>H4sIAAAAAAAACs1VUWvbMBB+L/Q/CLNHN9gljFDIg+eOdVu7ZU3ICqMPsn3YYrJkpNNGCPnvk+S0sRO6tKMLCQRb993d9+l0Pi1PTwgJSlrDL1CaSRFckOB8EA3Oo9EgHgWhxzPDeNFxiK1DtMZqWRgO2pp/uDUhy/bxCM0WDbigu9vrQVpRRXME9c5l1INvpnD/DyAkWrcbHxCSRGuoM744S6c2oAnJvOUeb5SFJDUcjYKxAIOK8pBMTMZZ/hkWM/kTxFgYzluNXkxBkVoZj+qs6Q2+VNqlTbIjb0Nicz74u7Q3BilCQa5MTUXPa6eWD9iqfVmF/1zLqcmOtJQ9ZfsruXZ3SROVS0ENHqqG/uBsbn2EVdzStr+OdWMzRl2LBg65z7H5atvfsrsg6w5eF/kKWFkhCNfQQBUTZZfGu8+tmQq03m6v22gqjcfirn0VPpf/i6Mnc+YP/aDMCc+YkIflvJQ1E+3qoLwTBbksBTs888x2ZSMVkq9YgXoV7s3i/snJEb/q5EgQFcsMwjGOjm1x+2fHRDKBemJUXlENRZ/TzWhUIEqsLDDqHUmQlIwzXOwCM2nKSoB2syeO+thHgcA5K0Hkbi9v++h3xnkjf9veuCDDPvS+lM5/Y+u2XUCbaQO+Pc6Gwz5wCzVlws2yrRmZ2f0mbnL2I/7jpZNWUmqYIlVo9VzL3H8ZR9hGfxP6jGt9K86RfZJNQ192ubvH/enJ6g9ugIMJwQoAAA==</code>
+                <description>
+A versatile scout from a faraway land
+-Can diversify into any build
+-Able to stay out of dangerous situations
+-Can dominate a friend or foe to use for recon
+                </description>
+            </pregen>
+        </pregens>
+    </module>
+</embarkmodules>

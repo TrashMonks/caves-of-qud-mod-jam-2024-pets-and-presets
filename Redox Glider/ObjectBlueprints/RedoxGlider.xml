@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects>
+  <object Name="Sal_RedoxGlider" Inherits="Baboon">
+    <part Name="Description" Short="Flakes of oxidized chrome cling to his claws, the remnants of a once grand structure now used to sustain this odd creature. A small piece of his right ear is missing; a single, minor injury for the countless expeditions he has taken part in. Countless Rust Gliders before him have been used by many a traveler to help ensure the road ahead was safe, gliding from chrome steeple to chrome steeple, using their large eyes to spot any danger." />
+    <part Name="Render" DisplayName="{{m|Seir the Rust Glider}}" Tile="Meph_MJ2024_Salvadaddy_01.png" ColorString="&amp;Y" DetailColor="R" />
+
+    <stat Name="Hitpoints" sValue="12" />
+    <stat Name="Level" sValue="3" />
+    <stat Name="DV" sValue="11" />
+    <stat Name="AV" sValue="3" />
+    <stat Name="MA" sValue="-12" />
+    <stat Name="Ego" sValue="15" />
+    <stat Name="Willpower" sValue="32" />
+    <stat Name="Strength" sValue="12" />
+    <stat Name="Agility" sValue="23" />
+    <stat Name="Intelligence" sValue="16" />
+    <stat Name="ElectricResistance" sValue="15" />
+
+    <skill Name="ShortBlades" />
+    <skill Name="Discipline_FastingWay" />
+    <skill Name="Survival_RuinsSurvival" />
+    <skill Name="Survival_Trailblazer" />
+    <skill Name="Tactics_Run" />
+    <skill Name="Endurance_Longstrider" />
+    <skill Name="Tactics_Hurdle" />
+    <skill Name="Acrobatics_Jump" />
+
+    <mutation Name="DarkVision" />
+    <mutation Name="ElectricalGeneration" Level="3" />
+    <mutation Name="Precognition" Level="3" />
+
+    <removeinventoryobject Blueprint="Small Stone" />
+    <removeinventoryobject Blueprint="Baboon_Bite" />
+
+    <inventoryobject Blueprint="RustClaw" Number="2" />
+
+    <part Name="AISelfPreservation" Threshold="30" />
+    <part Name="ConversationScript" ConversationID="RedoxGlider" />
+    <part Name="Pettable" />
+    <property Name="Story" Value="RedoxGlider Story" />
+    <tag Name="StartingPet" />
+    <tag Name="PetResponse" Value="lets out a high pitched bark,looks at you" />
+    <tag Name="Gender" Value="male" />
+  </object>
+</objects>

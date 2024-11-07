@@ -1,0 +1,14 @@
+<conversations>
+  <conversation ID="RedoxGlider">
+    <start ID="Welcome">
+      <text>{{w|*Seir stares at you blankly*}}</text>
+      <text>{{w|*Seir stares at you blankly*}}</text>
+      <text>{{w|*Seir stares at you blankly*}}</text>
+      <text>{{w|*Seir looks up at you blankly*}}</text>
+      <text>{{w|*Seir looks up at you blankly*}}</text>
+      <text>{{w|*Seir looks up at you blankly*}}</text>
+      <text>{{w|*Seir lets out a little sneeze*}}</text>
+      <choice Target="End">Live and drink, glide-friend.</choice>
+    </start>
+  </conversation>
+</conversations>

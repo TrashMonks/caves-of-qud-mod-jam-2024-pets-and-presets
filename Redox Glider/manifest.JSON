@@ -1,0 +1,9 @@
+{
+    "id": "Sal_RedoxGlider",
+    "title": "Redox Glider",
+    "description": "Made for the 2024 Caves of Qud Pets and Presets modding jam. Adds {{m|Seir the Rust Glider}} as a companion, and the scout preset who can Dominate Seir and use him to scout ahead. Credit to Mephril for making the tiles.",
+    "version": "0.1.0",
+    "author": "{{m|Sal}}",
+    "tags": "Pet",
+    "PreviewImage": "preview.png"
+}

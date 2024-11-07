@@ -1,0 +1,9 @@
+<objects>
+  <object Name="RustClaw" Inherits="NaturalWeapon">
+    <part Name="Render" DisplayName="Claw" Tile="Creatures/natural-weapon-claw.bmp" ColorString="&amp;r" />
+    <part Name="MeleeWeapon" BaseDamage="1d3" Skill="ShortBlades" Stat="Strength" Slot="Hand" />
+    <part Name="RustOnHit" />
+    <part Name="JumpBoost" RangeModifier="4" CanJumpOverCreatures="true" Stack="true" />
+    <tag Name="Gender" Value="plural" />
+  </object>
+</objects>
