@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects>
+
+  <object Name="Hazzary453_PAP_Drip" Inherits="Urn Porter">
+    <part Name="Render" DisplayName="{{watery|Drip}}" Tile="Hazzary453_PAP/Drip.png" RenderString="b" ColorString="&amp;Y" DetailColor="C" />
+    <part Name="Description" Short="A haphazard arrangement of circuitry and servos adorns a rusty, dented watering can. =pronouns.Possessive= paint, scratched and chipped suggests many years of care given to the flourishing life around =pronouns.objective=. =pronouns.Subjective= =verb:amble:afterpronoun= around with endless curiosity, bringing water to all =pronouns.subjective= =verb:find:afterpronoun=." />
+    <part Name="Brain" Wanders="False" Calm="True" />
+    <tag Name="Gender" Value="female"/>
+    <part Name="AISelfPreservation" Threshold="100" />
+    <part Name="LiquidProducer" Liquid="water" VariableRate="50-120" ChanceSkipSameCell="95" PureOnFloor="true" />
+    <stat Name="Level" Value="5"/>
+
+    <property Name="Story" Value="Hazzary453_PAP_Drip_Story" />
+    <tag Name="StartingPet" />
+    <part Name="Pettable" />
+    <tag Name="PetResponse" Value="drips water,creaks,sloshes,hums softly" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+    <removepart Name="ConversationScript" />
+    <removepart Name="AIUrnDuster"/>
+    <removeinventoryobject Blueprint="UrnPorter_AshShovel" />
+    <xtagGrammar Proper="true" />
+  </object>
+
+</objects>

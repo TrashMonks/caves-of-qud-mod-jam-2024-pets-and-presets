@@ -1,0 +1,16 @@
+<embarkmodules>
+    <module Class="XRL.CharacterBuilds.Qud.QudPregenModule">
+        <pregens>
+            <pregen Name="Wandering Parasite" Genotype="Mutated Human" Tile="Hazzary453_PAP/Ukubutuka.png" Foreground="w" Detail="G" Background="k" ColorString="&amp;w" DetailColor="G">
+                <code>H4sIAAAAAAAACs1WbWvbMBD+Xuh/EGYf3RB33egK+ZBmY29tyeqQDkY/yPZhicqSkE4bJuS/T3LSJnbZ0o7OxGBs3XMvj053Zy8ODwiJSlrBTzCWKxmdkeh4MBwcD08HyWkUN3jmuCi2FBKvMFxjlSqcAOvFP8KakMXq8QDNag3B6Pv1xWDCqKE5gjkPHu3gmyvC/RGkQq922RjEZGwtVJmojyapN9Axma9ijzbMYjJxAp2BkQSHhoqYTF0meP4V6pm6AzmSTogVx4ZMQZF6Gg/svOgVPpfae+/kEb1NEO/zXj+4vXRIEQryyVVUtrQe5fIeW65elvE/5zJ12Z6mssVsdybX6sHpjU+jIZdgckYl9pXJ5vi8b7uHuexw253NSnuPw22JBQF542PTu6trsb0g6zpeJ/mKlwzJnDdJjzuKc2p4OKAzEnbZRSfKNViyLV/GT408ZQqVrSUyQJ6T9I73TGBcacYzrpztN+45lP7suSx7DutMCUr2HjetNVPSl1jVb9yZ7wdNkdUvEnazuP3juEpedFyNEQ3PHMI+zqsuud0Da6q4RDt1YeZbKNoxw+cBDcgSmQfeto4kGpe+W7D2wOs2MFOuZBJsGHhJ0sY+SwQheAkyD3t500ZvuBBa/QLjoXdt6EOpAoWNbLviIqpTDU15HJ2ctIFrqChv2qszmDO/33EY122L//ilmzClLKRIDXo+FypvmmIPy+hvRJ/wR9GxC8G+KK3p8/4owuP28GD5GyGSrvE8CwAA</code>
+                <description>
+                    A well cared for vine, gently clutching its deceased gardner.
+                    {{c|&#249;}} Primarily plant based mental caster
+                    {{c|&#249;}} Summons plants and enthralls creatures
+                    {{c|&#249;}} Needs plenty of water
+                    {{c|&#249;}} {{W|Medium survivable}} starting build
+                </description>
+            </pregen>
+        </pregens>
+    </module>
+</embarkmodules>
