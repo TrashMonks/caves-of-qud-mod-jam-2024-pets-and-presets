@@ -1,0 +1,10 @@
+{
+    "id": "Kernelmethod_Presets_Denmagn",
+    "title": "Preset: Denmagn",
+    "description": "Adds the Denmagn preset to the game. This is a versatile build for players with a modest amount of experience playing Qud. Play as a tinker with a flexible set of stats and skills that you can specialize more in the middlegame and endgame.",
+    "version": "1.0.0",
+    "author": "{{G|kernelmethod}}",
+    "LoadOrder": 0,
+    "tags": "Preset",
+    "PreviewImage": "preview.png"
+}

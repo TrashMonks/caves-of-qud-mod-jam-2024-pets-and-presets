@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<embarkmodules>
+  <module Class="XRL.CharacterBuilds.Qud.QudPregenModule">
+    <pregens>
+      <pregen Name="Denmagn" Genotype="Mutated Human" Tile="Kernelmethod_Presets/Denmagn.png" Foreground="y" Detail="W" Background="k">
+        <code>
+H4sIAAAAAAAAA81VXWvbMBR9z68QZo9OSLrC2kIesrRby1ZI69AORh9k+WJrlSWjj40Q8t97paSe7TCylWESSOKcc3Xv0dHVzXpASJTTEn6CNlzJ6IJEJ6Px6GR8NpqcR7GnU8dF1uAnyI+3VKkyJ8Ag+h1/ErIOnzWxXFXgV3y7/zqaF1RTZkF/9OnM6M5l/v0ZpLIYdhsWxGRmDJSpWA3nCS6oYvKwLTz9rSomcyes0zCV4KymIiYLlwrOvsBqqZ5BTqUTIggMWjJqKap41YbIO/uvwi4xx564ugSmfA33WW+dpRYycu1KKptBeybuqE343sRv9DBx6VFa2NJ10MFdtM+ZsEIJqnuwLhwV5jVHZ15H2UH7ygoTjhuAAQEsZKiv5/a1bjyTXbfurL1UuBEYls4wAVkjfYh8oJpTaTHQb7BDzpUL1KQBb+K/K3vllWrOqCB4j0Bvib6qXwPPC4t1M3LnOHuWYExvxZeaV+j4D8Wl7dHxG625pXjW3nBVQm+FPynNgDzSxgV5c8n6+elPg2Ly3wbFzGKDps7C8U2KrrSDo2Lhm80snGYFNdh0F60DixKrQea2QPxD8xiiWc4FtyvEz1r4Urm8CLemy9xgUwvBc5DM7+K8RT5yISr1C/TesqtcIfa+hhrNFdEqqSD0wvD0tIXfQ0m55DLvDMIUNznz07EVf+APBT+fBpvBC9YKpqwgCQAA
+        </code>
+        <description>
+&amp;c&#249;&amp;y Hybrid fighter with electrical generation
+&amp;c&#249;&amp;y Tinkering skills and high intelligence
+&amp;c&#249;&amp;y Flexible play with versatile stats and skills
+&amp;c&#249;&amp;y {{W|Medium survivable}} starting build
+        </description>
+      </pregen>
+    </pregens>
+  </module>
+</embarkmodules>
