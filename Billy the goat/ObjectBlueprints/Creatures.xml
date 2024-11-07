@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--Templates -->
+<objects>
+
+	<object Name="AricBilly" Inherits="BaseGoat">
+		<part Name="Render" DisplayName="Billy" Tile="Assets_Content_Textures_Creatures_sw_goat.bmp" RenderString="g" ColorString="&amp;w" />
+		<part Name="Description" Short="Unexpectedly intelligent eyes peer out above a tightly braided goatee. Two horns protrude from the forehead, though Billy the Goat's tongue is twice as sharp as either." />
+		<part Name="Corpse" CorpseChance="100" CorpseBlueprint="Goat Corpse" />
+		<stat Name="Level" Value="1" />
+		<stat Name="AV" Value="4" />
+		<stat Name="Hitpoints" Value="30" />            
+		<stat Name="Strength" sValue="18"/>
+		<stat Name="Intelligence" sValue="16"/>
+		<mutation Name="Horns" Level="1" Variant="Horns" />
+				
+		<skill Name="ShortBlades" />
+		<skill Name="Tactics" />
+		<skill Name="Tactics_Charge" />
+		
+		<part Name="Preacher" Book="Aric Billy Sass" Prefix="Billy brays, &amp;W'" Frozen="Billy, singularly unimpressed, can only huff at his cryogenic predicament" inOrder="false" ChatWait="300" /> 
+		
+		<tag Name="StartingPet" /> 
+		<part Name="Pettable" />
+		<tag Name="PetResponse" Value="brays,growls,paws the ground,nips your finger,says 'Any more will cost you'" />
+		<property Name="Story" Value="Aric The Story of a Great Goat" />
+
+		<tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+  </object>
+	
+</objects>
