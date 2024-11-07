@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objects>
+	<object Name="ModJam_All Pet Spawner" Inherits="Widget">
+		<part Name="Render" DisplayName="{{W|Spawn Every Pet}}" />
+		<part Name="ModJamPetSpawner" />
+		<tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+		<tag Name="Pet" />
+		<tag Name="StartingPet" />
+		<tag Name="ExcludeFromModJamPetSpawner" />
+	</object>
+</objects>
