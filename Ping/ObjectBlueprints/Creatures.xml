@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objects>
+  <object Name="HeartPing_CrystalPet" Inherits="Creature">
+    <!-- Visual and Description -->
+    <part Name="Render" 
+          DisplayName="{{HeartPingCalm|Ping}}" 
+          Tile="Creatures/ping.png" 
+          ColorString="&amp;M" 
+          DetailColor="R"/>
+    <part Name="Description" 
+          Short="A sentient crystal that chose to take the shape of a heart after feeling your kindness. =pronouns.Subjective= communicates through gentle chimes and light patterns, taking special delight in creating tiny rainbow refractions when you're nearby. Despite being made of crystal, there's something undeniably warm about =pronouns.possessive= presence."/>
+    <part Name="LightSource" Radius="3" />
+
+    <!-- Core Properties -->
+    <part Name="Body" Anatomy="CrystalHeart" />
+    <part Name="Brain" 
+          Hostile="False" 
+          Wanders="True" 
+          MaxWanderRadius="6" 
+          Passive="True" 
+          Calm="True" />
+    <part Name="Physics" 
+          Weight="0"
+          Organic="false" 
+          FreezeTemperature="-99999" 
+          BrittleTemperature="-99999"/>
+    <part Name="Robot" />
+    <part Name="Pettable"/>
+    
+    <!-- Removed Parts -->
+    <removepart Name="Springy" />
+    <removepart Name="Stomach" />
+    
+    <!-- Death Properties -->
+    <part Name="Corpse" 
+          CorpseChance="100" 
+          CorpseBlueprint="BarathrumiteSafetyBand" />
+
+    <!-- Base Statistics -->
+    <stat Name="Hitpoints" Value="100" />
+    <stat Name="Speed" Value="125" />
+    <stat Name="MoveSpeed" Value="75" />
+    <stat Name="Level" Value="5" />
+    <stat Name="AV" Value="5" />
+    <stat Name="DV" Value="20" />
+
+    <!-- Attributes -->
+    <stat Name="Strength" sValue="10" />
+    <stat Name="Toughness" sValue="22" />
+    <stat Name="Willpower" sValue="18" />
+    <stat Name="Agility" sValue="18" />
+    <stat Name="Intelligence" sValue="18" />
+    <stat Name="Ego" sValue="18" />
+
+    <!-- Resistances -->
+    <stat Name="HeatResistance" Value="75" />
+    <stat Name="ColdResistance" Value="75" />
+    <stat Name="AcidResistance" Value="75" />
+    <part Name="EffectResistance" Values="Sleep,StunGasStun" />
+    <part Name="MentalShield" />
+
+    <!-- Mutations and Special Abilities -->
+    <mutation Name="Teleportation" Level="5" />
+    <mutation Name="Telepathy" Level="1"/>
+    <mutation Name="Clairvoyance" Level="1" />
+    <mutation Name="Phasing" Level="1" />
+    <mutation Name="Regeneration" Level="5" />
+
+    <!-- Equipment -->
+    <inventoryobject Blueprint="BarathrumiteSafetyBand" 
+                     Number="1" 
+                     CellChance="100" 
+                     CellFullChance="100" 
+                     CellType="Chem Cell" />
+    <inventoryobject Blueprint="HeartPing_ResonanceCrystal" 
+                     Number="1" />
+    <inventoryobject Blueprint="HeartPing_Hoversled" 
+                     Number="1" 
+                     Slot="Floating Nearby" />
+    <inventoryobject Blueprint="HeartPing_RecyclingSuit" 
+                     Number="1" 
+                     Slot="Body" />
+
+    <!-- Interaction Systems -->
+    <part Name="ConversationScript" 
+          ConversationID="HeartPing_Conversation" />
+    <tag Name="PetResponse" 
+         Value="resonates in harmony with your touch,forms tiny heart-shaped light patterns,chimes a happy little melody,vibrates with cozy warmth,creates a small light show just for you,sparkles with pure joy,hums your favorite tune,glows with affection"/>
+
+    <!-- Metadata and Classification -->
+    <property Name="Story" Value="HeartPing_Story" />
+    <tag Name="Role" Value="Companion"/>
+    <tag Name="StartingPet"/>
+    <tag Name="Gender" Value="neuter"/>
+    <tag Name="Robot" Value="true" />
+    <xtagGrammar Proper="true"/>
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+  </object>
+</objects>

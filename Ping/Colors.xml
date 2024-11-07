@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<colors>
+  <shaders>
+    <shader Name="HeartPingCalm" Type="alternation" Colors="m-M-W-M-m" ShowInPicker="false"/>
+  </shaders>
+</colors>

@@ -1,0 +1,9 @@
+{
+    "id": "HeartPing",
+    "title": "Ping - The Crystal Companion",
+    "description": "Adds Ping, an adorable heart-shaped crystal pet that communicates through gentle chimes and glows.",
+    "version": "1.0.0",
+    "author": "Papuna Gagnidze",
+    "tags": "Pet",
+    "PreviewImage": "preview.png"
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bodies>
+  <anatomies>
+    <anatomy Name="CrystalHeart" Category="Mechanical">
+      <part Type="Arm" Laterality="Right" />
+      <part Type="Wheel" Laterality="Right" />
+			<part Type="Wheel" Laterality="Left" />
+    </anatomy>
+  /<anatomies>
+</bodies>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objects>
+  <object Name="HeartPing_ResonanceCrystal" Inherits="Token">
+    <part Name="Render" DisplayName="{{M|resonance crystal}}" ColorString="&amp;M" TileColor="&amp;m" DetailColor="R" RenderString="*" RenderLayer="5" />
+    <part Name="Description" Short="A small crystal attuned by Ping. It pulses with stored light and provides gentle illumination. The crystal seems to respond to your touch with tiny rainbow patterns." />
+    <part Name="Commerce" Value="50" />
+    <part Name="Cursed" />
+    <part Name="LightSource" Radius="2" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+  </object>
+
+  <object Name="HeartPing_RecyclingSuit" Inherits="Recycling Suit">
+    <part Name="Cursed" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+  </object>
+
+  <object Name="HeartPing_Hoversled" Inherits="Hoversled">
+    <part Name="Cursed" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
+  </object>
+</objects>

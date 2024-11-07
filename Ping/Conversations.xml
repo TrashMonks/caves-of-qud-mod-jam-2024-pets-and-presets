@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<conversations>
+  <conversation ID="HeartPing_Conversation">
+    <start>
+      <text>*Ping's crystalline form pulses with soft light, ready to interact.*</text>
+      <choice Target="Chat">Have a conversation</choice>
+      <choice Target="Emotions">Share feelings</choice>
+      <choice Target="LightShow">Request a light display</choice>
+      <choice Target="End">Just observe</choice>
+    </start>
+
+    <node ID="Chat">
+      <text>*Ping's surface brightens eagerly, facets catching and refracting light in intricate patterns.*</text>
+      <choice Target="Story">Origins?</choice>
+      <choice Target="Network">Crystal networks?</choice>
+      <choice Target="Secrets">Share a secret</choice>
+      <choice Target="More">Something else</choice>
+      <choice Target="End">End chat</choice>
+    </node>
+
+    <node ID="More">
+      <text>*A curious shimmer ripples across Ping's surface.*</text>
+      <choice Target="Chat">New topic</choice>
+      <choice Target="Emotions">Share feelings</choice>
+      <choice Target="LightShow">Request light show</choice>
+      <choice Target="End">Finish talking</choice>
+    </node>
+
+    <node ID="Story">
+      <text>*Light patterns dance, showing a lone crystal awakening in darkness. The images shift: solitude, discovery, choice, transformation. The final pattern settles into a heart shape, pulsing with warmth.*</text>
+      <choice Target="Network">Ask about other crystals</choice>
+      <choice Target="More">Different topic</choice>
+    </node>
+
+    <node ID="Network">
+      <text>*Complex geometric patterns emerge, suggesting vast crystalline networks. Some patterns feel ancient, others vibrant and new. A sense of both belonging and uniqueness radiates from Ping.*</text>
+      <choice Target="Secrets">Share a secret</choice>
+      <choice Target="More">Different topic</choice>
+    </node>
+
+    <node ID="Secrets">
+      <text>*Ping creates a private sphere of gentle light around you both. A crystalline chime suggests: secrets shared here stay here.*</text>
+      <choice Target="More">Maybe later</choice>
+      <choice Target="End">Thank Ping for trusting you</choice>
+    </node>
+
+    <node ID="LightShow">
+      <text>*The air fills with dancing lights - first gentle pastels, then vibrant rainbows, finally settling into a mesmerizing pattern that seems to respond to your emotions.*</text>
+      <choice Target="More">Amazing!</choice>
+      <choice Target="End">Watch in peaceful silence</choice>
+    </node>
+
+    <node ID="Emotions">
+      <text>*Ping's surface becomes mirror-like, reflecting your own expression while creating a harmonious resonance between you both.*</text>
+      <choice Target="EmotionJoy">Share joy</choice>
+      <choice Target="EmotionConcern">Express concern</choice>
+      <choice Target="EmotionCuriosity">Show curiosity</choice>
+      <choice Target="More">Another time</choice>
+    </node>
+
+    <node ID="EmotionJoy">
+      <text>*Ping's entire form brightens dramatically, creating a shower of sparkling light particles that dance around you both. A happy chime echoes your positive feelings.*</text>
+      <choice Target="More">Share more</choice>
+      <choice Target="End">Enjoy the moment</choice>
+    </node>
+
+    <node ID="EmotionConcern">
+      <text>*Ping's light softens to a gentle, comforting glow. Warm, supportive pulses of energy emanate outward, like a crystalline hug.*</text>
+      <choice Target="More">Thank Ping</choice>
+      <choice Target="End">Feel supported</choice>
+    </node>
+
+    <node ID="EmotionCuriosity">
+      <text>*Excited chimes ring out as Ping creates swirling question-mark patterns in the air. Their light shifts through various colors, suggesting shared wonderment.*</text>
+      <choice Target="More">Explore together</choice>
+      <choice Target="End">Ponder the mysteries</choice>
+    </node>
+
+    <node ID="End">
+      <text>*Ping's glow softens to a gentle pulse, like a crystalline heartbeat, maintaining a comforting presence even in silence.*</text>
+    </node>
+
+  </conversation>
+</conversations>
