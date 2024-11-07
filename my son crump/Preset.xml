@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<embarkmodules>
+	<module Class="XRL.CharacterBuilds.Qud.QudPregenModule">
+		<pregens>
+			<pregen Name="my son crump" Genotype="Mutated Human" Tile="crump.png" Foreground="Y" Detail="w" Background="k">
+				<code>H4sIADDEKmcA/81VUW/TMBD+K5HFo1e1fUBbpD6UDI3BJpWmDCS0Byc5pRaObdlnUCj57zun28oKQZv6UB4i9Xz33X35vou7YbVo4Ds4L41mKZuOxqPp+HQ0OWOcFUGqapebUG5Mx42pggLP0q+b+9+r1gIVfFlejbK1cKJEcG8i2I8+hio+F6ANUtV1X8+TuffQFKo9yXICWJ7cbMfMdgR4kgWFwcFMQ0AnFE8WoVCy/ADtynwDPdNBKeJTCRQs3bBXccBLaJwT8A8q1PChinpdBxQIVfIuNEJTal+NruPPFyEPxX+gwRMWQxLcF1GnCwdtAcJVh759LyWh/ZHff4/HkAKNZemYMw8Kyr683/cHMI34pD2KQkES16UBgtwIJ4VGlkZSnGUmxOB1FOk33KVz8lnAyR4wN6UUSrXJEmyodQQMQ2+fukV+vcytOaKTRUA4tl37RIb8Whip0S+CK9fCQxW75+hA17hm6ckpZ/NaKoktBWecrUyo1xo8uRrDS42glKxBl0QnnnyWSlnzAxyFkylnb2sTEx1nwuYWosi0HcIuoRFSS133cUGj59vFOehbyYJH08if8Jg/sgtDhIbc0PSvQh03GwXG0uXxK3OhsV1HKQuP20p6V1HhbWSd0bS++S5/mIZrYzzkKBySPVem7L+jY+v4D1KDd/FeNU14b6wVf72Qb7s7Vztzi9MHAAA=</code>
+				<description>
+he has every disease
+{{c|&#249;}} Graybeard with 1 in every stat
+{{c|&#249;}} Starts with 6 Unstable Genome
+{{c|&#249;}} {{R|Absurdly difficult}} challenge build
+				</description>
+			</pregen>
+		</pregens>
+	</module>
+</embarkmodules>
