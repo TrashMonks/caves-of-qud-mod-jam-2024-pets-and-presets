@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects>
+  <object Name="Meph_ModJam2024_Pet" Inherits="BaseRobot">
+    <part Name="Render" DisplayName="{{cloudy|Lampothy}}" Tile="Characters/Meph_ModJam2024_Pet.png" ColorString="&amp;y" DetailColor="Y" />
+    <part Name="Body" Anatomy="HoverRobot" />
+    <part Name="Description" Short="A pale shadow of a machine stares out at the world through a flickering lens set into a cranium of beaten chrome. This overlarge head is fixed to an abdomen of slim metal struts and arterial wiring, and flanked by a pair of halogen lamps. It's voice projects through a mesh larynx, ceaselessly humming a song just below the audible frequency. It hovers in the air, propelled by some unseen device; and, every so often, it's form shimmers as though it were the image of a minor moon reflected on the surface of a still pond. Perhaps that is why it seems so curious about everything, why it drinks in every detail: It's on the other side of a window - Able to look, but never to touch." />
+    <part Name="Pettable" />
+    <part Name="ConversationScript" ConversationID="Meph_ModJam2024_Pet_Convo" />
+	  <part Name="LightSource" Lit="true" Radius="3" />
+    <part Name="Inventory" />
+    <part Name="AnimatedMaterialGeneric" AnimationLength="200" LowFrameOffset="1" HighFrameOffset="1" DetailColorAnimationFrames="0=Y,150=y,151=Y,180=y,181=Y" />
+    <stat Name="Hitpoints" Value="30" />
+    <stat Name="Level" Value="3" />
+    <stat Name="AV" Value="3" />
+    <stat Name="Strength" sValue="12" />
+    <stat Name="Agility" sValue="22" />
+    <stat Name="Toughness" sValue="16" />
+    <stat Name="Intelligence" sValue="12" />
+    <stat Name="Willpower" sValue="20" />
+    <stat Name="Ego" sValue="12" />
+    <property Name="Role" Value="Minion" />
+    <property Name="Story" Value="Meph_ModJam2024_Pet_Story" />
+    <skill Name="Persuasion_Berate" />
+    <tag Name="Pet" />
+    <tag Name="PetResponse" Value="purrs in negative frequency,gazes at you,beams,flickers,bobs up-and-down" />
+    <tag Name="StartingPet" />
+    <tag Name="NoXP" />
+    <tag Name="Gender" Value="neuter" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+    <tag Name="NamingTag" Value="Ibulian" />
+    <tag Name="Kernelmethod_BetterPetSelector_Description" Value="An illuminant nullphase drone that berates enemies." />
+    <xtagGrammar Proper="true" />
+    <tag Name="Nullphase" />
+  </object>
+</objects>

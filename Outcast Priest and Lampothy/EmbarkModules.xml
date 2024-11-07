@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<embarkmodules>
+    <module Class="XRL.CharacterBuilds.Qud.QudPregenModule">
+        <pregens>
+            <pregen Name="Outcast Priest" Genotype="True Kin" Tile="Characters/Meph_ModJam2024_Preset.png" Foreground="y" Detail="w" Background="k">
+                <code>H4sIAHo1LWcA/81UXWvbMBR9768QZo+OcTIY2SAPXjbG1hayJHSD0QfZvrNFZclIVxveyH/vlZ3UdgMLeViJIQk5534cnXutv1eMBQWv4BcYK7QK3rFgFsXRLJ5H03kQejp1QuYDfkp83FGVzp0ES+gP+suYL+efPbFtavAZ39c30bLkhmcI5r0vZ6OvLvefT6A0UthtmxCyxFqoUtlMlhtKqEN21zVe9KpCtnQSnYGFAoeGy5CtXCpFdg3NVj+AWignZSuw1ZJz5KTioI2QV77jWcI+UI0jcU8tqOQh3FfdGgfsWqghf+Tfntq1v7su8nz7Ni69SPdGuk6at4/2NVdGgEWmf7JESnartbIvYGOCaETqEOzFOflc2kkzV1ootCtnspJbyEcdvddoQBVYEv62zyIiKYQU2BA+H+Fb7YpSgfVv+ZsR81khSCkKUJk/xZj8JqSs9W8wxMxGzMdCe+wJ2k+t5Xi9qUEh8ZPXAxmEr6HiQglVEBcPmJQOmdQEjuL/054smxSMAhTZ5S3KkbaTmyK9bZPpALEgIUNS31/p3TNcIYrre3lRG+Qp7c4fMImpbnT2MHxlu3jt2qEOerX4HTeCt0xAqYch9YPyz/0LjLXU2gIdwyAtGJ2Aew8ub8L/kHn6jn2W5nt90XXNz7he6fv+avcIGxq7YTQIAAA=</code>
+                <description>
+&amp;c&#249;&amp;y Hybrid melee and ranged fighter
+&amp;c&#249;&amp;y Starts with stabilizer arm locks
+&amp;c&#249;&amp;y {{W|Highly survivable}} starting build
+                </description>
+            </pregen>
+        </pregens>
+    </module>
+</embarkmodules>

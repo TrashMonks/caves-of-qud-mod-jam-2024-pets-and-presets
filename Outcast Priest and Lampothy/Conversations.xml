@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<conversations>
+  <conversation ID="Meph_ModJam2024_Pet_Convo">
+    <node ID="Start">
+      <text>{{emote|*Lampothy stares at you.*}}</text>
+      <text>{{emote|*Lampothy turns it's lamps this-way-and-that.*}}</text>
+      <text>{{emote|*Something clunks in Lampothy, then slots back into place.*}}</text>
+      <text>{{emote|*Lampothy pulses light at a breathing rhythm.*}}</text>
+      <text>{{emote|*Lampothy hovers placidly.*}}</text>
+      <text>{{emote|*Lampothy flickers, then comes back into focus.*}}</text>
+      <text>{{emote|*For a second, you think see something reflected in Lampothy's chrome. Then, it is gone.*}}</text>
+      <text>{{emote|*Lampothy hums in uninterrupted sine.*}}</text>
+      <text>{{emote|*Lampothy clicks rhythmically.*}}</text>
+      <choice GotoID="End">Live and... remain ever rustless.</choice>
+    </node>
+  </conversation>
+</conversations>
