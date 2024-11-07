@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<embarkmodules>
+    <module Class="XRL.CharacterBuilds.Qud.QudPregenModule">
+        <pregens>
+            <pregen Name="Acid Rustler" Genotype="Mutated Human" Tile="Characters/Meph_ModJam2024_Preset02.png" Foreground="y" Detail="G" Background="k">
+                <code>H4sIAC8wLWcA/81VW2vbTBB9z69YRB8VY4dQkg/8oCrFvSTgRiZfoeRhJQ3S0tWu2EuKKf7vmV3JtiTTCkNqLPBFc2bmnJnd2f19QUhQ0ApeQGkmRfAfCa4m08nV9GYyuw1CB6eW8byDzxCfNlAlc8tBo/UHvhLi0rmnBVbrGlzE98f7SVxSRTMD6oNLpyffbO4+CxDSoNuDDwhJpDVUKV9fxgkG1CF5aojne1UhiS03VsFcgDWK8pAsbcpZ9hXWK/kTxFxYzr1AryWnhqKKrTa0vHOMRwm7wxwH4nYUmHLr7rI+WEMN5OSTrajoOh00sYU2/nfTeB7fw8SmZ9nCnq7RDrbeLudCwToFqvITNM8vFubVZ9e+gbLRBlY1Jpx2DBo4ZD7DbkCbZy/E+22JnJ4oVyAoJ7EURsl9Da3rE1WMCoOersIBGEvroVnH3K7LKG8slZKavQBZUE1wmkA12KkEJJxVSM6pyPXJSFeO847xNyp19//5T3ODk/NGcxMZo1hqDZzf4AyljU7OUjJh9NKqrKQa8h6jO5kMzkRhSrS/7y5DEBWMM7M+sK+kLUoB2s3dbQ/5LAxwzgoQmauiH/Y/47yWv0AhctNDPhbS2Xamzv4KaJ3U4PfC5fV1z/4IFWWCiWJwLqRYZOQOi57/Pzpf41JKDYmhyqCSe5n5vX52e+ZvMsevrkGY4/oi65oecX/h9/PF5hVz0fDMkAkAAA==</code>
+                <description>
+&amp;c&#249;&amp;y Melee fighter and corrosive gas attacker
+&amp;c&#249;&amp;y AoE damage and crowd control
+&amp;c&#249;&amp;y {{W|Challenging}} starting build
+                </description>
+            </pregen>
+        </pregens>
+    </module>
+</embarkmodules>

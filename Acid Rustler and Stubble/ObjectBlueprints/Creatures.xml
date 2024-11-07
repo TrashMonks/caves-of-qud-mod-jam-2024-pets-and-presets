@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects>
+  <object Name="Meph_ModJam2024_Pet02" Inherits="BaseReptile">
+    <part Name="Render" DisplayName="{{tarnished|Stubble}}" Tile="Characters/Meph_ModJam2024_Pet02.png" ColorString="&amp;G" DetailColor="W" />
+    <part Name="Description" Short="When matters of the nature of something come into play, an oft cited phrase is to 'never judge a book by its cover.' So too should it be said of the offspring of beasts: While their vicious temperament may not as of yet emerged, it is only a matter of time before the inevitable descent into primacy. See here in this example, the juvenile tartbeard: Behold the guileless eyes, the little half-moon claws, the tiny oval scales; and the mouth, open in stupefied glee, totally unaware of the potency of the acid which drips from it's mouth to sizzle and foam upon contact with the ground. Do not be fooled by it's appearance - within this adorable bundle lurks the potential for vast destruction. Or, perhaps the potential to form a bond with someone worthy." />
+    <part Name="Pettable" />
+    <part Name="ConversationScript" ConversationID="Meph_ModJam2024_Pet02_Convo" />
+    <part Name="Inventory" />
+    <part Name="Corpse" />
+    <stat Name="Hitpoints" Value="50" />
+    <stat Name="Level" Value="3" />
+    <stat Name="AV" Value="4" />
+    <stat Name="Strength" sValue="16" />
+    <stat Name="Agility" sValue="20" />
+    <stat Name="Toughness" sValue="20" />
+    <stat Name="Intelligence" sValue="12" />
+    <stat Name="Willpower" sValue="16" />
+    <stat Name="Ego" sValue="18" />
+    <stat Name="AcidResistance" Value="100" />
+    <stat Name="ColdResistance" Value="0" />
+    <inventoryobject Blueprint="Meph_ModJam2024_Pet02_Bite" />
+    <mutation Name="CorrosiveBreather" Level="1" />
+    <property Name="Role" Value="Artillery" />
+    <property Name="Story" Value="Meph_ModJam2024_Pet02_Story" />
+    <tag Name="Pet" />
+    <tag Name="PetResponse" Value="squeaks,rolls around,squeals excitedly,pants,nuzzles your hand,gurgles contentedly" />
+    <tag Name="StartingPet" />
+    <tag Name="NoXP" />
+    <tag Name="Gender" Value="male" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+    <tag Name="Kernelmethod_BetterPetSelector_Description" Value="A mischievous juvenile tartbeard with corrosive breath." />
+    <xtagGrammar Proper="true" />
+  </object>
+
+  <object Name="Meph_ModJam2024_Pet02_Bite" Inherits="Bite">
+    <part Name="Render" DisplayName="tricuspid teeth" />
+    <part Name="MeleeWeapon" BaseDamage="2d2" />
+  </object>
+</objects>

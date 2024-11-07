@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<conversations>
+  <conversation ID="Meph_ModJam2024_Pet02_Convo">
+    <node ID="Start">
+      <text>{{emote|*Stubble belches a cloud of gas.*}}</text>
+      <text>{{emote|*Stubble paws at the ground.*}}</text>
+      <text>{{emote|*Stubble is distracted by something.*}}</text>
+      <text>{{emote|*Stubble is chewing something you'd really rather not know about.*}}</text>
+      <text>{{emote|*Stubble yawns.*}}</text>
+      <text>{{emote|*Stubble inhales their own breath and sneezes.*}}</text>
+      <text>{{emote|*Stubble drools.*}}</text>
+      <text>{{emote|*Stubble chases his tail.*}}</text>
+      <text>{{emote|*Stubble clicks and squeaks.*}}</text>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+  </conversation>
+</conversations>
