@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objects>
+  <object Name="Arctic Fox Pet" Inherits="BaseDog">
+    <part Name="Render" DisplayName="arctic fox" Tile="Critters/Arctic_Fox.bmp" RenderString="d" ColorString="&amp;Y" DetailColor="y" />
+    <part Name="Corpse" CorpseChance="100" CorpseBlueprint="Dog Corpse" />
+    <part Name="Brain" Hostile="false" Factions="Dogs-100" />
+    <stat Name="AV" Value="3" />
+    <stat Name="Hitpoints" Value="15" />
+    <part Name="Description" Short="In colder climes this elusive creature is nearly invisible, in the midst of Qud it appears to be a billow grounded fog which peers about with beedy eyes." />
+    <stat Name="Level" Value="5" />
+    <stat Name="ColdResistance" Value="50" />
+    <inventoryobject Blueprint="ArcticFox_Bite" Number="1" />
+    <tag Name="Role" Value="Brute" />
+    <tag Name="StartingPet" />
+ <part Name="Pettable" />
+    <tag Name="PetResponse" Value="licks you,yips" />
+    <property Name="Story" Value="Arctic Fox Story" />
+  </object>
+  <object Name="ArcticFox_Bite" Inherits="Bite">
+    <part Name="MeleeWeapon" BaseDamage="1d6" />
+    <part Name="ElementalDamage" Damage="1d3" Attributes="Cold" />
+  </object>
+
+</objects>

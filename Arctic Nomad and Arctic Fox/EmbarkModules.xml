@@ -1,0 +1,13 @@
+<embarkmodules>
+    <module Class="XRL.CharacterBuilds.Qud.QudPregenModule">
+        <pregens>
+            <pregen Name="Arctic Nomad" Genotype="Mutated Human" Tile="Arctic_Nomad.png" Foreground="Y" Detail="w" Background="k">
+                <code>H4sIAAAAAAAACs1VbWvbMBD+Xuh/EGYfnZCEMkIgH1xv3VsLWRy6wegH2T5sEVkyelnxQv57T3ba2Ald2tGFBIKte+7ueXS6k1fnZ4R4GS3gNyjNpPAmxBv1B/3RYNwfjj2/xmPLeNpyGKLDYIMVMrUcNJp/uTUhq+bxBC2qElzQz/l1P8ypookBdeky6v53m7r/JxDSoNtNHeCTQGsoYl71wggDSp/cNtzTrTKfhJYbq2AqwBpFuU9mNuYs+QbVQi5BTIXlvNFYi0mpoSjjSR2a3pnXSvuASfbkbUkw56O/S3tjDTWQks+2oKLjtVfLR2zdvKz9f65lZOMTLWVH2eFKbtzrQmI+m4I6Vg3rg8Pc+gSruKPtcB2LEjMO2hYNHJI6x3Zqm9+qvSCbDt4U+UoB/GEiI3NatQlqx1uqGBUG/dwud9FQ2hobtu1r/6XMi5wlS3Jl1ZFp72UvB6pwhI9LHPCYCXlczlBVcskEaKbfhHi7uHt2aIdvOrSBMYrF1sApTu2uuMNjO5NMGD2zKsmpxg6cdI/Pi4wCkZkcgXHnSLwgY5yZah9YSJvleMRu7IeDLvZFGOCcZSASt5dRF/3BOC/lPd7AE/K+C33MpGPa2to959EyKqFuj97FRReYQ0GZwAtl93qKcb+Bu7S6Ef/xvg9zKTVEBmcd9VzLpB6LE2yjvwl9wRd1J86RfZVlSV/3XXWPu/Oz9QPSWzMjPAoAAA==
+</code>
+                <description>
+ An arctic denizen has traveled out of the frigid north to witness the fallen splendor of Qud and feast upon the bounties of the warm lands.
+                </description>
+            </pregen>
+        </pregens>
+    </module>
+</embarkmodules>

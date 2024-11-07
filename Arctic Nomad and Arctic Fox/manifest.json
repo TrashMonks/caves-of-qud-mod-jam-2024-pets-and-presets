@@ -1,0 +1,9 @@
+{
+    "id": "ArcticNomad",
+    "title": "Arctic Nomad",
+    "description": "Adds an arctic nomad marauder preset and an arctic fox pet. For the Caves Of Qud Pets and Presets modding jam 2024.",
+    "version": "1.0",
+    "author": "Crabemperor",
+    
+    "PreviewImage": "preview.png"
+}
