@@ -1,8 +1,8 @@
 {
     "author": "Thighs",
-    "title":"Dusk-and-Dawn",
-    "description":"Adds a starting pet, Dusk-and-Dawn, and a mutant preset tile Cat Herder to pair with it.",
-    "version":"0.1.0",
+    "title":"Dawn-and-Dusk",
+    "description":"Adds a starting pet, Dawn-and-Dusk, and a mutant preset tile Cat Herder to pair with it.",
+    "version":"1.0.0",
     "tags":"preset,tile",
     "previewImage":"preview.png"
 }

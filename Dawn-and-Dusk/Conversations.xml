@@ -54,14 +54,14 @@ Given my relative position, {{m-M-m-M sequence|Dusk}} often decides where we end
 
 If you'd like us somewhere specific, allow me to pass it along to {{m-M-m-M sequence|Dusk}} on your behalf.
 
-{{emote|**{{c-C-c-C sequence|Dawn}} appears to relish the thought.*}}~
-In case you'd like me to settle a bet, I do not 'get along with dawngliders'.
+{{emote|*{{c-C-c-C sequence|Dawn}} appears to relish the thought.*}}~
+In case you'd like me to settle a bet, we do not 'play nicely with dawngliders'.
 
-Maybe once, I could've, but something overtakes me... and...
+Maybe once, we might've, but something overtakes us... and...
 
 {{emote|*{{c-C-c-C sequence|Dawn}}, lost in thought, chitters out a killing bite.*}}
 
-Ah, pardon me. But surely that should give you a hint.
+Ah, excuse me. Though that should surely give you a hint.
 		</text>
 		<choice GotoID="End">{{emote|*Think 'You've given me a lot to think about, {{c-C-c-C sequence|Dawn}}.'*</choice>
 	</node>
@@ -76,7 +76,7 @@ Ah, pardon me. But surely that should give you a hint.
       </text>
       <choice IfZoneName="Red Rock" GotoID="RedRagnarok">{{emote|*Think 'Actually, we're at Red Rock.'*}}</choice>
 	  <choice GotoID="RedRedWhine">{{emote|*Think 'Is that so?'*}}</choice>
-	  <choice GotoID="End">{{emote|*Think 'Live and Drink, {{c-C-c-C sequence|Dawn}}.'}}</choice>
+	  <choice GotoID="End">{{emote|*Think 'Live and Drink, {{c-C-c-C sequence|Dawn}}.'*}}</choice>
     </node>
 	
 	<node ID="RedRagnarok">
@@ -88,7 +88,7 @@ Ah, pardon me. But surely that should give you a hint.
 
 		{{emote|*As you discuss the situation with {{c-C-c-C sequence|Dawn}}, you notice that {{m-M-m-M sequence|Dusk}} is lowering them closer to the ground and is, seemingly, scanning for projectiles.*}}
 	  </text>
-	  <choice GotoID="End">{{emote|*Think 'I can see that. Live and drink.'}}</choice>
+	  <choice GotoID="End">{{emote|*Think 'I can see that. Live and drink.'*}}</choice>
 	</node>
 	
 	<node ID="RedRedWhine">
@@ -107,7 +107,7 @@ Ah, pardon me. But surely that should give you a hint.
 
 		Yes, well... cute or not, it was won through dedication... cunning... and honour.
 
-		In fact, {{m-M-m-M sequence|Dusk}} and I decided that, as we'd so outgrown out peers, we should title ourselves.
+		In fact, {{m-M-m-M sequence|Dusk}} and I decided that, as we'd so outgrown our peers, we should title ourselves.
 
 		After all, we're like... the Spindle. We stand alone, and overlook all of Qud... it's a lonely existence...
 
@@ -130,9 +130,9 @@ Ah, pardon me. But surely that should give you a hint.
 	
 	<node ID="EquinoxNotalk">
 	  <text>
-		{{emote|*You prod at {{m-M-m-M sequence|Dusk}}'s mind. While it appears present, there is no response.}}
+		{{emote|*You prod at {{m-M-m-M sequence|Dusk}}'s mind. While it appears present, there is no response.*}}
 	  </text>
-	  <choice IfHavePart="Telepathy" GotoID="EquinoxRealtalk">{{emote|Try to prod {{c-C-c-C sequence|Dawn}}'s mind, instead.}}</choice>
+	  <choice IfHavePart="Telepathy" GotoID="EquinoxRealtalk">{{emote|*Try to prod {{c-C-c-C sequence|Dawn}}'s mind, instead.*}}</choice>
 	  <choice GotoID="End">Live and drink, {{m-M-m-M sequence|Dusk}}.</choice>
 	</node>
   </conversation>
