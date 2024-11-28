@@ -1,0 +1,10 @@
+{
+  "id": "UnquietNeedle",
+  "loadOrder": 1,
+  "title": "{{M|Unquiet Needle}}",
+  "description": "Here's my entry for the 2024 Pets and Presets modding jam. It's mostly a proof-of-concept for how a talking weapon could work in Qud, but I hope it's fun nonetheless.",
+  "version": "1.0",
+  "author": "{{m|A Blessed Feline}}",
+  "tags": "Weapon,Pet,Lore,Quest",
+  "previewImage": "preview.png"
+}

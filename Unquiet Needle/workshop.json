@@ -1,8 +1,8 @@
 {
-  "WorkshopId": 3066816138,
-  "Title": "[Modding Jam 2024] Unquiet Needle",
-  "Description": "Here's my entry for the 2024 Pets & Presets modding jam. It's mostly a proof-of-concept for how a talking weapon could work in Qud, but I hope it's fun nonetheless.",
-  "Tags": "Weapon,Pet,Lore,Quest",
+  "WorkshopId": 3360361106,
+  "Title": "Unquiet Needle",
+  "Description": "Here's my entry for the 2024 Pets and Presets modding jam. It's mostly a proof-of-concept for how a sapient, talking weapon could work with the mechanics of Qud. I threw it all together rather quickly, hopefully all the conversations and the questline work as it should. I have no clue whether any of it is balanced, but I hope that it is at the veay least fun to toy around with.\n\nIs yours the hand that will guide the Unquiet Needle to its destiny?\n\nThanks to:\nBarnabusBarnabas, for helping with the concepts for various pieces of lore and mechanics\nlibrarianmage, for helping with the modding process\nYulia and wizardlizard for giving feedback on the sprites\r",
+  "Tags": "Pet, Weapon, Lore, Quest",
   "Visibility": "2",
   "ImagePath": "preview.png"
 }
