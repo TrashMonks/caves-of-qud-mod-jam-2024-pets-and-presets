@@ -6,3 +6,4 @@ These mods had updates since the last time the pack was updated:
 * Acid Rustler and Stubble
 * Belongings
 * Dawn-and-Dusk
+* Denmagn
