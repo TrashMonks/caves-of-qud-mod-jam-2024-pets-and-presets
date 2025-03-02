@@ -7,5 +7,6 @@ These mods had updates since the last time the pack was updated:
 * Belongings
 * Dawn-and-Dusk
 * Denmagn
+* my son crump
 * Outcast Priest and Lampothy
 * Relic Hunters
