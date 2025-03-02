@@ -62,7 +62,8 @@ Above, the radiant glistening of {{c-C-c-C sequence|Dawn}} is pleasant, and ever
     <tag Name="InventoryPopulationTable" Value="EquinoxInventory" />
 	
 	<!-- And, you know, preparing for the sadness. -->
-	<part Name="Corpse" BodyDrop="false" InventoryDrop="true"/>
+	<removepart Name="Corpse"/>
+	<!--RIP old corpse handling stuff, etc. etc. <part Name="Corpse" BodyDrop="false" InventoryDrop="true"/> -->
     
 	<!-- Kind of grim/dark story (yet again, from me), might be due a rework? It's a bit saddening. -->
 	<property Name="Story" Value="Equinox_Story" />

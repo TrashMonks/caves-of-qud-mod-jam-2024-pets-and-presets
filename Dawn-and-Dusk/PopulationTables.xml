@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <populations>
   <population Name="EquinoxInventory">
-    <group Style="pickeach">
+    <group Name="Items" Style="pickeach">
 
 	  <table Name="Junk 1" Number="0-2" />	 
 	  
