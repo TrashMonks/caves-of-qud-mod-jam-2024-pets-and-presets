@@ -4,11 +4,16 @@
         <part Name="Render" DisplayName="Belongings" Tile="Phils_Belongings/belongings.png" TileColor="&amp;w" DetailColor="r" />
         <part Name="Description" Short="A sentient Chest made out of intelligent Nachash Tree Wood. Hundreds of little legs bristle beneath the Chest. When it opens the lid, a long row of sharp teeth appear." />
         <part Name="Pettable" />
+        <part Name="Body" Anatomy="Phils_Belongings" />
         <part Name="Fetches" SniffChance="5" SniffMessageChance="5" />
         <part Name="LeavesTrail" TrailChance="1" TrailBlueprint="@BelongingsTrail" OnEnter="false" />
         <part Name="ConversationScript" ConversationID="BelongingsConvo" />
-        <part Name="Brain" Hostile="False" Wanders="True" MaxWanderRadius="6" Passive="False" />
+        <part Name="Brain" Hostile="False" Wanders="True" MaxWanderRadius="8" Passive="True" Calm="False" />
         <part Name="Physics" Organic="false" Weight="350" />
+
+        <removepart Name="Stomach" />
+        <removepart Name="Springy" />
+      
 
         <stat Name="Hitpoints" Value="250" />
         <stat Name="Level" Value="3" />
@@ -27,6 +32,7 @@
         <property Name="Story" Value="Phils_Belongings Story" />
 
         <inventoryobject Blueprint="BelongingsBite"/>
+        <inventoryobject Blueprint="BelongingsChest"/>
 
         <tag Name="Pet" />
         <tag Name="PetResponse" Value="wags with their non-existent tail, pants with their open lid, are revealing a long row of teeth." />
@@ -37,7 +43,16 @@
     </object>
 
     <object Name="BelongingsBite" Inherits="BaseFangs">
-        <part Name="MeleeWeapon" MaxStrengthBonus="8000" BaseDamage="2d3" Skill="Axe" Stat="Strength" Attributes="Bite" />
+        <part Name="NaturalWeapon" MaxStrengthBonus="8000" BaseDamage="2d3" Skill="Axe" Stat="Strength" Attributes="Bite" />
+        <part Name="Description" Short="A long row of clean, white teeth." />
+        <part Name="Cursed" RevealInDescription="false" />
+    </object>
+
+    <object Name="BelongingsChest" Inherits="Armor">
+        <part Name="Armor" WornOn="Body" AV="0" DV="0" />
+        <part Name="Render" DisplayName="Belongings Body" Tile="Phils_Belongings/chestchest.png" TileColor="&amp;w" DetailColor="r" />
+        <part Name="Description" Short="No matter how dirty it seems to get, it is never really dirty." />
+        <part Name="Cursed" RevealInDescription="false"/>
     </object>
 
 </objects>
