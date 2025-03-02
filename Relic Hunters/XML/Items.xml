@@ -1,102 +1,445 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<objects> <!--edit espadas: P+ que se haga pesada con 64 sap-->
+<objects> 
+			<!-- ==================================0==================================== base khophes ============================================0=========================================-->
 	<object Name="Dancerogue_RelicHunter_BaseKhopesh" Inherits="Long Sword3">
 		<part Name="Render" DisplayName="{{leafy|BaseKhopesh}}" Tile="items/sw_kopesh.bmp" ColorString="G" DetailColor="&amp;K" />
-		<part Name="Commerce" Value="255" />
+		<part Name="Commerce" Value="300" />
 		<part Name="Description" Short="A grass sword grown from a sword fern plant, its stem aglow with glimmer, entwining with other flora through unseen rootways. It forms an emotional bond with its wielder." /> 
 		<part Name="Physics" Weight="5" FlameTemperature="99999" VaporTemperature="9999" />
+		<!--<removepart Name="Metal" />--> <!-- Its usefull to take it off -->
 		<part Name="MeleeWeapon" Stat="Willpower" MaxStrengthBonus="0" BaseDamage="1d10+1d8-1d8" Skill="LongBlades" />
-		<part Name="BootSequence" BootTime="5" VerbOnBootInitialized="sprout" VerbOnBootAborted="wither" VerbOnBootDone="shine" SoundOnBootInitialized="Sounds/Interact/sfx_interact_artifact_start_buzz" SoundOnBootAborted="Sounds/Interact/sfx_melee_fungalInfection_blocked" SoundOnBootDone="Sounds/Interact/sfx_equip_armor_organic" />
+		<part Name="BootSequence" BootTime="5" VerbOnBootInitialized="sprout" VerbOnBootAborted="wither" VerbOnBootDone="blossom" SoundOnBootInitialized="Sounds/Interact/sfx_interact_artifact_start_buzz" SoundOnBootAborted="Sounds/Interact/sfx_interact_artifact_abort_clack" SoundOnBootDone="Sounds/Interact/sfx_equip_armor_organic" />
 		<!--<part Name="ZeroPointEnergyCollector" ChargeRate="40" World="JoppaWorld,OrbWorld" /> -->
 		<!-- <part Name="Circuitry" /> -->
 		<!-- <part Name="VibroWeapon" ChargeUse="20" /> -->
+		<!-- <part Name="Gaslight" ChargeUse="100" ChargedSkill="LongBlades" UnchargedSkill="Cudgel" ChargedPenetrationBonus="5" UnchargedPenetrationBonus="0" ChargedDamage="1d8" UnchargedDamage="1d2" ChargedName="{{gaslight|gaslight}} flyssa" UnchargedName="gaslight flyssa" /> -->
 		<tag Name="Tier" Value="7" />
-		<tag Name="SwingSound" Value="sfx_ability_mutation_stinger_tailWhip" />
 		<tag Name="BlockedSound" Value="sfx_melee_fungalInfection_blocked" />
 		<tag Name="EquipSound" Value="sfx_equip_armor_planty" />
 		<tag Name="UnequipSound" Value="sfx_equip_armor_planty" />
-		<stag Name="Historical" />
+		<tag Name="UndesirableWeapon" />
+		<tag Name="Role" Value="Rare" />
+		<stag Name="Melee" />
 			<tag Name="DynamicObjectsTable:MeleeWeapons" />
 			<stat Name="Hitpoints" Value="300" />
 			<tag Name="BaseObject" Value="*noinherit" />
-			<part Name="Yurtmat" />
-			<part Name="AddsRep" Faction="Trees" Value="100" />		
+			<part Name="Yurtmat" IsBootSensitive="true"  />
+			<part Name="AddsRep" Faction="Trees" Value="100"  IsBootSensitive="true" />
+			<intproperty Name="Bleeds" Value="1" />
+			<tag Name="BleedLiquid" Value="sap-1000" />
+			
 	</object>
-	<!-- BaseObject VibroKhopes--> <!-- sfx_equip_armor_planty - sfx_melee_vibroDagger_swing - sfx_melee_dagger_crysteel_swing - sfx_melee_foldedCarbide_wristblade_swing - sfx_melee_fungalInfection_blocked -->
-	<!-- <object Name="Base Khopesh" Inherits="Long Sword3">
-		<part Name="Render" DisplayName="{{leafy|BaseKhopesh}}" Tile="items/sw_kopesh.bmp" ColorString="&amp;G" DetailColor="K" />
-		<part Name="Description" Short="A grass sword grown from a sword fern plant, its stem aglow with glimmer, entwining with other flora through unseen rootways. It forms an emotional bond with its wielder." />
-		<tag Name="BaseObject" Value="*noinherit" />
-		<part Name="Commerce" Value="255" />
-		<part Name="Cursed" RevealInDescription="false"/>
-		<part Name="Physics" Weight="5" Organic="true" FlameTemperature="99999" VaporTemperature="9999" />
-		<stat Name="Hitpoints" Value="300" />
-		<part Name="MeleeWeapon" MaxStrengthBonus="2" BaseDamage="1d10+1d8-1d8" Skill="LongBlades" />
-		<part Name="BootSequence" BootTime="0" VerbOnBootInitialized="sprouts" VerbOnBootAborted="withers" VerbOnBootDone="shines" SoundOnBootInitialized="Sounds/Interact/sfx_interact_artifact_start_buzz" SoundOnBootAborted="Sounds/Interact/sfx_melee_fungalInfection_blocked" SoundOnBootDone="Sounds/Interact/sfx_equip_armor_planty" />
-		<part Name="ZeroPointEnergyCollector" ChargeRate="50" World="JoppaWorld,OrbWorld" />
-		<part Name="Circuitry" />
-		<part Name="LiquidVolume" MaxVolume="4" StartVolume="0-1" InitialLiquid="sap-1000" />
-		<part Name="LiquidProducer" Liquid="sap" Rate="100" FillSelfOnly="true" IsBioScannable="true" IsEMPSensitive="false" WorksOnEquipper="true" WorksOnSelf="false" RequiresBodyPartCategory="Plant" NameForStatus="CirculatoryGraft" />
-		<part Name="VibroWeapon" ChargeUse="5" />
-		<tag Name="Tier" Value="8" />
-		<intproperty Name="Bleeds" Value="1" />
-		<tag Name="BleedLiquid" Value="sap-1000" />
-		<tag Name="LivePlant" />
-		<tag Name="Plant" />
-		<tag Name="SwingSound" Value="Sounds/Melee/longBlades/sfx_melee_foldedCarbide_wristblade_swing" />
-		<tag Name="BlockedSound" Value="Sounds/Melee/multiUseBlock/sfx_melee_vibro_blocked" />
-		<tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_blade_long_artifact" />
-		<stag Name="Historical" />
-	</object> -->
+					<!-- ===========================================0=========================================0============================================================================ -->
 
-	<!-- Kopesh 1 -->
-	<object Name="Dancerogue_RH_Nephrolepis" Inherits="Dancerogue_RelicHunter_BaseKhopesh">
-		<part Name="Render" DisplayName="{{leafy|Nephrolepis}} {{b|-}}" Tile="items/sw_kopesh.bmp" ColorString="&amp;g" DetailColor="K" />
-			<part Name="Commerce" Value="100" />
-		<part Name="Description" Short="A grass sword grown from a 'Sword Fern' plant, its stem aglow with glimmer, entwining with other flora through unseen rootways. It forms an emotional bond with its wielder, but may break on combat. Some times it just needs to talk to blow off steam." />
-			<part Name="Physics" Weight="2" FlameTemperature="25000" VaporTemperature="5000" />
-			<part Name="MeleeWeapon" Stat="Willpower" MaxStrengthBonus="1" BaseDamage="2d8-2d4" Skill="LongBlades"/> <!-- More output damage: 16max - deviation: 6-->
-			<part Name="Armor" AV="0" DV="1" Willpower="-2"  WornOn="Hand" />
-			<part Name="BootSequence" BootTime="10" VerbOnBootInitialized="sprout" VerbOnBootAborted="wither" VerbOnBootDone="shine" SoundOnBootInitialized="Sounds/Interact/sfx_interact_artifact_start_buzz" SoundOnBootAborted="Sounds/Interact/sfx_melee_fungalInfection_blocked" SoundOnBootDone="Sounds/Interact/sfx_equip_armor_organic" />
-		<part Name="ZeroPointEnergyCollector" ChargeRate="20" World="JoppaWorld,OrbWorld" />
-		<part Name="Circuitry" />
-		<part Name="VibroWeapon" ChargeUse="20" />
-		<tag Name="NoSparkingQuest" />
-		<tag Name="Tier" Value="5" />
-		<stag Name="Historical" />
+	<!-- Kopesh 1 --><!--
+	<object Name="Dancerogue_RH_Nephrolepsis" Inherits="Dancerogue_RelicHunter_BaseKhopesh">
+		<part Name="Render" DisplayName="{{forest|Nephrolepsis}}" Tile="Grassword/Grassword7.png" ColorString="&amp;G" DetailColor="K" />
+		<part Name="Description" Short="A sentient grass sword parasite, grown from a cursed seed, its stem aglow with glimmer, entwining with other flora through unseen rootways. It forms an emotional bond with its wielder. Sometimes, it just needs a word or two to ease its temper. May steal psychic health to heal its weilder, but its emotionally dependent. While it active: Increased damage and penetration. +10 psychic glimmer. Restablishes your willpower, -1 MA. May reach breaking point on combat" />
+		<part Name="Commerce" Value="100" />
+		<tag Name="EquipmentFrameColors" Value="GgWw" />
+		<part Name="Armor" WornOn="arm" Willpower="-2" />
+			<part Name="Physics" Weight="2" FlameTemperature="5000" VaporTemperature="9999" />
 			<stat Name="Hitpoints" Value="100" />
-			<tag Name="Mods" Value="LongBladeMods,BladeMods,WeaponMods,CommonMods,ElectronicsMods" />
-			<part Name="MumblesInfection" Chance="7" />
-			<part Name="Examiner" Unknown="UnknownStrangePlant" Complexity="5" Difficulty="3" />
-			<part Name="LiquidVolume" MaxVolume="8" StartVolume="1" InitialLiquid="sap-1000" />
-			<part Name="LeakWhenBroken" />
-			<part Name="LiquidProducer" Liquid="sap" VariableRate="200" FillSelfOnly="true" IsTechScannable="true" IsBioScannable="true" IsEMPSensitive="false" WorksOnEquipper="true" WorksOnSelf="false" ChanceSkipSameCell="50" PureOnFloor="true" NameForStatus="GlucoseFromPhotosynthesiss"/>
-			<part Name="Cursed" RevealInDescription="false"/>
-			<part Name="CrumblesOnHit" Chance="2" />
-	</object>
+			<part Name="MeleeWeapon" Stat="Willpower" MaxStrengthBonus="5" BaseDamage="2d8-2d4" Skill="ShortBlades" Slot="Hand" /> --><!-- More output damage: 16max - deviation: 6--><!--
 
-	<!-- Kopesh 2 -->
-	<object Name="Dancerogue_RH_Polystichum" Inherits="Dancerogue_RelicHunter_BaseKhopesh">
-		<part Name="Render" DisplayName="{{leafy|Polystichum}} {{R|+}}" Tile="items/sw_kopesh.bmp" ColorString="&amp;K" DetailColor="G"/>
-			<part Name="Commerce" Value="500" />
-		<part Name="Description" Short="Brightly reflective. A grass sword grown from a 'Sword Fern' plant, its stem aglow with glimmer, entwining with other flora through unseen rootways. Rarely talkative." />
-			<part Name="Physics" Weight="2" FlameTemperature="99999" VaporTemperature="9999" />
-			<part Name="MeleeWeapon" HitBonus="2" Stat="Willpower" MaxStrengthBonus="9" BaseDamage="3d6-1d6" Skill="LongBlades"/> <!-- Weaker than Crysteel - With more output damage - deviation: 3-->
-			<part Name="Armor" AV="0" DV="2" WornOn="Hand" />
-			<part Name="BootSequence" BootTime="10" VerbOnBootInitialized="sprout" VerbOnBootAborted="wither" VerbOnBootDone="shine" SoundOnBootInitialized="Sounds/Interact/sfx_interact_artifact_start_buzz" SoundOnBootAborted="Sounds/Interact/sfx_melee_fungalInfection_blocked" SoundOnBootDone="Sounds/Interact/sfx_equip_armor_organic" />
-		<!--<part Name="ZeroPointEnergyCollector" ChargeRate="10" World="JoppaWorld,OrbWorld" /> -->
-		<part Name="Circuitry" />
-		<!-- <part Name="VibroWeapon" ChargeUse="100" /> -->
-		<tag Name="Tier" Value="9" />
+		<removetag Name="NoSparkingQuest" />
+		<tag Name="Tier" Value="4" />
 		<stag Name="Historical" />
-			<stat Name="Hitpoints" Value="600" />
-			<tag Name="Mods" Value="ElectronicsMods"/>
-			<part Name="LightSource" Lit="true" Radius="3" />
-			<part Name="MumblesInfection" Chance="1" />
-			<part Name="Examiner" Unknown="UnknownStrangePlant" Complexity="8" Difficulty="5" />
-			<part Name="LiquidVolume" MaxVolume="16" StartVolume="1-10" InitialLiquid="sap-1000" />
-			<part Name="LeakWhenBroken" />
-			<part Name="LiquidProducer" Liquid="sap" VariableRate="500-1000" FillSelfOnly="true" IsTechScannable="true" IsBioScannable="true" IsEMPSensitive="false" WorksOnEquipper="true" WorksOnSelf="true" ChanceSkipSameCell="50" PureOnFloor="true" NameForStatus="GlucoseFromPhotosynthesiss"/>
-	</object>
+			<tag Name="Mods" Value="none" />
+			<part Name="MumblesInfection" Chance="3" />
+		<part Name="Examiner" Unknown="UnknownStrangePlant" Complexity="4" Difficulty="2" />
+		
+		<part Name="VampiricWeapon" Percent="0-150" Reduction="1d3-1" Maximum="1d10+6" RequiresLivingTarget="true" RealityDistortionBased="false" />
 
+		--><!--<part Name="PowerSwitch" EnergyCost="80" FlippableWithoutUnderstanding="false" ActivateSuccessMessage="Entwining" ActivateFailureMessage="Not Enought Nutrients" DeactivateSuccessMessage="Plant withers" DeactivateFailureMessage="Not Enought Nutrients" />
+		--><!--
+		<part Name="BootSequence" BootTime="5" ReadoutInName="true" ReadoutInDescription="true" VerbOnBootInitialized="sprout" VerbOnBootAborted="wither" VerbOnBootDone="blossom" SoundOnBootInitialized="Sounds/Interact/sfx_interact_artifact_start_buzz" SoundOnBootAborted="Sounds/Interact/sfx_melee_fungalInfection_blocked" SoundOnBootDone="Sounds/Interact/sfx_equip_armor_organic" />
+		<part Name="LiquidVolume" MaxVolume="8" StartVolume="0" InitialLiquid="sap-1000" />	--><!-- Vol 8 * cpd 80 * ChargeUse24 ~ 26Atcks | * cpd 10 * CU 8 = 8Atcks | cpd 125 = MaxCharge 1000 - CU 50 = 20Atcks --><!--
+		<part Name="LeakWhenBroken" />
+		<part Name="LiquidProducer" Liquid="sap" VariableRate="200-1000" FillSelfOnly="true" IsTechScannable="true" IsBioScannable="true" IsEMPSensitive="false" WorksOnEquipper="true" WorksOnWearer="true" WorksOnSelf="false" RequiresBodyPartCategory="Animal" PureOnFloor="true" NameForStatus="GlucoseFromPhotosynthesiss" />
+		<part Name="LiquidFueledPowerPlant" Liquid="sap" ChargePerDram="125" IsEMPSensitive="true" IsTechScannable="true" IsBioScannable="true" NameForStatus="SeedGem" />
+			
+		--><!-- <part Name="ZeroPointEnergyCollector" ChargeRate="4" World="JoppaWorld,OrbWorld" />
+		<part Name="Capacitor" Charge="0" MaxCharge="40" ChargeRate="4" ChargeDisplayStyle=""/> --><!--
+	
+		<part Name="Gaslight" ChargeUse="50" ChargedSkill="LongBlades" UnchargedSkill="Cudgel" ChargedPenetrationBonus="2" UnchargedPenetrationBonus="-1" ChargedDamage="3d4" UnchargedDamage="4d2-1d2" ChargedName="{{forest|Nephrolepis}} {{R|+}}" UnchargedName="Nephrolepis {{B|-}}"/>
+		--><!-- <part Name="VibroWeapon" ChargeUse="40" /> --><!--
+		
+		<part Name="EquipStatBoost" Boosts="Willpower:2,MA:-1" ChargeUse="3" IsBootSensitive="true" IsEMPSensitive="false" IsPowerSwitchSensitive="true" IsRealityDistortionBased="false"  />
+		<part Name="GlimmerAlteration" Amount="10" ChargeUse="2" IsBootSensitive="true" IsEMPSensitive="false" IsPowerSwitchSensitive="true" IsTechScannable="true" IsRealityDistortionBased="false" NameForStatus="UnseenRootways"/>
+		
+		<part Name="Cursed" IsPowerSwitchSensitive="true" NeedsOtherActivePartOperational="EquipStatBoost" RevealInDescription="false"/>
+			<part Name="CrumblesOnHit" Chance="2" />
+			--><!--<part Name="MutationOnEquip" IsRealityDistortionBased="true" ClassName="WaveformWorm" DisplayName="Glimmering Rootpath" Level="1" Cooldown="50" />--><!--
+			--><!--<part Name="MutationOnEquip" IsRealityDistortionBased="false" ClassName="DefensiveChromatophores" DisplayName="Play Death" Level="5" Cooldown="200" />--><!--
+	</object>-->
+
+		<!-- Kopesh +1 -->
+				
+				<object Name="Dancerogue_RH_Nephrolepsis" Inherits="Dancerogue_RelicHunter_BaseKhopesh">
+					<part Name="Render" DisplayName="{{spaser|Nephrolepsis}}" Tile="Grassword/Grassword.png" ColorString="&amp;K" DetailColor="g" /> <!-- {{K|Dead}} -->
+					<part Name="Description" Short="Two sentient grass claws, grown from a cursed seed. Their glimmering stems pulse faintly, entwining with unseen rootways across the flora around them; and ocassionaly, they share secrets through fungal mouths. They siphon blood nutrients from foes to sustain their wielder, but cling with unsettling attachment. They can latch onto your arm, entwining you with unseen rootpaths. In the heat of combat, they may reach their breaking point." />
+					<part Name="Commerce" Value="120" />
+					<tag Name="EquipmentFrameColors" Value="wKgw" />
+					<part Name="Armor" AV="0" DV="-1" WornOn="Arm" />
+						<part Name="Physics" Weight="8" FlameTemperature="2500" VaporTemperature="9000" />
+						<stat Name="Hitpoints" Value="100" />
+						<part Name="MeleeWeapon" Stat="Willpower" MaxStrengthBonus="9" BaseDamage="1d8" Skill="LongBlades" Slot="Hand"/>
+					<tag Name="Tier" Value="5" />
+					<stag Name="Melee" />
+					<tag Name="Mods" Value="none" />
+					<part Name="MumblesInfection" Chance="3" />
+						<part Name="Examiner" Unknown="UnknownStrangePlant" Complexity="6" Difficulty="4" />
+					<tag Name="SwingSound" Value="Sounds/Melee/longBlades/sfx_melee_longBlade_saltHopperMandible_swing" />
+					<tag Name="BlockedSound" Value="Sounds/Melee/multiUseBlock/sfx_melee_longBlade_saltHopperMandible_blocked" />
+
+					<part Name="PowerSwitch" EnergyCost="0" FlippableWithoutUnderstanding="false" ActivateSuccessMessage="Entwining" ActivateFailureMessage="Not Enought Nutrients" DeactivateSuccessMessage="" DeactivateFailureMessage="" />
+					<part Name="BootSequence" ChargeUse="0" BootTime="100" ReadoutInName="true" ReadoutInDescription="false" IsPowerSwitchSensitive="true" VerbOnBootInitialized="sprout" VerbOnBootAborted="wither" VerbOnBootDone="blossom" />
+					<part Name="LiquidVolume" MaxVolume="8" StartVolume="8" InitialLiquid="sap-1000" />
+					<part Name="LeakWhenBroken" />
+					<part Name="LiquidProducer" Liquid="sap" VariableRate="10-500" IsBootSensitive="false" IsPowerSwitchSensitive="false" IsTechScannable="true" IsBioScannable="true" IsEMPSensitive="false" WorksOnEquipper="true" WorksOnWearer="true" WorksOnSelf="true" RequiresBodyPartCategory="Animal" PureOnFloor="true" NameForStatus="GlucoseFromPhotosynthesiss" />
+					<part Name="LiquidFueledPowerPlant" Liquid="sap" ChargePerDram="125" IsEMPSensitive="true" IsTechScannable="true" IsBioScannable="true" NameForStatus="SeedGem" />
+					
+						<part Name="VibroWeapon" IsBootSensitive="true" ChargeUse="500"  />
+					<part Name="VampiricWeapon" IsBootSensitive="true" ShowInShortDescription="false" Percent="0-150" Reduction="10d2" Maximum="1d10+30" RequiresLivingTarget="true" RealityDistortionBased="false" />
+					<part Name="MutationOnEquip" ChargeUse="1" WorksOnWearer="true" IsBootSensitive="true" IsRealityDistortionBased="false" ClassName="WaveformWorm" DisplayName="Glimmering Rootpath"/>
+					<part Name="Cursed" RevealInDescription="false" />
+					<part Name="CrumblesOnHit" Chance="2" />
+					<property Name="Story" Value="Relic Hunter Nephrolepsis" />
+				</object>		
+	
+		<!-- Kopesh +2 -->
+				
+				<object Name="Dancerogue_RH_Necrolepsis" Inherits="Dancerogue_RelicHunter_BaseKhopesh">
+					<part Name="Render" DisplayName="{{K|Dead}} {{forest|Necrolepsis}}" Tile="items/sw_whip_1.bmp" ColorString="&amp;G" DetailColor="w" /> <!--  -->
+					<part Name="Description" Short="A tangle of sentient vines grown from a cursed seed. Its glimmering stem pulses faintly, connecting through unseen rootways to other flora. Rarely speaks, preferring a quiet independence. Does well under preasure but needs enough sap to perform." />
+					<part Name="Commerce" Value="600" />
+					<tag Name="EquipmentFrameColors" Value="GgKg" />
+						<part Name="Physics" Weight="12" FlameTemperature="2500" VaporTemperature="9000" />
+						<stat Name="Hitpoints" Value="100" />
+						<part Name="MeleeWeapon" Stat="Toughness" MaxStrengthBonus="12" BaseDamage="3d3" Skill="Whip" Slot="Hand"/>
+					<tag Name="Tier" Value="7" />
+					<stag Name="Melee" />
+					<tag Name="Mods" Value="none" />
+					<part Name="MumblesInfection" Chance="1" />
+					<part Name="LightSource" Lit="true" Radius="2" />
+						<part Name="Examiner" Unknown="UnknownStrangePlant" Complexity="7" Difficulty="6" />
+					<tag Name="HitSound" Value="Sounds/Abilities/sfx_ability_mutation_stinger_tailWhip"/>
+					<tag Name="SwingSound" Value="Sounds/Abilities/sfx_ability_mutation_stinger_tailWhip" />
+					
+					<part Name="BootSequence" ChargeUse="0" BootTime="100" ReadoutInName="true" ReadoutInDescription="false" IsPowerSwitchSensitive="false" VerbOnBootInitialized="sprout" VerbOnBootAborted="wither" VerbOnBootDone="blossom" />
+					<part Name="LiquidVolume" MaxVolume="16" StartVolume="8" InitialLiquid="sap-1000" />
+					<part Name="LeakWhenBroken" />
+					<part Name="LiquidProducer" Liquid="sap" VariableRate="10-200" IsTechScannable="true" IsBioScannable="true" IsEMPSensitive="false" WorksOnEquipper="true" WorksOnWearer="true" WorksOnSelf="true" RequiresBodyPartCategory="Animal" PureOnFloor="true" NameForStatus="GlucoseFromPhotosynthesiss" />
+					<part Name="LiquidFueledPowerPlant" Liquid="sap" ChargePerDram="250" IsEMPSensitive="true" IsTechScannable="true" IsBioScannable="true" NameForStatus="SeedGem" />
+
+					<part Name="Gaslight" IsBootSensitive="true" ChargeUse="114" ChargedSkill="Whip" UnchargedSkill="Cudgel" ChargedPenetrationBonus="2" UnchargedPenetrationBonus="-2" ChargedDamage="3d3" UnchargedDamage="4d3" ChargedName="{{spaser|Necrolepsis}}" UnchargedName="{{K|Dead}} {{spaser|Necrolepsis}}"/>
+					<part Name="VampiricWeapon" IsBootSensitive="true" ShowInShortDescription="false" Percent="0-100" Reduction="1d3-1" Maximum="1d10+6" RequiresLivingTarget="true" RealityDistortionBased="false" />
+					<part Name="LatchesOn" InitialSaveTarget="14" InitialSaveStat="Willpower" InitialSaveDifficultyStat="Willpower" MoveSaveTarget="14" MoveSaveStat="Willpower" MoveSaveDifficultyStat="Willpower" BreakSaveTarget="14" BreakSaveStat="Willpower" BreakSaveDifficultyStat="Willpower" Duration="3d4" AutoAttackOnMove="true" AutoAttackOnMoveAway="true" AutoAttackPerTurn="true" BloodSpatterOnLatch="false" />
+						<part Name="MutationOnEquip" ChargeUse="1" WorksOnEquipper="true" IsBootSensitive="true" IsRealityDistortionBased="false" ClassName="WaveformWorm" DisplayName="Glimmering Rootpath"/>  <!--Cooldown="25" Range="6"-->
+					<part Name="CrumblesOnHit" Chance="0" />
+					<property Name="Story" Value="Relic Hunter Necrolepsis" />
+				</object>
+	
+<!-- Shield Spear -->
+	<!--<object Name="BaseThrownWeapon" Inherits="InorganicObject">
+		<tag Name="BaseObject" Value="*noinherit" />
+		<part Name="ThrownWeapon" />
+		<tag Name="UnequipSound" Value="sfx_unequip_weapon_thrown" />
+		<tag Name="Item" />
+		<stag Name="Thrown" />
+	</object>
+	<object Name="Geomagnetic Disc" Inherits="Item">
+		<part Name="Render" DisplayName="geomagnetic disc" RenderString="." Tile="Items/sw_geomagnetic_disc.bmp" DetailColor="Y" ColorString="&amp;C" Occluding="false" />
+		<part Name="Physics" Weight="1" Takeable="true" Solid="false" Category="Thrown Weapons" />
+		<part Name="Description" Short="Ions were spun into a euhedral disc on a spinning wheel, and aquamarine was heat-set on the inner ring by deepsea steam." />
+		<part Name="ThrownWeapon" />
+		<part Name="GeomagneticDisc" Damage="2d6" ChargeUse="100" Bounces="5" />
+		<part Name="EnergyCellSocket" SlotType="EnergyCell" />
+		<part Name="AIOffensiveEnergyCellReload" />
+		<part Name="AIPassiveEnergyCellReload" />
+		<part Name="Examiner" Complexity="6" />
+		<part Name="Commerce" Value="750" />
+		<tag Name="PathAsIfFlying" />
+		<tag Name="PathAsIfCannotOpenDoors" />
+		<tag Name="Mods" Value="CommonMods,ElectronicsMods,ThrownWeaponMods" />
+		<tag Name="Tier" Value="6" />
+		<tag Name="EquipSound" Value="sfx_equip_weapon_thrown_artifact" />
+		<tag Name="UnequipSound" Value="sfx_unequip_weapon_thrown" />
+		<part Name="TinkerItem" Bits="00126" CanDisassemble="true" CanBuild="true" />
+		<stag Name="Thrown" />
+		<xtagThrowVFX
+				Speed="1000"
+				Rotation="2880"
+				TrailStartColor="#77bfcf00"
+				TrailEndColor="#77bfcf60"
+				TrailStartWidth="16"
+				TrailLife="0.1"
+				Slant="True"
+				Arc="?2"
+				Curve="?2"
+	  />
+	</object>-->
+<!-- shield spears -->
+	
+	<object Name="Dancerogue_RH_MayorAncientSpear2" Inherits="Item">
+		<part Name="Render" DisplayName="{{m-m-M-G-g sequence|Mayor}} {{camouflage|Ancient Spear}}" Tile="Grassword/AncientSpearMayor.png" RenderString="/" ColorString="&amp;G" TileColor="&amp;K" DetailColor="O" />
+		<part Name="Description" Short="Splintered from the heartwood of an ancient tree, this petrified spear carries faint traces of glimmer, as if the essence of its origin lingers just beneath the surface. Its haft shifts subtly when held, etched with intricate sigils that pulse faintly, only to fade when observed too closely. Though weathered by countless ages, the spear retains a primal resonance, a vestige of an otherworldly psychic power. In battle, it moves with a will of its own, redirecting blows or striking with uncanny precision. When thrown, it arcs gracefully, always finding its way back to its wielder. When raised in a second hand, the spear offers a measure of protection, subtly guiding combat to deflect harm." />
+		<part Name="Commerce" Value="900" />
+		<part Name="Physics" Weight="8" Takeable="true" Solid="false" Category="Shields"/>
+		<stat Name="Hitpoints" Value="100" />
+		<part Name="Shield" AV="2" DV="-2" WornOn="Hand" />
+		<part Name="DisarmOnBlock" Chance="30" />
+				
+		<part Name="GeomagneticDisc" Damage="4d4" ChargeUse="0" Bounces="0" />
+		<part Name="ThrownWeapon" Damage="4d4" Penetration="10"/>
+		
+		<part Name="MeleeWeapon" Stat="Agility" MaxStrengthBonus="10" BaseDamage="2d6"  Skill="ShortBlades"/>
+
+		<part Name="PoisonOnHit" Chance="3" Strength="18" DamageIncrement="3" Duration="8-15" />
+		<tag Name="Mods" Value="none" />
+		<stag Name="Melee" />
+		<stag Name="Thrown" />
+		<stag Name="Protection" />
+		<tag Name="HideThrownWeaponPerformance" />
+		<tag Name="PathAsIfFlying" />
+		<tag Name="PathAsIfCannotOpenDoors" />
+
+		<part Name="GlobalModChanceFactorOnPlayerEquip" Mod="ModExtradimensional" Factor="3" />
+		<part Name="GlimmerAlteration" Amount="10" ChargeUse="0"  IsEMPSensitive="false" IsTechScannable="true" NameForStatus="AncientTreeCry"/>
+
+		<tag Name="Shield" Value="1" />
+		<tag Name="EquipSound" Value="sfx_equip_weapon_thrown_artifact" />
+		<tag Name="UnequipSound" Value="sfx_unequip_weapon_thrown" />
+		<tag Name="SwingSound" Value="Sounds/Melee/longBlades/sfx_melee_longBlade_zetachrome_swing" />
+		<tag Name="BlockedSound" Value="Sounds/Melee/multiUseBlock/sfx_melee_zetachrome_blocked" />
+		<tag Name="Tier" Value="8" />
+		<tag Name="DynamicObjectsTable:Items" Value="*delete" />
+		<tag Name="DynamicObjectsTable:MeleeWeapons" />
+		
+		<xtagThrowVFX
+				Speed="750"
+				Orientation="45"
+				Rotation="0"
+				TrailStartColor="#77bfcf00"
+				TrailEndColor="#77bfcf60"
+				TrailStartWidth="8"
+				TrailLife="0.1"
+				Slant="True"
+				Arc="?2"
+				Curve="?2"
+				TrailColor="Detail"
+				Easing="SineOut"
+	  />
+	</object>
+		 <!-- ======================================0========================================= second Minor Spear =================================================================0===================================== -->
+	<object Name="Dancerogue_RH_MinorSpear1" Inherits="Item">
+		<part Name="Render" DisplayName="{{o-o-O-G-g sequence|Minor}} {{camouflage|Ancient Spear}}" Tile="Grassword/AncientSpearMinor.png" RenderString="/" ColorString="&amp;G" TileColor="&amp;w" DetailColor="O" />
+		<part Name="Description" Short="Splintered from the outer bark of an ancient tree, this spear resembles a youngling version of its greater kin. Its haft bears faint traces of glimmer, but unlike its elder, it is veiled in amber, an impure amalgamation that softens its tingling resonance. With fewer remnants of psychic power, the weapon is simpler and less potent. Despite its gnarled appearance, it remains touched by an otherworldly guidance, capable of aiding its wielder in deflecting harm and returning to their hands when thrown. Though it lacks the stamina of its elder, and might not always come back." />
+		<part Name="Commerce" Value="250" />
+		<part Name="Physics" Weight="20" Takeable="true" Solid="false" Category="Shields"/>
+		<stat Name="Hitpoints" Value="15" />
+		<part Name="Shield" AV="1" DV="-1" WornOn="Hand" />
+		<part Name="DisarmOnBlock" Chance="3" />
+		
+		<part Name="GeomagneticDisc" Damage="1d10" ChargeUse="200" Bounces="0" />
+		<part Name="ThrownWeapon" Damage="1d10" Penetration="6"/>
+
+
+		<part Name="ZeroPointEnergyCollector" ChargeRate="10" World="JoppaWorld,OrbWorld" />
+		<part Name="Capacitor" Charge="0" MaxCharge="2000" ChargeRate="10" ChargeDisplayStyle="" />
+		
+		<part Name="MeleeWeapon" Stat="Agility" MaxStrengthBonus="5" BaseDamage="1d10"  Skill="Whip"/>
+
+		<part Name="PoisonOnHit" Chance="1" Strength="16" DamageIncrement="1" Duration="8-12" />
+		<tag Name="Mods" Value="ThrownWeaponMods,ShieldMods,WeaponMods,ElectronicsMods" />
+		<stag Name="Melee" />
+		<stag Name="Thrown" />
+		<stag Name="Protection" />
+		<tag Name="HideThrownWeaponPerformance" />
+		<tag Name="PathAsIfFlying" />
+		<tag Name="PathAsIfCannotOpenDoors" />
+
+		<part Name="GlobalModChanceFactorOnPlayerEquip" Mod="ModExtradimensional" Factor="1" />
+		<part Name="GlimmerAlteration" Amount="1" ChargeUse="0" IsEMPSensitive="false"  IsTechScannable="true" NameForStatus="AncientTreeRemnant"/>
+
+		<tag Name="Shield" Value="1" />
+		<tag Name="EquipSound" Value="sfx_equip_weapon_thrown_artifact" />
+		<tag Name="UnequipSound" Value="sfx_unequip_weapon_thrown" />
+		<tag Name="SwingSound" Value="Sounds/Melee/longBlades/sfx_melee_longBlade_saltHopperMandible_swing" />
+		<tag Name="BlockedSound" Value="Sounds/Melee/multiUseBlock/sfx_melee_longBlade_saltHopperMandible_blocked" />
+		<tag Name="Tier" Value="6" />
+		<tag Name="DynamicObjectsTable:Items" Value="*delete" />
+		<tag Name="DynamicObjectsTable:MeleeWeapons" />
+		
+		<xtagThrowVFX
+				Speed="550"
+				Orientation="45"
+				Rotation="0"
+				TrailStartColor="#77bfcf00"
+				TrailEndColor="#77bfcf60"
+				TrailStartWidth="8"
+				TrailLife="0.1"
+				Slant="True"
+				Arc="?2"
+				Curve="?2"
+				TrailColor="Detail"
+				Easing="SineOut"
+	  />
+	</object>
+	
+	<!--<object Name="Shield" Inherits="Item">
+		<part Name="Render" DisplayName="[Shield]" RenderString="}" />
+		<part Name="Shield" AV="1" DV="0" WornOn="Hand" />
+		<part Name="Physics" Weight="15" Category="Shields" />
+		<part Name="TinkerItem" Bits="00" CanDisassemble="false" CanBuild="false" />
+		<tag Name="BaseObject" Value="*noinherit" />
+		<tag Name="Shield" Value="1" />
+		<stag Name="Protection" />
+	</object>
+	<object Name="BaseShield" Inherits="Shield">
+		<part Name="Render" Tile="items/sw_shield1.bmp" />
+		<part Name="Examiner" Alternate="UnknownShield" />
+		<tag Name="EquipSound" Value="sfx_equip_material_generic_metal" />
+		<tag Name="Mods" Value="ShieldMods,CommonMods" />
+		<tag Name="BaseObject" Value="*noinherit" />
+	</object>
+	<object Name="Wooden Buckler" Inherits="BaseShield">
+		<part Name="Render" DisplayName="wooden buckler" Tile="items/sw_buckler.bmp" DetailColor="w" />
+		<part Name="Shield" AV="1" DV="-1" WornOn="Arm" />
+		<part Name="Description" Short="A wheel of dogthorn cut with hill-clan sigilwork is secured to the arm by a leather strap." />
+		<part Name="Commerce" Value="5" />
+		<tag Name="EquipSound" Value="sfx_equip_material_generic_organic" />
+		<tag Name="Tier" Value="1" />
+		<part Name="Physics" Weight="5" />
+	</object>-->
+<!-- end of shield spearks -->
+	
+<!-- Kopesh 2 -->
+	<!--<object Name="Dancerogue_RH_Polystichum" Inherits="Dancerogue_RelicHunter_BaseKhopesh">
+		<part Name="Render" DisplayName="{{leafy|Polystichum}}" Tile="Grassword/Grassword5.png" ColorString="&amp;K" DetailColor="G"/>
+		<part Name="Description" Short="A sentient grass sword grown from a cursed seed, its stem aglow with glimmer, entwining with other flora through unseen rootways. Independent, rarely talkative. Brightly reflective."/>
+		<part Name="Commerce" Value="1000" />
+		<tag Name="EquipmentFrameColors" Value="KKgG" />
+		<part Name="Armor" WornOn="Arm" />
+			<part Name="Physics" Weight="10" FlameTemperature="9000" VaporTemperature="9999" />
+			<stat Name="Hitpoints" Value="600" />
+			<part Name="MeleeWeapon" Stat="Toughness" MaxStrengthBonus="10" BaseDamage="6d3-2d2" Skill="LongBlades" Slot="Hand"/> --><!-- Weaker than Crysteel - With more output damage - deviation: 3--><!--
+			
+		<removetag Name="NoSparkingQuest" />
+		<tag Name="Tier" Value="8" />
+		<stag Name="Historical" />
+			<tag Name="Mods" Value="ElectronicsMods"/>
+			<part Name="LightSource" Lit="true" Radius="2" />
+			<part Name="MumblesInfection" Chance="1" />
+		<part Name="Examiner" Unknown="UnknownStrangePlant" Complexity="7" Difficulty="4" />
+
+		--><!-- <part Name="PowerSwitch" EnergyCost="80" FlippableWithoutUnderstanding="false" ActivateSuccessMessage="Entwining" ActivateFailureMessage="Not Enought Nutrients" DeactivateSuccessMessage="Plant withers" DeactivateFailureMessage="Not Enought Nutrients" />
+		<part Name="BootSequence" BootTime="5" ReadoutInName="true" ReadoutInDescription="true" VerbOnBootInitialized="sprout" VerbOnBootAborted="wither" VerbOnBootDone="blossom" SoundOnBootInitialized="Sounds/Interact/sfx_interact_artifact_start_buzz" SoundOnBootAborted="Sounds/Interact/sfx_melee_fungalInfection_blocked" SoundOnBootDone="Sounds/Interact/sfx_equip_armor_organic" />--><!--
+
+		<part Name="LiquidVolume" MaxVolume="8" StartVolume="0" InitialLiquid="sap-1000" />
+		<part Name="LeakWhenBroken" />
+		<part Name="LiquidProducer" Liquid="sap" VariableRate="200-800"  IsTechScannable="false" IsBioScannable="true" IsEMPSensitive="false" WorksOnEquipper="true" WorksOnWearer="true" WorksOnSelf="false" ChanceSkipSameCell="90" PureOnFloor="true" NameForStatus="GlucoseFromPhotosynthesiss"/>
+		<part Name="LiquidFueledPowerPlant" Liquid="sap" ChargePerDram="125" IsEMPSensitive="true" IsTechScannable="true" IsBioScannable="true" NameForStatus="SeedGem" />
+		
+		--><!-- <part Name="ZeroPointEnergyCollector" ChargeRate="10" World="JoppaWorld,OrbWorld" />
+		<part Name="Capacitor" Charge="0" MaxCharge="10000" ChargeRate="10" ChargeDisplayStyle="" /> --><!--
+
+		<part Name="Gaslight" ChargeUse="1000" ChargedSkill="LongBlades" UnchargedSkill="LongBlades" ChargedPenetrationBonus="1" UnchargedPenetrationBonus="0" ChargedDamage="4d4" UnchargedDamage="6d2" ChargedName="{{leafy|Polystichum}} {{R|+}}" UnchargedName="Polystichum {{B|-}}"/>
+		--><!-- <part Name="VibroWeapon" ChargeUse="1000" /> --><!--
+
+		<part Name="EquipStatBoost" Boosts="Willpower:2,MA:-1" ChargeUse="3" IsRealityDistortionBased="false"  />
+		<part Name="GlimmerAlteration" Amount="10" ChargeUse="2" IsTechScannable="true" IsRealityDistortionBased="false" NameForStatus="UnseenRootways"/>
+
+
+		--><!-- <part Name="GreatMachineGauge" />
+		<part Name="GlobalModChanceFactorOnPlayerEquip" Mod="ModExtradimensional" Factor="2" /> --><!--
+		
+		<part Name="IntPropertyChanger" AffectedProperty="BioScannerEquipped" Amount="1" ChargeUse="1" WorksOnWearer="true" WorksOnHolder="true" NameForStatus="Bioscanning" />
+
+		<part Name="ReduceCooldowns"  ChargeUse="10000" UsesChargePerEffect="true" WorksOnEquipper="true" WorksOnWearer="true" PercentageReduction="50" IncludeAbilities="LifeDrain"  NameForStatus="AetherEntwine"/>
+			--><!--++--><!--<part Name="MutationOnEquip"  IsRealityDistortionBased="true" ClassName="WaveformWorm" DisplayName="Glimmering Rootpath" /> --><!--" Level="10" Cooldown="160"--><!--
+	</object>-->
+
+	
+	<object Name="Dancerogue_RH_SayPlease" Inherits="Security Card">
+		<part Name="Render" DisplayName="Say '{{lovesickness|please}}'!" RenderString="-" ColorString="&amp;m" Occluding="false" RenderIfDark="true" Tile="Items/sw_key.bmp" />
+		<part Name="Commerce" Value="2050" />
+		<stat Name="AV" Value="25" />
+		<stat Name="Hitpoints" Value="600" />
+		<part Name="Description" Short="A brass rod of wisdom, designed to unlock only through the practiced grace of civility and empathy." />
+		<part Name="Physics" Weight="12"/>
+		<tag Name="NoSparkingQuest" />
+	</object>
+	
 </objects>
+
+							<!-- BaseObject VibroKhopes-->
+							<!-- sfx_equip_armor_planty -  sfx_ability_mutation_stinger_tailWhip - sfx_melee_vibroDagger_swing - sfx_melee_dagger_crysteel_swing - sfx_melee_foldedCarbide_wristblade_swing - sfx_melee_fungalInfection_blocked -->
+
+							<!-- <object Name="Base Khopesh" Inherits="Long Sword3">
+							<part Name="Render" DisplayName="{{leafy|BaseKhopesh}}" Tile="items/sw_kopesh.bmp" ColorString="&amp;G" DetailColor="K" />
+							<part Name="Description" Short="A grass sword grown from a sword fern plant, its stem aglow with glimmer, entwining with other flora through unseen rootways. It forms an emotional bond with its wielder." />
+							<tag Name="BaseObject" Value="*noinherit" />
+							<part Name="Commerce" Value="255" />
+							<part Name="Cursed" RevealInDescription="false"/>
+							<part Name="Physics" Weight="5" Organic="true" FlameTemperature="2500" VaporTemperature="9999" />
+							<stat Name="Hitpoints" Value="300" />
+							<part Name="MeleeWeapon" MaxStrengthBonus="2" BaseDamage="1d10+1d8-1d8" Skill="LongBlades" />
+							<part Name="BootSequence" BootTime="0" VerbOnBootInitialized="sprouts" VerbOnBootAborted="withers" VerbOnBootDone="shines" SoundOnBootInitialized="Sounds/Interact/sfx_interact_artifact_start_buzz" SoundOnBootAborted="Sounds/Interact/sfx_melee_fungalInfection_blocked" SoundOnBootDone="Sounds/Interact/sfx_equip_armor_planty" />
+							<part Name="ZeroPointEnergyCollector" ChargeRate="50" World="JoppaWorld,OrbWorld" />
+							<part Name="Circuitry" />
+							<part Name="LiquidVolume" MaxVolume="4" StartVolume="0-1" InitialLiquid="sap-1000" />
+							<part Name="LiquidProducer" Liquid="sap" Rate="100" FillSelfOnly="true" IsBioScannable="true" IsEMPSensitive="false" WorksOnEquipper="true" WorksOnSelf="false" RequiresBodyPartCategory="Plant" NameForStatus="CirculatoryGraft" />
+							<part Name="VibroWeapon" ChargeUse="5" />
+							<tag Name="Tier" Value="8" />
+							<intproperty Name="Bleeds" Value="1" />
+							<tag Name="BleedLiquid" Value="sap-1000" />
+							<tag Name="LivePlant" />
+							<tag Name="Plant" />
+						</object> -->
+
+	<!--       Whips or custom Ganglionic   --> <!--
+							<object Name="Dancerogue_RH_Nephrolepis" Inherits="Dancerogue_RelicHunter_BaseKhopesh">
+								<part Name="Render" DisplayName="{{forest|Nephrolepis}}" Tile="Grassword/Grassword7.png" ColorString="&amp;g" DetailColor="G" />
+								<part Name="Description" Short="A sentient grass sword parasite, grown from a cursed seed, its stem aglow with glimmer, entwining with other flora through unseen rootways. It forms an emotional bond with its wielder. Sometimes, it just needs a word or two to ease its temper." />
+								<part Name="Commerce" Value="100" />
+								<tag Name="EquipmentFrameColors" Value="GgWw" />
+								<part Name="Armor" WornOn="Hand" Willpower="-2" />
+								<part Name="Physics" Weight="2" FlameTemperature="5000" VaporTemperature="9999" />
+								<stat Name="Hitpoints" Value="100" />
+								<part Name="MeleeWeapon" Stat="Willpower" MaxStrengthBonus="5" BaseDamage="2d8-2d4" Skill="ShortBlades" Slot="Hand" />
+								--><!-- More output damage: 16max - deviation: 6--><!--
+
+								<removetag Name="NoSparkingQuest" />
+								<tag Name="Tier" Value="4" />
+								<stag Name="Historical" />
+								<tag Name="Mods" Value="none" />
+								<part Name="MumblesInfection" Chance="3" />
+								<part Name="Examiner" Unknown="UnknownStrangePlant" Complexity="4" Difficulty="2" />
+						
+								<part Name="VampiricWeapon" Percent="0-150" Reduction="1d3-1" Maximum="1d10+6" RequiresLivingTarget="true" RealityDistortionBased="false" />
+
+								<part Name="PowerSwitch" EnergyCost="80" FlippableWithoutUnderstanding="false" ActivateSuccessMessage="Entwining" ActivateFailureMessage="Not Enought Nutrients" DeactivateSuccessMessage="Plant withers" DeactivateFailureMessage="Not Enought Nutrients" />
+								<part Name="BootSequence" BootTime="5" ReadoutInName="true" ReadoutInDescription="true" VerbOnBootInitialized="sprout" VerbOnBootAborted="wither" VerbOnBootDone="shine" SoundOnBootInitialized="Sounds/Interact/sfx_interact_artifact_start_buzz" SoundOnBootAborted="Sounds/Interact/sfx_melee_fungalInfection_blocked" SoundOnBootDone="Sounds/Interact/sfx_equip_armor_organic" />
+
+								<part Name="LiquidVolume" MaxVolume="8" StartVolume="0" InitialLiquid="sap-1000" />
+								--><!-- Vol 8 * cpd 80 * ChargeUse24 ~ 26Atcks | * cpd 10 * CU 8 = 8Atcks | cpd 125 = MaxCharge 1000 - CU 50 = 20Atcks --><!--
+								<part Name="LeakWhenBroken" />
+								<part Name="LiquidProducer" Liquid="sap" VariableRate="200-1000" FillSelfOnly="true" IsTechScannable="true" IsBioScannable="true" IsEMPSensitive="false" WorksOnEquipper="true" WorksOnWearer="true" WorksOnSelf="false" RequiresBodyPartCategory="Animal" PureOnFloor="true" NameForStatus="GlucoseFromPhotosynthesiss" />
+								<part Name="LiquidFueledPowerPlant" Liquid="sap" ChargePerDram="125" IsEMPSensitive="true" IsTechScannable="true" IsBioScannable="true" NameForStatus="SeedGem" />
+
+								--><!-- <part Name="ZeroPointEnergyCollector" ChargeRate="4" World="JoppaWorld,OrbWorld" />
+									<part Name="Capacitor" Charge="0" MaxCharge="40" ChargeRate="4" ChargeDisplayStyle=""/> --><!--
+
+								<part Name="Gaslight" ChargeUse="50" ChargedSkill="LongBlades" UnchargedSkill="Cudgel" ChargedPenetrationBonus="2" UnchargedPenetrationBonus="-1" ChargedDamage="3d4" UnchargedDamage="4d2-1d2" ChargedName="{{forest|Nephrolepis}} {{R|+}}" UnchargedName="Nephrolepis {{B|-}}"/>
+								--><!-- <part Name="VibroWeapon" ChargeUse="40" /> --><!--
+
+								<part Name="EquipStatBoost" Boosts="Willpower:2,MA:-1" ChargeUse="3" IsBootSensitive="true" IsEMPSensitive="false" IsPowerSwitchSensitive="true" IsRealityDistortionBased="false"  />
+								<part Name="GlimmerAlteration" Amount="10" ChargeUse="2" IsBootSensitive="true" IsEMPSensitive="false" IsPowerSwitchSensitive="true" IsTechScannable="true" IsRealityDistortionBased="false" NameForStatus="UnseenRootways"/>
+
+								<part Name="Cursed" IsPowerSwitchSensitive="true" NeedsOtherActivePartOperational="EquipStatBoost" RevealInDescription="false"/>
+								<part Name="CrumblesOnHit" Chance="2" />
+								--><!--<part Name="MutationOnEquip" IsRealityDistortionBased="true" ClassName="WaveformWorm" DisplayName="Glimmering Rootpath" Level="1" Cooldown="50" />--><!--
+								--><!--<part Name="MutationOnEquip" IsRealityDistortionBased="false" ClassName="DefensiveChromatophores" DisplayName="Play Death" Level="5" Cooldown="200" />--><!--
+							</object>-->

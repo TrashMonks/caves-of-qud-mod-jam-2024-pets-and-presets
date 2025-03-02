@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<populations>
+
+	<!--Jake Stash-->
+	
+	<population Name="Dancerogue_RH_JakesWares">
+		<group Name="Items" Style="pickeach">
+			<table Name="DynamicObjectsTable:Headwear:Tier4" Number="1" Chance="10" />
+			<table Name="Junk {zonetier}" Number="0-2" Chance="50"  />
+			<inventoryobject Blueprint="@Junk 1" Number="0-4" Chance="50" />
+			<inventoryobject Blueprint="@Junk 2" Number="1d4" Chance="25" />
+			<object Blueprint="Ganglionic Teleprojector" Number="1" Chance="40" />
+			<object Blueprint="Reprogrammable Recoiler" Number="1" Chance="100" />
+			<object Blueprint="Spiral Borer" Number="1-4" Chance="100" />
+				<!--<object Blueprint="Dancerogue_RH_Polystichum" Number="1" Chance="40"/>-->
+			<object Blueprint="Dancerogue_RH_Nephrolepsis" Number="0-3" Chance="100"/>
+			<object Blueprint="Dancerogue_RH_Necrolepsis" Number="1" Chance="100"/>
+			<object Blueprint="Dancerogue_RH_SayPlease" Number="1" />
+			<object Blueprint="Dancerogue_RH_MayorAncientSpear2" Number="1" Chance="100" />
+			<object Blueprint="Dancerogue_RH_MinorSpear1" Number="1" Chance="100" />
+		</group>
+	</population>
+	
+	<!--Spears Spawn-->
+
+	<population Name="Melee Weapons 8C" Load="Merge">
+		<group Name="Items" Style="pickone" Load="Merge">
+			<object Weight="20" Number="1" Blueprint="Dancerogue_RH_MayorAncientSpear2" />
+		</group>
+	</population>
+	<population Name="Armor 8R" Load="Merge">
+		<group Name="Items" Style="pickone" Load="Merge">
+			<object Weight="10" Number="1" Blueprint="Dancerogue_RH_MayorAncientSpear2" />
+		</group>
+	</population>
+
+	<population Name="Melee Weapons 6C" Load="Merge">
+		<group Name="Items" Style="pickone" Load="Merge">
+			<object Weight="20" Number="1" Blueprint="Dancerogue_RH_MinorSpear1" />
+		</group>
+	</population>
+	<population Name="Armor 6R" Load="Merge">
+		<group Name="Items" Style="pickone" Load="Merge">
+			<object Weight="2" Number="1" Blueprint="Dancerogue_RH_MinorSpear1" />
+		</group>
+	</population>	
+	
+	<!--Weapons Spawn-->
+
+	<population Name="Melee Weapons 7C" Load="Merge">
+		<group Name="Items" Style="pickone" Load="Merge">
+			<object Weight="20" Number="1" Blueprint="Dancerogue_RH_Necrolepsis" />
+		</group>
+	</population>
+	<population Name="Melee Weapons 5C" Load="Merge">
+		<group Name="Items" Style="pickone" Load="Merge">
+			<object Weight="20" Number="1" Blueprint="Dancerogue_RH_Nephrolepsis" />
+		</group>
+	</population>
+	
+</populations>

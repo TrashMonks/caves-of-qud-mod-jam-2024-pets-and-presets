@@ -1,32 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <embarkmodules>
     <module Class="XRL.CharacterBuilds.Qud.QudPregenModule">
-        <pregens>
-			<!--editar build para que tengan nombre - assets: jake-->
-            <pregen Name="Relic Hunter" Genotype="Mutated Human" Tile="RelicHunter/RelicHunter2.png" Foreground="K" Detail="O" Background="k">
-                <code>H4sIAAAAAAAACs1XbWvbMBD+Puh/EGYfk5CWDkqhH9J0fVkbSOOQboxSZPuw1ciS0cs6r+S/7+S82cmadqUxSQiO9JzuTnePzqfnvU+EeDFN4RcozaTwjol30Gq3DtpH+PMaBR5YxqOSwD4KzLFURpaDxumfbkzI8/SxgIZ5Bm7R98FNq5tQRUMD6tRp1K1bG7nfBQhpUKxXLGiQjtaQBjxvdn1ckDXIaGr7ZOlZg3QtN1bBiQBrFOUN0rcBZ+E15EM5BnEiLOdTHwtnImoourHwDqc+m/917QyVrLm3NII65/JObc8aaiAilzaloiK1Fss5Npn+mTTeHUvfBjsayopnr0dyJu6UdjKpDYe6QljkDXXrHQziim+vhzHNUGO7PKOBQ1joWB7a6ee5PCAzAs+CfAp0XFZcCIyoYlQYxN3uVtGutAW2X56fNN5q8ZzTlImYDGi+wbB3kThy5MSJYx36YCd6mFWWcSA3EK8r3+r+/YwJAQpMzXaHCQvH5Nyqms0qF+fmo2QCi2bNtp9kMwGqajd8pRQzNEB+uRdHCnUzTApDBUirSVemgdUFUm/opWAh6XAOKt50zrdRYKQKgdzRcl2uw26Pak16TNTMNT+jIRiWAhlJZPrveq2fcibGrpwPWViv5VuLqm1KvjGDr9OPKabLwf2LTcn+hzYlHWMUC6yBXexKVp17vS3puzKv+1aFCdVYdY+rKfR8o0DEJkHgSyUlXidmnJl8HRhKGycCtGtrDqvQFb5SOGcxiNBt5aiK3jHOM/kEah36GkuX+1Lyy7zzaOZnUNCjeXhYBQaQUiaQ8KvtV4D77bimrLpii/1sF+u6TNkfWOA7SKGXnHydSgL7vlm/NAaCVU4p+dQgw8QNWAQKO0j3qCzKoGgezygyQsnYwsMAcFOXeNhBPTzScfW2gcyJCn6slAgvU1JghfDhH/VjqzlNpNTgG+xZkGM3MizK3S7mdYOjb7gErqwrcgYalOlSkeMVZoRnl8b1XA2vQQngKZhERg/Tff2QVp2zOHGk6XOaF6wFPs/D5hWtCOmySE27VXzfmxc3O9uee9zvfZr8BdWoOLzdEQAA</code>
+        <pregens> <!--H4sIAAAAAAAACs1XbW/aMBD+Pqn/wYr2MSCKOqmq1A+Uri9rkShBdNNUVU5ySlwcO/LLuqziv+8cKBBYaVeVCBAK9nO+O989vpyf9j4R4iU0g1+gNJPCOyJeu9lqtluHzXbb80s8tIzHSwL7KNCaYZmMLQeN0z/dmJCn6WMODYsc3KLvg+tmN6WKRgbUidOomzc2dr9zENKgWK9c4JOO1pCFvGh0A1yQ+2Q0tX288MwnXcuNVXAswBpFuU/6NuQsuoJiKMcgjoXlfOpj6UxMDUU35t7h1Gfzv66dopI19xZGUOezvFPbs4YaiMmFzaioSK3F8hmbTP9M/HfHMrDhjoay4tnrkZyJO6WdXGrDoa4QlnlD3XoHg7ji2+thzHLU2Fqe0cAhKnUsDu3087Q8IDMCz4J8AnS8rLgUGFHFqDCIu92tol1pS2x/eX7iv9XiGacZEwkZ0GKDYe88deQoiBPHOvTBTvQwqyznQK4hWVe+1f0HORMCFJia7Q5TFo3JmVU1m1Uuzo0HyQQWzZptP8pGClTVbvhSKWZoiPxyL44M6maYFIYKkFaTrsxCq0uk3tBLwSLS4RxUsumcb6PASBUBuaXLdbkOuz2qNekxUTPXgpxGYFgGZCSR6b/rtX7CmRi7cj5kUb2Wbyyqthn5xgy+Tj+mmC4Gdy82Jfsf2pR0jFEstAZ2sStZde71tqTvyrzuWxWlVGPVPaqm0AuMApGYFIEvlZR4nYRxZop1YChtkgrQrq05qEKX+ErhnCUgIreVwyp6yzjP5SOodehrIl3ul5K/zDuP5kEOJT0aBwdVYAAZZQIJv9p+hbjfjmvKqiu22M92sa7LjP2BOb6DFHrJydepJLDvm/VLYyBY5ZSSjz4Zpm7AYlDYQbpHZVEOZfN4SpERSiYW7geAm7rAww7q/oGOq7cNZE5c8mOlRHi5kgIrRAD/qB9bzWkqpYbAYM+CHLuWUVnudjGvGxx9wyVwZV2ZM9CgTJeKAq8wIzy7NKnnangFSgDPwKQyvp/u64e06owlqSNNn9OiZC3w5zxsXtGMkS7z1LSa5fe9eXGzs+25x93ep8lf3v4ST90RAAA=-->
+            <pregen Name="Relic Hunter" Genotype="Mutated Human" Tile="RelicHunter/RelicHunter2-2.png" Foreground="w" Detail="R" Background="k">
+                <code> H4sIAAAAAAAACs1XbU/bMBD+jsR/sKJ9TKtSMQkh8aGEMdioBE1VJk0IOekpMXXsyC9jBfW/75wWmrRjhQmsVqoS+znfXe4en8+PuzuEBBkt4BcozaQIDknQbXfa3c5Bu9sNwgpPLOPjmsAeCnQWWCHHloPG6Z9uTMjj/PEMDacluEU/BhftKKeKpgbUsdOo21d27P5fQUiDYv1qQUh6WkOR8GkrinFBGZLR3PbR0rOQRJYbq+BIgDWK8pBc2oSz9DtMh3IC4khYzuc+Vs6MqaHoxrN3OPXJvNW1E1Sy5t7SCOp8kndq+9ZQA2NyZgsqGlJrsXzCZvOXWfjfsYxtsqWhbHi2OZILcae0V0ptOPgKYZU31K23MIgrvm0OY1Gixk59RgOHtNKx3LTz32N9QBYEXgT5GOikrrgSGFHFqDCIu69bRSNpK2yvPj8LX2vxlNOCiYwM6NSv4T5mkpUcyAVk2q/puGRCgALj2e4wZ+mEnFrl2axycW7dSSawUHq2fS9bOVDl3fC5UszQBPnlDosCfDNMCkMFSKtJJIvE6grxG3opWEp6nIPKPO/tU6lSINe0Xot92O1TrUmfCc9ci0uagmEFkJFEpv/2a/2YMzFxJXzIUr+WryyqtgX5xgweoe9TTJeDmxcbkb13bUR6xiiWWAPb2ImsOre5Fbl0ZV5fWpXmVGPVPWymMIiNApGZHIHPjZQEvYxxZqbrwFDaLBegXSuz34TO8UjhnGUgUvcpB030mnFeyntQ69CXTLrc15Jf511Ay7iEih6t/f0mMICCMoGEX225EvzenmvEmis+sIeNsK7Lgj3AM76FFHrJyc1UEnhjXd+8QQkuL8EJxZwrmVm4HQC6fYbbGdTtHZ007xDIjXHFgDU9SgqsATH8pUJ8aNZyKTXEBrsSZNGFTKuCto2Z+4ejr7jarayrcgYalImomOLFZIS7k2ZvvPC5x83uzuwPNz7m3NQQAAA= </code>
                 <description>
-&amp;c&#249;&amp;y Built to be played with {{b|Jake}} the dog
+&amp;c&#249;&amp;y Designed to be played with {{b|Jake}} the dog, and his Stash
 &amp;c&#249;&amp;y Utility-based to hunt relics
 &amp;c&#249;&amp;y Highly maneuverable
 &amp;c&#249;&amp;y {{r|Challenging}} starting build
 &amp;c&#249;&amp;y Requires knowledge and skill
-&amp;c&#249;&amp;y Can make huge explosions
-&amp;c&#249;&amp;Y Ego as main stat
+&amp;c&#249;&amp;y Can make huge explosions with Quantum Jitters and Space-Time Vortex
+&amp;c&#249;&amp;Y EGO as main stat
 &amp;c&#249;&amp;y Force Wall and Recoiler to scape
 &amp;c&#249;&amp;y Preset by {{O|DanceRogue}}
 				</description>
             </pregen>
 
-			<pregen Name="Plant Person" Genotype="Mutated Human" Tile="RelicHunter/RelicHunterFern#6-3.png" Foreground="G" Detail="K" Background="k">
-				<code>H4sIAAAAAAAACs1XbU/bMBD+jsR/sKJ9LFWL2IaQ+FDKgAkmdU1VNk0IOcktMTh25NhDWdf/vrPTl6QdlCGI2qpK4zvfPb57fGdPdncI8WKawi9QOZPCOyLefrvT3u8c4s9rOXlgGI8qCl1UmMtSGRkOOQ7/sO+ETMrHQjQqMrCTvg2v2v2EKhpqUCfWYt7+aiL7s8Ma1b64CS3Sy3NIA17s9X2UZC0yLn0fL5G1SN9wbRQcCzBaUd4iAxNwFl5CMZL3II6F4bzE6MBEVFOEsUCHQ+/0/0I7RSNr8JZO0Obc5EBBDKImWgvgXDYt/0xbLw7gOQi5pQGsQ9scwLm+NfvFaKohIhcmpY3FsszcFkayCmxzHGcEtFTkVGgyQNyysSD6JthSPtaQbQ7jTN0aPVdQBEBV1FQQHf3Rdr6FYVzBtjmQaYYWO9WRHDiEzsayeZSfSfWFzOrALMinEpcDe6nJQw61VDjVMVUM6Y6adp2r0r40Ttatjk9bz/U9SKSWeSF0ApqFxL9nolkAQ7unQZXvjXoeKZZh2O8kE7rpsI8e5F6CG69xx700S1jApMkbXrAUSK8e56DiolnXJ0bFgO5F3KzfM6lCINe0Wpua8OsXWSIFGbO0aWoJyBltOLmcCaxZMRmx8FU8L19uHu2J3VftiT2tFQuMhm1siqvgnnFKs/U0HxgVJjTH8nZUz5/nawUi1gkK3tdS4vVixpkuUHBQF4ykiRMkl+2qH+qiz1i7OWfYQ0K7lI916TXjPJMPoGyau3XZp1ji6OFyrEo6j2Z+Bo4eewcHdcEQUspcOVnp/gGut2fPBPUZb3ic6ptcy5T9hoV8Cyn0GMjNVBJ4ibfGJxMO9Gfx5wyUmE4JnlVIsnZ/ykC7wxRFJigZG7gdAi7mAjc5qNs7eg81dWRM5HixUhq8TEmBlcGHf9SNN81lImUOvsZDAXLrSoauxm1jPp8A+ozbx8o817Eo16dGwBi3K42hkcvIJXIJeAo6kdFtuaTv0qgzFieWL3jDLBxRgc9T8PSMdoRMWWSl03bfV01J1X973X8FcZmFzXjrtxk78yWUt4+b3Z3pX7UTb7N5EwAA</code>
+			<pregen Name="Plant Person" Genotype="Mutated Human" Tile="RelicHunter/RelicHunterFern#6-4.png" Foreground="g" Detail="w" Background="k">
+				<code> H4sIAAAAAAAACs1XbU/bMBD+jsR/sKJ9TKu2YhJC6odSBkyjUtdEZdKEkJPcEoNjR34Zykr/+85poU2BFSaIWqlq7efe73xnz/b3CPFSmsNvUJpJ4R0Rr9futHudw3av5/kVHlnGkzWCLhJ0llguE8tB4/ZPtyZktvh5hMKyAMf0Y3LRHmZU0diAOnYSdfu7Tdz3DIQ0SDaqGHwy0BryiJetYYAMhU+mC939lWU+GVpurIK+AGsU5T4Z24iz+BuUobwF0ReW84WNlTEJNRTNeLQOtz6Zt5p2gkKemLdSgjIf6J3YkTXUQELObU5FjepJLB+w+eLP3P/vWAY22tFQ1izbHskluRN6pqCMgKqkqSBWmUPZegfDuGHb9kDmBUrsrO9o4BBXMlbHdvGZrS/IsoSXQT6R6A60cqtjDrVUVKRTqhgVBimdn5voUNoK667vz/3X6h5n0khdCpOBYTEJbplo1oAJpCBALdaNag4VKzDsN5IJ03TYwzvZyvDgNa54kBcZi5i0ulm9x4oZw4EcSwENqw6lwMoecA4qLRv22qoUUL1Im9V7KlUM5JKut8Um9I5AGMrJiCklVbOqg7LIpCBTljecYs4ENs2UhCx+F82rxdWLQ7n7rkN5YIxikTWwi1N507jtY3nsGroeWxVnVGN/ParnzwuMApGaDIHPtZR4g5RxZkoEDupAKG2aYePST3m+4vDgnOEQi50rh3X0knFeyDtQLs3dOvYllY5htbdedB4tggKq8mgdHNSBCeSUVU1l4/oRob8Ddympc3zgfW5otZE5+wOP+A6W0EtGbi8lge83J3w2+yUVaHN/CkrM5z4JM3jm9VGAqe5zFGtBydTC9QTQnXM85qCub+gt1MixZpKqMjaag1coKbA3BPBM5/jQbGZSaggM3kuwui5kXHW5XczoPwx9xQNog68aH5SbEytgigeWpvC295D7udrfm/8FL2Hz9fUPAAA= </code>
 				<description>
-&amp;c&#249;&amp;y Built to be played with {{b|Jake}} the dog
+&amp;c&#249;&amp;y Designed to be played with {{b|Jake}} the dog
 &amp;c&#249;&amp;y Curious build for exploration
 &amp;c&#249;&amp;y Tough crowd controller
 &amp;c&#249;&amp;y {{W|Medium survivable}} starting build
 &amp;c&#249;&amp;y Starts in the Salt Dunes
-&amp;c&#249;&amp;y Can trade 'Snake Oiler' from start
+&amp;c&#249;&amp;y Can trade 'Snake Oiler' from Oddly-hued glowpad
 &amp;c&#249;&amp;Y WILL as main stat
 &amp;c&#249;&amp;y Force Wall and Recoiler to scape
 &amp;c&#249;&amp;y Preset by {{O|DanceRogue}}
