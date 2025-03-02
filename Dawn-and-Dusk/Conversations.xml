@@ -9,6 +9,9 @@
 		{{emote|*{{m-M-m-M sequence|Dusk}} settles in place to rest, jostling {{c-C-c-C sequence|Dawn}} from the usual comfort of their perch.*}}~
 		{{emote|*{{c-C-c-C sequence|Dawn}} preens {{m-M-m-M sequence|Dusk}}'s fur, almost seeming to sigh at the indignity of it.*}}
       </text>
+	  <text IfFinishedQuestStep="Tomb of the Eaters~Disable the Spindle's Magnetic Field" IfZoneName="Gyl" Priority="3">
+	  {{emote|*{{m-M-m-M sequence|Dusk}} raises their head, pushing {{c-C-c-C sequence|Dawn}} upright. They stare, eyes wide.*}}
+	  </text>
 	  <choice IfHavePart="Telepathy" GotoID="EquinoxRealtalk">{{emote|Converse with {{c-C-c-C sequence|Dawn}} telepathically.}}</choice>
 	  <choice IfHavePart="Telepathy" GotoID="EquinoxNotalk">{{emote|Converse with {{m-M-m-M sequence|Dusk}} telepathically.}}</choice>
       <choice GotoID="End">Live and drink.</choice>
@@ -25,7 +28,10 @@
       <choice GotoID="Telepathetic">{{emote|*Think, to {{c-C-c-C sequence|Dawn}}, 'You're telepathic?'*}}</choice>
 	  <choice GotoID="EverybodyWantsToTalkToCats">{{emote|*Think, to {{c-C-c-C sequence|Dawn}}, 'Any thoughts you'd like to share lately?'*}}</choice>
 	  <choice GotoID="EquinoxNotalk">{{emote|*Think, to {{m-M-m-M sequence|Dusk}}, 'Can you speak to me too?'*}}</choice>
-      <choice GotoID="End">Live and drink.</choice>
+	  <choice IfZoneID="JoppaWorld.53.3.1.0.0" IfHaveQuest="Tomb of the Eaters" GotoID="DawnAndDuskAndHerododicus" Priority="1">{{emote|*Think, to {{c-C-c-C sequence|Dawn}}, 'I need to go somewhere important. I don't think I can come back.'*}}</choice>
+      <choice IfZoneName="Gyl" IfFinishedQuestStep="Tomb of the Eaters~Disable the Spindle's Magnetic Field" IfNotFinishedQuest="Tomb of the Eaters" GotoID="DawnAndDuskYouRecame" Priority="1">{{emote|*Think, to {{c-C-c-C sequence|Dawn}}, 'I made it back.'*}}</choice>
+	  <choice IfZoneName="Grit Gate" IfHaveQuest="A Call to Arms" IfNotFinishedQuest="A Call to Arms" GotoID="WeStanDawnAndDusk" Priority="1">{{emote|*Think, to {{c-C-c-C sequence|Dawn}}, 'Will you be alright, fighting the Putus Templar?'*}}</choice>
+	  <choice GotoID="End">Live and drink.</choice>
     </node>
 
 	<node ID="EverybodyWantsToTalkToCats">
@@ -135,5 +141,65 @@ Ah, excuse me. Though that should surely give you a hint.
 	  <choice IfHavePart="Telepathy" GotoID="EquinoxRealtalk">{{emote|*Try to prod {{c-C-c-C sequence|Dawn}}'s mind, instead.*}}</choice>
 	  <choice GotoID="End">Live and drink, {{m-M-m-M sequence|Dusk}}.</choice>
 	</node>
+	
+	<node ID="DawnAndDuskAndHerododicus">
+	  <text>
+	  {{emote|*{{c-C-c-C sequence|Dawn}} swallows hard. For once, it is not a hairball.*}}
+	  
+	  {{emote|*Rather than looking relieved, {{m-M-m-M sequence|Dusk}} only looks somber.*}}
+
+	  {{emote|*{{c-C-c-C sequence|Dawn}} averts their gaze.*}}
+	  
+	  Perhaps I was too hopeful to expect a happy ending, in a place so rich with conflict.
+	  
+	  I... We will never forget you, =name=.
+	  </text>
+	 <choice GotoID="DawnAndDuskHeartbreakers">{{emote|*Think 'You still have each other. Live and drink, {{c-C-c-C sequence|Dawn}}-and-{{m-M-m-M sequence|Dusk}}.'*}}</choice>
+	</node>
+	
+	<node ID="DawnAndDuskHeartbreakers">
+		<text>
+		{{emote|*{{m-M-m-M sequence|Dusk}} nods, their eyes wet.*}}
+		</text>
+	 <choice GotoID="End">{{emote|*Think about what comes next.*}}</choice>
+	</node>
+	
+	<node ID="DawnAndDuskYouRecame">
+	  <text>
+	  {{emote|*{{c-C-c-C sequence|Dawn}} shoots a stare in your direction.*}}
+	  
+	  Some folks just don't have the decency to stay gone when they tell you they're leaving for good!
+	  
+	  {{emote|*{{m-M-m-M sequence|Dusk}} adjusts, chiding {{c-C-c-C sequence|Dawn}} for their rudeness by shaking their balance.*}}
+	  
+	  I apologise, we were struggling to leave the Tomb... and then, there was this... {{hologram|energy}}...
+	  
+	  As fast as {{m-M-m-M sequence|Dusk}}'s legs could carry us, with my directions... we came here.
+	  
+	  And here you are, =name=.
+	  
+	  {{emote|*{{c-C-c-C sequence|Dawn}}'s eyes squint, up at you.*}}
+	  
+	  I do not know what will befall us yet, but... please do not leave us again.	  
+	  </text>
+	 <choice GotoID="End">{{emote|*Think, 'It is good to see you safe too, {{c-C-c-C sequence|Dawn}}-and-{{m-M-m-M sequence|Dusk}}.'*}}</choice>
+	 <choice GotoID="End">{{emote|*Simply pet them.*}}</choice>
+	</node>
+	
+	<node ID="WeStanDawnAndDusk">
+	  <text>
+	  {{emote|*{{c-C-c-C sequence|Dawn}}-and-{{m-M-m-M sequence|Dusk}} look at you with steeled determination.*}}
+	  
+	  You may have surmised that we... can exaggerate our abilities.
+	  
+	  But, and I do not say this lightly, =name=... do not think for a second that we can allow these fiends to raid Grit Gate!
+	  
+	  {{emote|*{{m-M-m-M sequence|Dusk}} spews a vicious hiss as {{c-C-c-C sequence|Dawn}} sits up proudly.*}}
+	  
+	  There is fire in our bellies and ice in our veins! Give them no quarter, for none shall be given!
+	  </text>
+	 <choice GotoID="End">{{emote|*Think, 'I'm not sure exactly what all of that means, but I agree that we can't let the Putus Templar get away with this. To arms!'*}}</choice>
+	</node>
+	
   </conversation>
 </conversations>

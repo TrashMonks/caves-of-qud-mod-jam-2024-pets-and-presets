@@ -5,3 +5,4 @@ This document lists the changes made to this pack to support Caves of Qud's 1.0 
 These mods had updates since the last time the pack was updated:
 * Acid Rustler and Stubble
 * Belongings
+* Dawn-and-Dusk
