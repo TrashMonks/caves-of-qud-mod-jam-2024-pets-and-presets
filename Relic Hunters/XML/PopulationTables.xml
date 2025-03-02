@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<populations>
+	<population Name="Dancerogue_RH_JakesWares">
+		<group Name="Items" Style="pickeach">
+			<table Name="DynamicObjectsTable:Headwear:Tier4" Number="1" Chance="20" />
+			<table Name="Junk {zonetier}" Number="1-4" Chance="50"  />
+			<object Blueprint="Ganglionic Teleprojector" Number="1" Chance="10" />
+			<object Blueprint="Reprogrammable Recoiler" Number="1" Chance="90" />
+			<object Blueprint="Spiral Borer" Number="2-4" Chance="90" />
+			<object Blueprint="Dancerogue_RH_Nephrolepsis" Number="2-6" Chance="90"/>
+			<!--<object Blueprint="Dancerogue_RH_Polystichum" Number="1" Chance="40"/>-->
+			<object Blueprint="Dancerogue_RH_Necrolepsis" Number="1-2" Chance="60"/>
+			<object Blueprint="Dancerogue_RH_SayPlease" Number="1" />
+			
+		</group>
+	</population>
+</populations>

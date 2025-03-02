@@ -8,3 +8,4 @@ These mods had updates since the last time the pack was updated:
 * Dawn-and-Dusk
 * Denmagn
 * Outcast Priest and Lampothy
+* Relic Hunters
