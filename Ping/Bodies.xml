@@ -6,5 +6,5 @@
       <part Type="Wheel" Laterality="Right" />
 			<part Type="Wheel" Laterality="Left" />
     </anatomy>
-  /<anatomies>
+  </anatomies>
 </bodies>

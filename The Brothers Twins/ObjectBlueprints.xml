@@ -4,14 +4,14 @@
         <part Name="Render" DisplayName="Tiamat" />
         <part Name="Description" Short="A wizened old ray preserved from times before the Eaters, of twins; two. In its age it begins to seek out the warmth of this world and prefers nothing more than time spent on a friend's leg surface." />
         <tag Name="StartingPet" />
-        <part Name="pettable" />
+        <part Name="Pettable" />
         <tag Name="PetResponse" Value="chirps, whips his head to see your hand, stands solidly, rubs his face into you, swipes at you" />
     </object>
     <object Name="Maxatony" Inherits="Astral Tabby">
         <part Name="Render" DisplayName="Maxatony" />
         <part Name="Description" Short="A mercurial old tabby readmitted to this world from times before the Eaters, of two twins. Its phasing fur runs ragged and unwashed, and it longs for days before." />
         <tag Name="StartingPet" />
-        <part Name="pettable" />
+        <part Name="Pettable" />
         <tag Name="PetResponse" Value="meows silently, his tail sticks up, purrs" />
     </object>
 </objects> 
