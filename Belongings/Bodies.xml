@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<bodies>
+  <anatomies>
+    <anatomy Name="Phils_Belongings" Category="Wooden">
+        <part Type="Mouth" />
+        <part Type="Leg" Laterality="Right Fore" SupportsDependent="Forelegs" />
+        <part Type="Leg" Laterality="Left Fore" SupportsDependent="Forelegs" />
+        <part Type="Leg" Laterality="Right Mid" SupportsDependent="Midlegs" />
+        <part Type="Leg" Laterality="Left Mid" SupportsDependent="Midlegs" /> 
+        <part Type="Leg" Laterality="Right Hind" SupportsDependent="Hindlegs" />
+        <part Type="Leg" Laterality="Left Hind" SupportsDependent="Hindlegs" />
+        <part Type="Legs" Laterality="Fore" DependsOn="Forelegs" />
+        <part Type="Legs" Laterality="Mid" DependsOn="Midlegs" />
+        <part Type="Legs" Laterality="Hind" DependsOn="Hindlegs" />
+    </anatomy>
+  </anatomies>
+</bodies>
