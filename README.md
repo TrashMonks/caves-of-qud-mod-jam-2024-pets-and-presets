@@ -3,7 +3,7 @@ Mod jam pack for the November 2024 [Caves of Qud Mod Jam: Pets & Presets](https:
 
 A gigantic feathered phase-harmonic thanks to all who participated! — The mod jam organizers
 
-Wish for `jamaddpet` to open a menu to add a pet in-game, or choose the "Spawn Every Pet" pet to start the game with every pet (*chaos will ensue*).
+Wish for `jamaddpet` to open a menu to add a pet in-game, or choose the "Spawn Every Pet" pet to start the game with every pet (*chaos will ensue*). You can also access these via the in-game wish menu (bound to <kbd>shift</kbd>-<kbd>W</kbd> by default).
 
 This version of the pack is for the 1.0 release (209.X) of Caves of Qud.
 
