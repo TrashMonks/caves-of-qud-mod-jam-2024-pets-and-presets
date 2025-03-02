@@ -7,3 +7,4 @@ These mods had updates since the last time the pack was updated:
 * Belongings
 * Dawn-and-Dusk
 * Denmagn
+* Outcast Priest and Lampothy
