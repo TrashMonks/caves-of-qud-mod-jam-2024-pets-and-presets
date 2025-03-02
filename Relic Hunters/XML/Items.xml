@@ -23,7 +23,7 @@
 			<tag Name="DynamicObjectsTable:MeleeWeapons" />
 			<stat Name="Hitpoints" Value="300" />
 			<tag Name="BaseObject" Value="*noinherit" />
-			<part Name="Yurtmat" IsBootSensitive="true"  />
+			<part Name="Yurtmat" />
 			<part Name="AddsRep" Faction="Trees" Value="100"  IsBootSensitive="true" />
 			<intproperty Name="Bleeds" Value="1" />
 			<tag Name="BleedLiquid" Value="sap-1000" />
@@ -101,7 +101,7 @@
 					<part Name="LiquidFueledPowerPlant" Liquid="sap" ChargePerDram="125" IsEMPSensitive="true" IsTechScannable="true" IsBioScannable="true" NameForStatus="SeedGem" />
 					
 						<part Name="VibroWeapon" IsBootSensitive="true" ChargeUse="500"  />
-					<part Name="VampiricWeapon" IsBootSensitive="true" ShowInShortDescription="false" Percent="0-150" Reduction="10d2" Maximum="1d10+30" RequiresLivingTarget="true" RealityDistortionBased="false" />
+					<part Name="VampiricWeapon" IsBootSensitive="true" Percent="0-150" Reduction="10d2" Maximum="1d10+30" RequiresLivingTarget="true" RealityDistortionBased="false" />
 					<part Name="MutationOnEquip" ChargeUse="1" WorksOnWearer="true" IsBootSensitive="true" IsRealityDistortionBased="false" ClassName="WaveformWorm" DisplayName="Glimmering Rootpath"/>
 					<part Name="Cursed" RevealInDescription="false" />
 					<part Name="CrumblesOnHit" Chance="2" />
@@ -134,7 +134,7 @@
 					<part Name="LiquidFueledPowerPlant" Liquid="sap" ChargePerDram="250" IsEMPSensitive="true" IsTechScannable="true" IsBioScannable="true" NameForStatus="SeedGem" />
 
 					<part Name="Gaslight" IsBootSensitive="true" ChargeUse="114" ChargedSkill="Whip" UnchargedSkill="Cudgel" ChargedPenetrationBonus="2" UnchargedPenetrationBonus="-2" ChargedDamage="3d3" UnchargedDamage="4d3" ChargedName="{{spaser|Necrolepsis}}" UnchargedName="{{K|Dead}} {{spaser|Necrolepsis}}"/>
-					<part Name="VampiricWeapon" IsBootSensitive="true" ShowInShortDescription="false" Percent="0-100" Reduction="1d3-1" Maximum="1d10+6" RequiresLivingTarget="true" RealityDistortionBased="false" />
+					<part Name="VampiricWeapon" IsBootSensitive="true" Percent="0-100" Reduction="1d3-1" Maximum="1d10+6" RequiresLivingTarget="true" RealityDistortionBased="false" />
 					<part Name="LatchesOn" InitialSaveTarget="14" InitialSaveStat="Willpower" InitialSaveDifficultyStat="Willpower" MoveSaveTarget="14" MoveSaveStat="Willpower" MoveSaveDifficultyStat="Willpower" BreakSaveTarget="14" BreakSaveStat="Willpower" BreakSaveDifficultyStat="Willpower" Duration="3d4" AutoAttackOnMove="true" AutoAttackOnMoveAway="true" AutoAttackPerTurn="true" BloodSpatterOnLatch="false" />
 						<part Name="MutationOnEquip" ChargeUse="1" WorksOnEquipper="true" IsBootSensitive="true" IsRealityDistortionBased="false" ClassName="WaveformWorm" DisplayName="Glimmering Rootpath"/>  <!--Cooldown="25" Range="6"-->
 					<part Name="CrumblesOnHit" Chance="0" />

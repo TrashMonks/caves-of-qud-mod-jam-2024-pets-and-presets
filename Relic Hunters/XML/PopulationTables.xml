@@ -7,8 +7,8 @@
 		<group Name="Items" Style="pickeach">
 			<table Name="DynamicObjectsTable:Headwear:Tier4" Number="1" Chance="10" />
 			<table Name="Junk {zonetier}" Number="0-2" Chance="50"  />
-			<inventoryobject Blueprint="@Junk 1" Number="0-4" Chance="50" />
-			<inventoryobject Blueprint="@Junk 2" Number="1d4" Chance="25" />
+			<table Name="Junk 1" Number="0-4" Chance="50" />
+			<table Name="Junk 2" Number="1d4" Chance="25" />
 			<object Blueprint="Ganglionic Teleprojector" Number="1" Chance="40" />
 			<object Blueprint="Reprogrammable Recoiler" Number="1" Chance="100" />
 			<object Blueprint="Spiral Borer" Number="1-4" Chance="100" />

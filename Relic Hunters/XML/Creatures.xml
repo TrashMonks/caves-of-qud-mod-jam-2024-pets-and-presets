@@ -32,7 +32,7 @@
 	  <intproperty Name="Bleeds" Value="1" />
 	  <tag Name="BleedLiquid" Value="slime-1000" />
 	  <tag Name="BleedColor" Value="&amp;b" />
-	  <tag Name="BleedPrefix" Value="{{b|blody}}" />  does not work I think, but doesnt cause any trouble 
+	  <tag Name="BleedPrefix" Value="{{b|blody}}" />  <!-- does not work I think, but doesnt cause any trouble -->
 	  <tag Name="Noswap" />
 	  
 <!-- Mecha -->
@@ -151,7 +151,7 @@
 		<tag Name="Class" Value="hover robot" />
 		<part Name="MaintenanceSystems" />--> 
 		<tag Name="Unenslavable" /> 
-		<!--<tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />-->
+		<tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
 		<part Name="ConversationScript" ConversationID="InsectNest" Filter="Cryptic Machine" ClearLost="false"/>
 		<tag Name="Merchant" />
 		<part Name="Inventory" />
