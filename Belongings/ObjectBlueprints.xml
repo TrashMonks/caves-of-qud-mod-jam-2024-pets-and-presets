@@ -43,7 +43,7 @@
     </object>
 
     <object Name="BelongingsBite" Inherits="BaseFangs">
-        <part Name="NaturalWeapon" MaxStrengthBonus="8000" BaseDamage="2d3" Skill="Axe" Stat="Strength" Attributes="Bite" />
+        <part Name="MeleeWeapon" MaxStrengthBonus="8000" BaseDamage="2d3" Skill="Axe" Stat="Strength" Attributes="Bite" />
         <part Name="Description" Short="A long row of clean, white teeth." />
         <part Name="Cursed" RevealInDescription="false" />
     </object>
