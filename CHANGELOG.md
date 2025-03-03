@@ -21,6 +21,19 @@ Starting with Qud's 1.0 release, preset tiles are assumed to be "facing" left in
 * Redox Glider
 * Relic Hunters
 
+## Tagged unique objects (e.g., pets) as excluded from dynamic encounters
+* Arctic Nomad and Arctic Fox
+* Belongings
+* Gabbro
+* Glitch
+* Jumping Spider
+* Knight of the Wastes and Pantaglia Merchant
+* Luminary-at-Dawn
+* Palladium Dragon
+* Redox Glider
+* Relic Hunters
+* The Brothers: Twins
+
 ## Fixed errors and warnings
 * Belongings
   * Corrected the `NaturalWeapon` part to `MeleeWeapon` on Belonging's bite (`BelongingsBite`).
@@ -31,5 +44,5 @@ Starting with Qud's 1.0 release, preset tiles are assumed to be "facing" left in
 * Relic Hunters
   * Removed `Yurtmat`'s nonexistent `IsBootSensitive` attribute on the base khopesh (`Dancerogue_RelicHunter_BaseKhopesh`).
   * Removed `VampiricWeapon`'s nonexistent `ShowInShortDescription` attribute on Nephrolepsis and Necrolepsis (`Dancerogue_RH_Nephrolepsis`, `Dancerogue_RH_Necrolepsis`).
-* The Brothers Twins
+* The Brothers: Twins
   * Corrected the `pettable` parts on the twins to `Pettable`.
