@@ -9,5 +9,6 @@
     <tag Name="PetResponse" Value="blinks,trembles,pricks your thumb" />
     <tag Name="StartingPet" />
     <part Name="Render" DisplayName="Pantaglia" Tile="pantaglia.png" ColorString="&amp;g" DetailColor="W" />
+    <tag Name="ExcludeFromDynamicEncounters" />
   </object>
 </objects>

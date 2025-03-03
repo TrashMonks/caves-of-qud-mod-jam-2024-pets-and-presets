@@ -41,5 +41,6 @@
     <tag Name="StartingPet" />
     <tag Name="PetResponse" Value="lets out a high pitched bark,looks at you" />
     <tag Name="Gender" Value="male" />
+    <tag Name="ExcludeFromDynamicEncounters" />
   </object>
 </objects>

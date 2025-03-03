@@ -38,5 +38,6 @@
         <tag Name="PetResponse" Value="=subject.Name= =verb:pet= you back!,ERROR: =subject.Name='s PetResponse not found!,=subject.Name=,The spurt =subject.Name=s.,=subject.Name= glitches in and out of existence for a moment." />
         <tag Name="StartingPet" />
         <xtagGrammar Proper="true" />
+        <tag Name="ExcludeFromDynamicEncounters" />
     </object>
 </objects>

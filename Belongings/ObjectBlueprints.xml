@@ -46,6 +46,7 @@
         <part Name="MeleeWeapon" MaxStrengthBonus="8000" BaseDamage="2d3" Skill="Axe" Stat="Strength" Attributes="Bite" />
         <part Name="Description" Short="A long row of clean, white teeth." />
         <part Name="Cursed" RevealInDescription="false" />
+        <tag Name="ExcludeFromDynamicEncounters" />
     </object>
 
     <object Name="BelongingsChest" Inherits="Armor">
@@ -53,6 +54,7 @@
         <part Name="Render" DisplayName="Belongings Body" Tile="Phils_Belongings/chestchest.png" TileColor="&amp;w" DetailColor="r" />
         <part Name="Description" Short="No matter how dirty it seems to get, it is never really dirty." />
         <part Name="Cursed" RevealInDescription="false"/>
+        <tag Name="ExcludeFromDynamicEncounters" />
     </object>
 
 </objects>

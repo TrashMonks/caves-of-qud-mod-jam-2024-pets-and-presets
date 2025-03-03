@@ -27,7 +27,7 @@
 			<part Name="AddsRep" Faction="Trees" Value="100"  IsBootSensitive="true" />
 			<intproperty Name="Bleeds" Value="1" />
 			<tag Name="BleedLiquid" Value="sap-1000" />
-			
+			<tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
 	</object>
 					<!-- ===========================================0=========================================0============================================================================ -->
 
@@ -106,6 +106,7 @@
 					<part Name="Cursed" RevealInDescription="false" />
 					<part Name="CrumblesOnHit" Chance="2" />
 					<property Name="Story" Value="Relic Hunter Nephrolepsis" />
+					<tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
 				</object>		
 	
 		<!-- Kopesh +2 -->
@@ -139,6 +140,7 @@
 						<part Name="MutationOnEquip" ChargeUse="1" WorksOnEquipper="true" IsBootSensitive="true" IsRealityDistortionBased="false" ClassName="WaveformWorm" DisplayName="Glimmering Rootpath"/>  <!--Cooldown="25" Range="6"-->
 					<part Name="CrumblesOnHit" Chance="0" />
 					<property Name="Story" Value="Relic Hunter Necrolepsis" />
+					<tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
 				</object>
 	
 <!-- Shield Spear -->
@@ -370,6 +372,7 @@
 		<part Name="Description" Short="A brass rod of wisdom, designed to unlock only through the practiced grace of civility and empathy." />
 		<part Name="Physics" Weight="12"/>
 		<tag Name="NoSparkingQuest" />
+		<tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
 	</object>
 	
 </objects>

@@ -41,6 +41,7 @@
     	<tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_robot_lesser"/>
 
 		<tag Name="BaseObject" Value="*noinherit"/>
+		<tag Name="ExcludeFromDynamicEncounters" Value="*noinherit"/>
 	</object>
 
 	<!-- ACTORSESES -->
