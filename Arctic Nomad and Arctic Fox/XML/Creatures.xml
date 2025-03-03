@@ -15,6 +15,7 @@
  <part Name="Pettable" />
     <tag Name="PetResponse" Value="licks you,yips" />
     <property Name="Story" Value="Arctic Fox Story" />
+    <tag Name="ExcludeFromDynamicEncounters" />
   </object>
   <object Name="ArcticFox_Bite" Inherits="Bite">
     <part Name="MeleeWeapon" BaseDamage="1d6" />

@@ -6,6 +6,7 @@
         <tag Name="StartingPet" />
         <part Name="Pettable" />
         <tag Name="PetResponse" Value="chirps, whips his head to see your hand, stands solidly, rubs his face into you, swipes at you" />
+        <tag Name="ExcludeFromDynamicEncounters" />
     </object>
     <object Name="Maxatony" Inherits="Astral Tabby">
         <part Name="Render" DisplayName="Maxatony" />
@@ -13,5 +14,6 @@
         <tag Name="StartingPet" />
         <part Name="Pettable" />
         <tag Name="PetResponse" Value="meows silently, his tail sticks up, purrs" />
+        <tag Name="ExcludeFromDynamicEncounters" />
     </object>
 </objects> 

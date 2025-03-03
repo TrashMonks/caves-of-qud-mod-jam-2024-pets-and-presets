@@ -33,6 +33,7 @@
 		<tag Name="TakeDamageSound" Value="Sounds/Creatures/VO/sfx_creature_animal_spider_vo_hurt"/>
 		<tag Name="AmbientIdleSound" Value="Sounds/Creatures/VO/sfx_creature_animal_spider_vo_idle"/>
 		<tag Name="PunchSound" Value="Sounds/Creatures/VO/sfx_creature_animal_spider_vo_attack"/> 
+		<tag Name="ExcludeFromDynamicEncounters" />
 	</object>
 	<object Name="Trashbug_JumpingSpider_Bite" Inherits="CaveSpider_Bite">
 		<part Name="MeleeWeapon" BaseDamage="2d2" Skill="ShortBlades" />

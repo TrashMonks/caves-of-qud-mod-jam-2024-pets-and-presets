@@ -28,7 +28,7 @@
 			<part Name="AddsRep" Faction="Trees" Value="100"  IsBootSensitive="true" />
 			<intproperty Name="Bleeds" Value="1" />
 			<tag Name="BleedLiquid" Value="sap-1000" />
-			
+			<tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
 	</object>
 					<!-- ================================================================================================================================================================================================================= -->
 
@@ -106,6 +106,7 @@
 					<part Name="MutationOnEquip" ChargeUse="2" WorksOnWearer="true" IsBootSensitive="true" IsRealityDistortionBased="true" ClassName="WaveformWorm" DisplayName="Glimmering Rootpath"/>
 					<part Name="Cursed" RevealInDescription="false" />
 					<part Name="CrumblesOnHit" Chance="6" />
+					<tag Name="ExcludeFromDynamicEncounters" />
 				</object>		
 	
 	<!-- Kopesh 3 -->
@@ -138,6 +139,7 @@
 					
 						<part Name="MutationOnEquip" ChargeUse="2" WorksOnEquipper="true" IsBootSensitive="true" IsRealityDistortionBased="false" ClassName="WaveformWorm" DisplayName="Glimmering Rootpath"/>  <!--Cooldown="25" Range="6"-->
 					<part Name="CrumblesOnHit" Chance="0" />
+					<tag Name="ExcludeFromDynamicEncounters" />
 				</object>
 	
 	<!-- Kopesh 2 -->
@@ -198,6 +200,7 @@
 		<part Name="Description" Short="A brass rod of wisdom, designed to unlock only through the practiced grace of civility and empathy." />
 		<part Name="Physics" Weight="12"/>
 		<tag Name="NoSparkingQuest" />
+		<tag Name="ExcludeFromDynamicEncounters" />
 	</object>
 	
 </objects>

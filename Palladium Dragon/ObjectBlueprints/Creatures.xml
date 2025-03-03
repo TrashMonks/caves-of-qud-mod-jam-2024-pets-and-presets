@@ -24,5 +24,6 @@
 		<builder Name="Tier2HumanoidEquipment" />
 		<inventoryobject Blueprint="Plastifer Jerkin" Number="1" />
 		<xtagGrammar Proper="true" />
+		<tag Name="ExcludeFromDynamicEncounters" />
 	</object>
 </objects>

@@ -23,6 +23,7 @@
     <inventoryobject Blueprint="CalciumGuy_MoltenMaul" Number="1" />
     <skill Name="Cudgel" />
     <skill Name="Cudgel_Bludgeon" />
+    <tag Name="ExcludeFromDynamicEncounters" />
   </object>
 
   <object Name="CalciumGuy_MoltenMaul" Inherits="Base Pseudopod">
