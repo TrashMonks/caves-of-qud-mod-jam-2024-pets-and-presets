@@ -1,9 +1,9 @@
 {
-  "id": "CavesOfQudModJam2024PetsAndPresets",
-  "title": "Pets && Presets Mash-Up",
-  "description": "Compilation mod pack for the {{Y|Caves of Qud Modding Jam: Pets && Presets}}, which ran at the beginning of November 2024. See all the entries at {{C|https://itch.io/jam/caves-of-qud-modding-jam-3/entries}}!\n\nWish for {{W|jamaddpet}} to open a menu to add a pet in-game, or choose the {{W|Spawn Every Pet}} pet to start the game with every pet ({{Y|chaos will ensue}}).\n\n{{W|Warning:}} Do not run this pack simultaneous with any of the mods contained within.",
-  "tags": "pet,preset,mod pack",
-  "version": "1.0",
-  "author": "Mod Jam Participants and Organizers",
-  "previewimage": "preview.png"
+  "ID": "CavesOfQudModJam2024PetsAndPresets",
+  "Title": "Pets && Presets Mash-Up",
+  "Description": "Compilation mod pack for the {{Y|Caves of Qud Modding Jam: Pets && Presets}}, which ran at the beginning of November 2024. See all the entries at {{C|https://itch.io/jam/caves-of-qud-modding-jam-3/entries}}!\n\nUse the in-game wish menu (Debug > Wish Menu) to add a pet in-game, or choose the {{W|Spawn Every Pet}} pet to start the game with every pet ({{Y|chaos will ensue}}).\n\n{{W|Warning:}} Do not run this pack simultaneous with any of the mods contained within.",
+  "Tags": "pet,preset,mod pack",
+  "Version": "1.2",
+  "Author": "Mod Jam Participants and Organizers",
+  "Previewimage": "preview.png"
 }
