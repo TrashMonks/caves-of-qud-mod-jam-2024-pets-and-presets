@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wishcommands>
+  <wish DisplayName="Add a pet" ModName="Pets &amp;&amp; Presets Mash-Up" Author="Mod Jam Participants and Organizers" Commands="jamaddpet" Icon="creatures/sw_dog_shaggy.bmp" ColorPair="YC" />
+  <wish DisplayName="Add every pet" ModName="Pets &amp;&amp; Presets Mash-Up" Author="Mod Jam Participants and Organizers" Commands="item:ModJam_All Pet Spawner" />
+</wishcommands>
